@@ -1,16 +1,23 @@
 import React, {useState} from 'react';
-import SearchBar from './components/search-bar.component';
 import './App.css';
 import {useCouncillor} from "./hooks/useCouncillor.hook";
 import {useDebounce} from "use-debounce";
+import CssBaseline from "@material-ui/core/CssBaseline";
+import SearchBar from "./components/search-bar/search-bar.component";
 
 const App = () => {
   const [query, setQuery] = useState('');
   const [debouncedQuery] = useDebounce(query, 300);
-  const councillor = useCouncillor(debouncedQuery);
+  const [councillor, originalQuery] = useCouncillor(debouncedQuery);
   return (
     <div className="App">
-      <SearchBar query={query} setQuery={setQuery}/>
+      <CssBaseline/>
+      <SearchBar
+        label="Find councillor with postal code or address"
+        query={query}
+        setQuery={setQuery}
+        isLoading={query !== debouncedQuery || debouncedQuery !== originalQuery}
+      />
       <div>{JSON.stringify(councillor)}</div>
     </div>
   );

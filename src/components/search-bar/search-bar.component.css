@@ -1,0 +1,15 @@
+.root {
+  padding: 2px 4px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.input {
+  flex: 1;
+  margin-left: 16px;
+}
+
+.loading {
+  margin: 12px;
+}

@@ -1,9 +1,9 @@
 import React, {useState} from 'react';
 import './App.css';
-import {useCouncillor} from "./hooks/useCouncillor.hook";
 import {useDebounce} from "use-debounce";
 import CssBaseline from "@material-ui/core/CssBaseline";
-import SearchBar from "./components/search-bar/search-bar.component";
+import SearchBar from "./components/search-bar";
+import useCouncillor from "./hooks/use-councillor";
 
 const App = () => {
   const [query, setQuery] = useState('');

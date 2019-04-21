@@ -1,8 +1,8 @@
 import {useEffect, useState} from 'react';
-import {getCouncillorFromAddress} from "../services/address2councillor.service";
+import {getCouncillorFromAddress} from "../../services/address2councillor.service";
 import {pipe} from "ramda";
 
-export const useCouncillor = (address = '') => {
+const useCouncillor = (address = '') => {
   const [councillor, setCouncillor] = useState(undefined);
   const [completedQuery, setCompletedQuery] = useState(undefined);
 
@@ -18,3 +18,5 @@ export const useCouncillor = (address = '') => {
   }, [address]);
   return [councillor, completedQuery];
 };
+
+export default useCouncillor;

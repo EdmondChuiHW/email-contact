@@ -1,13 +1,16 @@
 {
-  "main.css": "/email-contact/static/css/main.a055601b.chunk.css",
-  "main.js": "/email-contact/static/js/main.3f249f6c.chunk.js",
-  "main.js.map": "/email-contact/static/js/main.3f249f6c.chunk.js.map",
+  "main.css": "/email-contact/static/css/main.31f888fb.chunk.css",
+  "main.js": "/email-contact/static/js/main.ea11983f.chunk.js",
+  "main.js.map": "/email-contact/static/js/main.ea11983f.chunk.js.map",
   "runtime~main.js": "/email-contact/static/js/runtime~main.3d4a06f5.js",
   "runtime~main.js.map": "/email-contact/static/js/runtime~main.3d4a06f5.js.map",
-  "static/js/2.c8c8fd73.chunk.js": "/email-contact/static/js/2.c8c8fd73.chunk.js",
-  "static/js/2.c8c8fd73.chunk.js.map": "/email-contact/static/js/2.c8c8fd73.chunk.js.map",
+  "static/js/2.4748a7f7.chunk.js": "/email-contact/static/js/2.4748a7f7.chunk.js",
+  "static/js/2.4748a7f7.chunk.js.map": "/email-contact/static/js/2.4748a7f7.chunk.js.map",
   "index.html": "/email-contact/index.html",
-  "precache-manifest.43aa15520187121b046e4defeb6ddf63.js": "/email-contact/precache-manifest.43aa15520187121b046e4defeb6ddf63.js",
+  "precache-manifest.d848d11ecb6c784e00b253aeb54f023d.js": "/email-contact/precache-manifest.d848d11ecb6c784e00b253aeb54f023d.js",
   "service-worker.js": "/email-contact/service-worker.js",
-  "static/css/main.a055601b.chunk.css.map": "/email-contact/static/css/main.a055601b.chunk.css.map"
+  "static/css/main.31f888fb.chunk.css.map": "/email-contact/static/css/main.31f888fb.chunk.css.map",
+  "static/media/gmail.ico": "/email-contact/static/media/gmail.2db0d88c.ico",
+  "static/media/outlook.ico": "/email-contact/static/media/outlook.759fade9.ico",
+  "static/media/yahoo.ico": "/email-contact/static/media/yahoo.9796ed78.ico"
 }

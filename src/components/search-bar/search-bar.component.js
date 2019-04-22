@@ -3,11 +3,14 @@ import Paper from "@material-ui/core/Paper/index";
 import IconButton from "@material-ui/core/IconButton/index";
 import InputBase from "@material-ui/core/InputBase/index";
 import SearchIcon from '@material-ui/icons/Search';
+import ClearIcon from '@material-ui/icons/Clear';
 import './search-bar.component.css';
 import Loading from "../loading";
 
 const SearchBar = ({query = '', label = '', isLoading = false, setQuery}) => {
+  const clearQuery = useCallback(() => setQuery(''), []);
   const onChange = useCallback(e => setQuery(e.target.value), []);
+
   return <Paper className="root" elevation={1}>
     <InputBase
       autoComplete="postal-code"
@@ -17,9 +20,14 @@ const SearchBar = ({query = '', label = '', isLoading = false, setQuery}) => {
       onChange={onChange}
     />
     <Loading isLoading={isLoading} className="loading">
-      <IconButton aria-label="Search">
-        <SearchIcon/>
-      </IconButton>
+      {query
+        ? <IconButton aria-label="Locate me" onClick={clearQuery}>
+          <ClearIcon/>
+        </IconButton>
+        : <IconButton aria-label="Search">
+          <SearchIcon/>
+        </IconButton>
+      }
     </Loading>
   </Paper>;
 };

@@ -1,8 +1,8 @@
 import {useEffect, useState} from 'react';
-import {getCouncillorFromAddress} from "../../services/address2councillor.service";
+import {getCouncillorFromAddress, getCouncillorFromGeo} from "../../services/address2councillor.service";
 import {pipe} from "ramda";
 
-const useCouncillor = (address = '') => {
+const useCouncillor = ({address = '', coords = {latitude: 0, longitude: 0}}) => {
   const [councillor, setCouncillor] = useState(undefined);
   const [completedQuery, setCompletedQuery] = useState(undefined);
 
@@ -12,10 +12,12 @@ const useCouncillor = (address = '') => {
   );
 
   useEffect(() => {
-    const req = getCouncillorFromAddress(address);
+    const req = coords && !address
+      ? getCouncillorFromGeo(coords)
+      : getCouncillorFromAddress(address);
     req.then(onCouncillorLoaded);
     return () => req.abort();
-  }, [address]);
+  }, [address, coords]);
   return [councillor, completedQuery];
 };
 

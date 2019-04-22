@@ -7,3 +7,7 @@ export const getCouncillorFromAddress = (address = '') => request({
     address,
   },
 });
+
+export const getCouncillorFromGeo = ({latitude = 0, longitude = 0}) => (
+  getCouncillorFromAddress(`geo: lng: ${longitude}, lat: ${latitude}`)
+);

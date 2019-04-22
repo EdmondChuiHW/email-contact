@@ -21,7 +21,7 @@ const CouncillorCard = ({firstName = '', lastName = '', ward = '', role = '', ph
   const subtitle = when(startsWith('Councillor'), s => `${s} – ${ward}`)(role);
   const normalizeWard = when(startsWith('City'), always('Edmonton'));
 
-  const [emailBody, emailSubject] = makeYegCoreZoneEmail({role, lastName, ward: normalizeWard(ward)});
+  const [emailBody, emailDisplay, emailSubject] = makeYegCoreZoneEmail({role, lastName, ward: normalizeWard(ward)});
 
   return <Paper>
     <div className="contact">
@@ -38,7 +38,7 @@ const CouncillorCard = ({firstName = '', lastName = '', ward = '', role = '', ph
           {subtitle}
         </Typography>
         <Typography component="pre" className="template">
-          {emailBody}
+          {emailDisplay}
         </Typography>
       </CardContent>
     </div>

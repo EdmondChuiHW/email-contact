@@ -8,7 +8,8 @@ import CouncillorCard from "./components/councillor-card";
 import {geolocated} from "react-geolocated";
 import geolocationProvider from "./utils/geo-location-provider";
 import * as queryString from "query-string";
-import * as classNames from "classnames";
+import classNames from "classnames";
+import {Typography} from "@material-ui/core";
 
 const geoLocatedConfig = {
   positionOptions: {
@@ -39,6 +40,7 @@ const App = ({coords}) => {
         setQuery={setQuery}
         isLoading={query !== debouncedQuery || debouncedQuery !== originalQuery}
       />
+      <Typography gutterBottom/>
       {councillor && <CouncillorCard {...councillor}/>}
     </div>
   );

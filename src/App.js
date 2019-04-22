@@ -7,6 +7,8 @@ import useCouncillor from "./hooks/use-councillor";
 import CouncillorCard from "./components/councillor-card";
 import {geolocated} from "react-geolocated";
 import geolocationProvider from "./utils/geo-location-provider";
+import * as queryString from "query-string";
+import * as classNames from "classnames";
 
 const geoLocatedConfig = {
   positionOptions: {
@@ -21,9 +23,15 @@ const App = ({coords}) => {
   const [query, setQuery] = useState('');
   const [debouncedQuery] = useDebounce(query, 300);
   const [councillor, originalQuery] = useCouncillor({address: debouncedQuery, coords});
+  const {iframe_pls} = queryString.parse(window.location.search);
+
+  const className = classNames(
+    'app',
+    {'iframe-pls': iframe_pls},
+  );
 
   return (
-    <div className="App">
+    <div className={className}>
       <CssBaseline/>
       <SearchBar
         label="Find councillor with postal code or address"

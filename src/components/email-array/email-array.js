@@ -9,7 +9,7 @@ const makeButtonFromProvider = ({email = '', cc = '', subject = '', body = ''}) 
       key={name}
       name={name}
       src={src}
-      herf={hrefResolver({email, cc, subject, body})}/>
+      href={hrefResolver({email, cc, subject, body})}/>
   );
 
 const EmailArray = ({email = '', cc = '', subject = '', body = ''}) => (

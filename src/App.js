@@ -19,8 +19,7 @@ const App = () => {
         setQuery={setQuery}
         isLoading={query !== debouncedQuery || debouncedQuery !== originalQuery}
       />
-      <CouncillorCard {...councillor}/>
-      <div>{JSON.stringify(councillor)}</div>
+      {councillor && <CouncillorCard {...councillor}/>}
     </div>
   );
 };

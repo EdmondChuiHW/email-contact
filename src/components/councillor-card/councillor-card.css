@@ -1,0 +1,42 @@
+.contact {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.image {
+  max-height: 220px;
+  width: auto;
+  height: auto;
+}
+
+.template {
+  white-space: pre-wrap;
+}
+
+.email-array {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.email-array::-webkit-scrollbar {
+   display: none;
+ }
+
+.email-array > * {
+  flex: 0 0 auto;
+}
+
+@media (max-width: 500px) {
+  .contact {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .image {
+    width: 100%;
+    max-height: none;
+  }
+}

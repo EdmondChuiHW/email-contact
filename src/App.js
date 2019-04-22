@@ -35,7 +35,7 @@ const App = ({coords}) => {
     <div className={className}>
       <CssBaseline/>
       <SearchBar
-        label="Find your councillor with postal code or address"
+        label="Find your councillor by postal code/address"
         query={query}
         setQuery={setQuery}
         isLoading={query !== debouncedQuery || debouncedQuery !== originalQuery}

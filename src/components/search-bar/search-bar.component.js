@@ -16,6 +16,7 @@ const SearchBar = ({query = '', label = '', isLoading = false, setQuery}) => {
       autoComplete="postal-code"
       className="input"
       placeholder={label}
+      autoFocus={true}
       value={query}
       onChange={onChange}
     />

@@ -11,6 +11,11 @@ describe('SearchBar', () => {
     expect(getByPlaceholderText('ayyyyyyyy')).toBeInTheDocument();
   });
 
+  it('should render query', () => {
+    const {getByDisplayValue} = render(<SearchBar query={'qqqqq'}/>);
+    expect(getByDisplayValue('qqqqq')).toBeInTheDocument();
+  });
+
   it('should render isLoading=true', () => {
     const {getByRole} = render(<SearchBar isLoading={true}/>);
     expect(getByRole('progressbar')).toBeInTheDocument();

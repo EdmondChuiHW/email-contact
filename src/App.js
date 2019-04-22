@@ -4,6 +4,7 @@ import {useDebounce} from "use-debounce";
 import CssBaseline from "@material-ui/core/CssBaseline";
 import SearchBar from "./components/search-bar";
 import useCouncillor from "./hooks/use-councillor";
+import CouncillorCard from "./components/councillor-card";
 
 const App = () => {
   const [query, setQuery] = useState('');
@@ -18,6 +19,7 @@ const App = () => {
         setQuery={setQuery}
         isLoading={query !== debouncedQuery || debouncedQuery !== originalQuery}
       />
+      <CouncillorCard {...councillor}/>
       <div>{JSON.stringify(councillor)}</div>
     </div>
   );

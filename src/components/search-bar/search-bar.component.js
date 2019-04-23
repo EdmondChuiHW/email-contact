@@ -22,7 +22,7 @@ const SearchBar = ({query = '', label = '', isLoading = false, setQuery}) => {
     />
     <Loading isLoading={isLoading} className="loading">
       {query
-        ? <IconButton aria-label="Locate me" onClick={clearQuery}>
+        ? <IconButton aria-label="Clear" onClick={clearQuery}>
           <ClearIcon/>
         </IconButton>
         : <IconButton aria-label="Search">

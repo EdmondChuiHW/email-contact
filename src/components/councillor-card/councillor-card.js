@@ -16,6 +16,11 @@ import EmailArray from "../email-array";
 const defaultPhotoUrl = 'https://www.edmonton.ca/city_government/documents/Mayor-Headshot_800x494_rdax_500x309.jpg';
 const cc = 'council@edmonton.ca';
 
+// todo refactor to use email provider
+const mailToHrefResolver = ({email = '', cc = '', subject = '', body = ''}) => (
+  `mailto:${email}?subject=${subject}&body=${body}&cc=${cc}`
+);
+
 const CouncillorCard = ({firstName = '', lastName = '', ward = '', role = '', phone = '', email = '', photoUrl = defaultPhotoUrl}) => {
   const name = `${firstName} ${lastName}`;
   const subtitle = when(startsWith('Councillor'), s => `${s} – ${ward}`)(role);
@@ -46,7 +51,7 @@ const CouncillorCard = ({firstName = '', lastName = '', ward = '', role = '', ph
     <CardActions>
       <div className="email-array">
         <MobileView>
-          <Button color="primary" href={`mailto:${email}`}>
+          <Button color="primary" href={mailToHrefResolver({email, cc, subject: emailSubject, body: emailBody})}>
             <EmailIcon className="left-icon"/>
             Mail app
           </Button>

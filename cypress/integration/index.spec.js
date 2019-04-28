@@ -1,12 +1,38 @@
 const requestWithAddress = ({ward, address}) => {
-  cy.visit('/');
-
-  cy.get('button[aria-label="Search"]');
-
   cy.get('input')
+    .clear()
     .type(address);
 
   cy.contains(`Ward ${ward}`, {timeout: extendedTimeout});
+
+  cy.get('.email-array')
+    .contains(/gmail/i)
+    .should('have.prop', 'href')
+    .and('include', 'https://mail.google.com/mail/')
+    .and('include', `Ward%20${ward}`);
+
+  cy.get('.email-array')
+    .contains(/outlook/i)
+    .should('have.prop', 'href')
+    .and('include', 'https://outlook.live.com/')
+    .and('include', `Ward%20${ward}`);
+
+  cy.get('.email-array')
+    .contains(/yahoo/i)
+    .should('have.prop', 'href')
+    .and('include', 'https://compose.mail.yahoo.com/')
+    .and('include', `Ward%20${ward}`);
+
+  cy.get('.email-array')
+    .contains(/mail app/i)
+    .should('have.prop', 'href')
+    .and('match', /^mailto:.+/)
+    .and('include', `Ward%20${ward}`);
+
+  cy.get('.email-array')
+    .contains(/call/i)
+    .should('have.prop', 'href')
+    .and('match', /^tel:\d+/);
 };
 
 // Heroku needs time to wake up; free tier zzz

@@ -1,7 +1,7 @@
 import request from "request-promise-native";
 
 export const getCouncillorFromAddress = (address = '') => request({
-  url: 'https://address2contact.herokuapp.com/address2councillor',
+  url: `${process.env.REACT_APP_ADDRESS_SERVER_HOST}/address2councillor`,
   json: true,
   qs: {
     address,

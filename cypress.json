@@ -1,4 +1,4 @@
 {
-  "baseUrl": "https://chuihinwai.github.io/email-contact/?iframe_pls=aye",
+  "baseUrl": "https://localhost:3000",
   "chromeWebSecurity": false
 }

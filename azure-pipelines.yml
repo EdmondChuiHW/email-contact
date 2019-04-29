@@ -18,10 +18,10 @@ steps:
 - script: |
     npm ci
     npm run test:ci
-  displayName: 'install and test'
+  displayName: 'install and unit test'
 
 - task: PublishTestResults@2
   condition: succeededOrFailed()
   inputs:
     testRunner: JUnit
-    testResultsFiles: '**/junit.xml'
+    testResultsFiles: '**/*junit.xml'

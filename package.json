@@ -8,7 +8,7 @@
     "@material-ui/icons": "^3.0.2",
     "classnames": "^2.2.6",
     "core-js": "^3.0.1",
-    "query-string": "^6.4.2",
+    "query-string": "^6.5.0",
     "ramda": "^0.26.1",
     "react": "^16.8.6",
     "react-device-detect": "^1.6.2",
@@ -17,7 +17,7 @@
     "react-scripts": "2.1.8",
     "request": "^2.88.0",
     "request-promise-native": "^1.0.7",
-    "use-debounce": "^1.1.2"
+    "use-debounce": "^2.0.0"
   },
   "scripts": {
     "start": "HTTPS=true react-scripts start",
@@ -49,7 +49,7 @@
     "not op_mini all"
   ],
   "devDependencies": {
-    "@types/request-promise-native": "^1.0.15",
+    "@types/request-promise-native": "^1.0.16",
     "cypress": "^3.2.0",
     "eslint-plugin-cypress": "^2.2.1",
     "gh-pages": "^2.0.1",

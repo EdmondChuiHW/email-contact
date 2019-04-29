@@ -1,8 +1,8 @@
 
 [![Build Status](https://dev.azure.com/chuihinwai/email-contact/_apis/build/status/chuihinwai.email-contact?branchName=master)](https://dev.azure.com/chuihinwai/email-contact/_build/latest?definitionId=2&branchName=master)
 
-<p float="left">
-  <img src="./docs/img/don-desktop.png" width="700" style="display:block;">
+<p style="text-align: center;">
+  <img src="./docs/img/don-desktop.png" width="774" style="display:block;">
   <img src="./docs/img/scott-phone.png" height="520" style="display:inline-block;">
   <img src="./docs/img/aaron-tablet.png" height="520" style="display:inline-block;">
 </p>

@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="94b74840-050c-4224-af0e-1605da7be64d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/docs/img/don-desktop.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/img/scott-phone.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/img/aaron-tablet.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -121,8 +119,8 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="95">
-                <caret line="5" column="29" selection-start-line="5" selection-start-column="29" selection-end-line="5" selection-end-column="29" />
+              <first_editor relative-caret-position="67">
+                <caret line="4" column="48" selection-start-line="4" selection-start-column="48" selection-end-line="4" selection-end-column="48" />
               </first_editor>
               <second_editor />
             </state>
@@ -536,7 +534,7 @@
       <workItem from="1555944164792" duration="4678000" />
       <workItem from="1556255825758" duration="3422000" />
       <workItem from="1556418062085" duration="4866000" />
-      <workItem from="1556495439626" duration="8912000" />
+      <workItem from="1556495439626" duration="9142000" />
     </task>
     <task id="LOCAL-00001" summary="+gh-pages">
       <created>1555793649259</created>
@@ -755,7 +753,21 @@
       <option name="project" value="LOCAL" />
       <updated>1556516089806</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="+add pics to readme [skip ci]">
+      <created>1556516969090</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1556516969090</updated>
+    </task>
+    <task id="LOCAL-00033" summary="+update readme pics [skip ci]">
+      <created>1556517071107</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1556517071107</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -791,10 +803,11 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="54684000" />
+    <option name="totallyTimeSpent" value="54914000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="48" y="23" width="1392" height="877" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49809885" visible="true" weight="0.24945295" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -885,8 +898,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="+email template" />
-    <MESSAGE value="+UI" />
     <MESSAGE value="+locate" />
     <MESSAGE value="*typo" />
     <MESSAGE value="+style" />
@@ -910,7 +921,9 @@
     <MESSAGE value="*update pipeline task name" />
     <MESSAGE value="+add badge" />
     <MESSAGE value="*refactor email providers" />
-    <option name="LAST_COMMIT_MESSAGE" value="*refactor email providers" />
+    <MESSAGE value="+add pics to readme [skip ci]" />
+    <MESSAGE value="+update readme pics [skip ci]" />
+    <option name="LAST_COMMIT_MESSAGE" value="+update readme pics [skip ci]" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
@@ -1247,8 +1260,8 @@
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="95">
-            <caret line="5" column="29" selection-start-line="5" selection-start-column="29" selection-end-line="5" selection-end-column="29" />
+          <first_editor relative-caret-position="67">
+            <caret line="4" column="48" selection-start-line="4" selection-start-column="48" selection-end-line="4" selection-end-column="48" />
           </first_editor>
           <second_editor />
         </state>

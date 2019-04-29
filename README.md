@@ -3,8 +3,8 @@
 
 <p float="left">
   <img src="./docs/img/don-desktop.png" width="700" style="display:block;">
-  <img src="./docs/img/scott-phone.png" width="350" style="display:inline-block;">
-  <img src="./docs/img/aaron-tablet.png" width="350" style="display:inline-block;">
+  <img src="./docs/img/scott-phone.png" height="520" style="display:inline-block;">
+  <img src="./docs/img/aaron-tablet.png" height="520" style="display:inline-block;">
 </p>
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

@@ -1,0 +1,16 @@
+{
+  "main.css": "/email-contact/static/css/main.d676e1eb.chunk.css",
+  "main.js": "/email-contact/static/js/main.5ecffb86.chunk.js",
+  "main.js.map": "/email-contact/static/js/main.5ecffb86.chunk.js.map",
+  "runtime~main.js": "/email-contact/static/js/runtime~main.3d4a06f5.js",
+  "runtime~main.js.map": "/email-contact/static/js/runtime~main.3d4a06f5.js.map",
+  "static/js/2.ae4db52c.chunk.js": "/email-contact/static/js/2.ae4db52c.chunk.js",
+  "static/js/2.ae4db52c.chunk.js.map": "/email-contact/static/js/2.ae4db52c.chunk.js.map",
+  "index.html": "/email-contact/index.html",
+  "precache-manifest.113848c3344d47da2226389f6acb105a.js": "/email-contact/precache-manifest.113848c3344d47da2226389f6acb105a.js",
+  "service-worker.js": "/email-contact/service-worker.js",
+  "static/css/main.d676e1eb.chunk.css.map": "/email-contact/static/css/main.d676e1eb.chunk.css.map",
+  "static/media/gmail.ico": "/email-contact/static/media/gmail.2db0d88c.ico",
+  "static/media/outlook.ico": "/email-contact/static/media/outlook.759fade9.ico",
+  "static/media/yahoo.ico": "/email-contact/static/media/yahoo.9796ed78.ico"
+}

@@ -25,3 +25,12 @@ steps:
   inputs:
     testRunner: JUnit
     testResultsFiles: '**/*junit.xml'
+
+- script: |
+    npm run build
+  displayName: 'build'
+
+- task: PublishPipelineArtifact@0
+  inputs:
+    artifactName: 'build'
+    targetPath: 'build'

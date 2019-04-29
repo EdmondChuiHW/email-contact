@@ -1,5 +1,7 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+[![Build Status](https://dev.azure.com/chuihinwai/email-contact/_apis/build/status/chuihinwai.email-contact?branchName=master)](https://dev.azure.com/chuihinwai/email-contact/_build/latest?definitionId=2&branchName=master)
+
 ## Available Scripts
 
 In the project directory, you can run:

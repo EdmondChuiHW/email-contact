@@ -1,6 +1,12 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 [![Build Status](https://dev.azure.com/chuihinwai/email-contact/_apis/build/status/chuihinwai.email-contact?branchName=master)](https://dev.azure.com/chuihinwai/email-contact/_build/latest?definitionId=2&branchName=master)
+
+<p float="left">
+  <img src="./docs/img/don-desktop.png" width="350" style="display:inline-block;">
+  <img src="./docs/img/scott-phone.png" width="350" style="display:inline-block;">
+</p>
+
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
 

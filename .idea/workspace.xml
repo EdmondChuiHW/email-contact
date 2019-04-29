@@ -2,17 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="94b74840-050c-4224-af0e-1605da7be64d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/services/email-providers/mailto-provider.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/img/don-desktop.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/img/scott-phone.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/councillor-card/councillor-card.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/councillor-card/councillor-card.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/email-array/email-array.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/email-array/email-array.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/email-array/email-button.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/email-button/email-button.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/email-array/email-button.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/email-button/email-button.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/email-providers/gmail-provider.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/email-providers/gmail-provider.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/email-providers/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/email-providers/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/email-providers/outlook-provider.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/email-providers/outlook-provider.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/email-providers/yahoo-provider.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/email-providers/yahoo-provider.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -30,6 +23,15 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="76">
               <caret line="4" column="13" lean-forward="true" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/azure-pipelines.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="305">
+              <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
             </state>
           </provider>
         </entry>
@@ -64,8 +66,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/services/email-providers/gmail-provider.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="133">
-              <caret line="7" column="23" lean-forward="true" selection-start-line="7" selection-start-column="23" selection-end-line="7" selection-end-column="23" />
+            <state relative-caret-position="228">
+              <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
             </state>
           </provider>
         </entry>
@@ -91,13 +93,13 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/services/email-providers/mailto-provider.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="133">
-              <caret line="7" column="24" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
+            <state relative-caret-position="190">
+              <caret line="10" column="14" selection-start-line="10" selection-start-column="14" selection-end-line="10" selection-end-column="14" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/services/email-providers/outlook-provider.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="209">
@@ -115,11 +117,23 @@
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="95">
+                <caret line="5" column="29" selection-start-line="5" selection-start-column="29" selection-end-line="5" selection-end-column="29" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/services/email-providers/yahoo-provider.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="190">
-              <caret line="10" column="28" selection-start-line="10" selection-start-column="28" selection-end-line="10" selection-end-column="28" />
+              <caret line="10" column="14" selection-start-line="10" selection-start-column="14" selection-end-line="10" selection-end-column="14" />
             </state>
           </provider>
         </entry>
@@ -183,16 +197,16 @@
         <option value="$PROJECT_DIR$/reporter-config.json" />
         <option value="$PROJECT_DIR$/src/components/email-array/email-button.js" />
         <option value="$PROJECT_DIR$/azure-pipelines.yml" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/services/email-providers/index.js" />
         <option value="$PROJECT_DIR$/package.json" />
-        <option value="$PROJECT_DIR$/src/services/email-providers/gmail-provider.js" />
-        <option value="$PROJECT_DIR$/src/services/email-providers/mailto-provider.js" />
-        <option value="$PROJECT_DIR$/src/services/email-providers/yahoo-provider.js" />
         <option value="$PROJECT_DIR$/src/components/councillor-card/councillor-card.js" />
         <option value="$PROJECT_DIR$/src/components/email-array/email-array.js" />
         <option value="$PROJECT_DIR$/src/components/email-button/email-button.js" />
         <option value="$PROJECT_DIR$/src/services/email-providers/outlook-provider.js" />
+        <option value="$PROJECT_DIR$/src/services/email-providers/yahoo-provider.js" />
+        <option value="$PROJECT_DIR$/src/services/email-providers/mailto-provider.js" />
+        <option value="$PROJECT_DIR$/src/services/email-providers/gmail-provider.js" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -258,6 +272,17 @@
               <item name="email-contact" type="462c0819:PsiDirectoryNode" />
               <item name="cypress" type="462c0819:PsiDirectoryNode" />
               <item name="videos" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="email-contact" type="b2602c69:ProjectViewProjectNode" />
+              <item name="email-contact" type="462c0819:PsiDirectoryNode" />
+              <item name="docs" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="email-contact" type="b2602c69:ProjectViewProjectNode" />
+              <item name="email-contact" type="462c0819:PsiDirectoryNode" />
+              <item name="docs" type="462c0819:PsiDirectoryNode" />
+              <item name="img" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="email-contact" type="b2602c69:ProjectViewProjectNode" />
@@ -368,6 +393,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/docs/img" />
       <recent name="$PROJECT_DIR$/src/components/email-button" />
       <recent name="$PROJECT_DIR$/src" />
       <recent name="$PROJECT_DIR$/src/hooks/use-councillor" />
@@ -510,7 +536,7 @@
       <workItem from="1555944164792" duration="4678000" />
       <workItem from="1556255825758" duration="3422000" />
       <workItem from="1556418062085" duration="4866000" />
-      <workItem from="1556495439626" duration="8539000" />
+      <workItem from="1556495439626" duration="8912000" />
     </task>
     <task id="LOCAL-00001" summary="+gh-pages">
       <created>1555793649259</created>
@@ -722,7 +748,14 @@
       <option name="project" value="LOCAL" />
       <updated>1556504801674</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="*refactor email providers">
+      <created>1556516089806</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1556516089806</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -758,11 +791,10 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="54311000" />
+    <option name="totallyTimeSpent" value="54684000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="48" y="23" width="1392" height="877" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49809885" visible="true" weight="0.24945295" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -853,7 +885,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="+index" />
     <MESSAGE value="+email template" />
     <MESSAGE value="+UI" />
     <MESSAGE value="+locate" />
@@ -878,7 +909,8 @@
     <MESSAGE value="*some noop change to try azure auto deploy" />
     <MESSAGE value="*update pipeline task name" />
     <MESSAGE value="+add badge" />
-    <option name="LAST_COMMIT_MESSAGE" value="+add badge" />
+    <MESSAGE value="*refactor email providers" />
+    <option name="LAST_COMMIT_MESSAGE" value="*refactor email providers" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
@@ -1094,23 +1126,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/azure-pipelines.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="205">
-          <caret line="20" column="44" selection-start-line="20" selection-start-column="44" selection-end-line="20" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="38">
-            <caret line="2" column="222" selection-start-line="2" selection-start-column="222" selection-end-line="2" selection-end-column="222" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/reporter-config.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="57">
@@ -1166,27 +1181,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/services/email-providers/gmail-provider.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="7" column="23" lean-forward="true" selection-start-line="7" selection-start-column="23" selection-end-line="7" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/services/email-providers/mailto-provider.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="7" column="24" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/services/email-providers/yahoo-provider.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="10" column="28" selection-start-line="10" selection-start-column="28" selection-end-line="10" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/services/address2councillor.service.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="76">
@@ -1219,6 +1213,44 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="209">
           <caret line="11" column="14" selection-start-line="11" selection-start-column="14" selection-end-line="11" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/services/email-providers/yahoo-provider.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="10" column="14" selection-start-line="10" selection-start-column="14" selection-end-line="10" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/services/email-providers/mailto-provider.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="10" column="14" selection-start-line="10" selection-start-column="14" selection-end-line="10" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/services/email-providers/gmail-provider.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/azure-pipelines.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="305">
+          <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="95">
+            <caret line="5" column="29" selection-start-line="5" selection-start-column="29" selection-end-line="5" selection-end-column="29" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>

@@ -1,6 +1,4 @@
 import yahooIcon from "../../imgs/yahoo.ico";
-import {pipe} from "ramda";
-import hrefSanitizer from "./href-sanitizer";
 
 const hrefResolver = ({email = '', cc = '', subject = '', body = ''}) => (
   // Sep 19 2016 http://stackoverflow.com/a/30106907/1578294
@@ -10,7 +8,7 @@ const hrefResolver = ({email = '', cc = '', subject = '', body = ''}) => (
 const yahooProvider = {
   name: 'Yahoo',
   src: yahooIcon,
-  hrefResolver: pipe(hrefSanitizer, hrefResolver),
+  hrefResolver,
 };
 
 export default yahooProvider;

@@ -1,19 +1,29 @@
 import React from "react";
-import {map} from "ramda";
-import emailProviders from "../../services/email-providers";
-import EmailButton from "./email-button";
+import {keys, map, pick, pipe} from "ramda";
+import EmailButton from "../email-button/email-button";
+import commonEmailProviders from "../../services/email-providers";
+import hrefSanitizer from "../../services/email-providers/href-sanitizer";
 
-const makeButtonFromProvider = ({email = '', cc = '', subject = '', body = ''}) =>
-  ({name = '', src = '', hrefResolver}) => (
+const defaultHrefResolverParams = {email: '', cc: '', subject: '', body: ''};
+
+const makeButtonFromProvider = (hrefResolverParams = defaultHrefResolverParams) =>
+  ({name = '', hrefResolver, ...rest}) => (
     <EmailButton
       key={name}
       name={name}
-      src={src}
-      href={hrefResolver({email, cc, subject, body})}/>
+      href={pipe(hrefSanitizer, hrefResolver)(hrefResolverParams)}
+      {...rest}
+    />
   );
 
-const EmailArray = ({email = '', cc = '', subject = '', body = ''}) => (
-  map(makeButtonFromProvider({email, cc, subject, body}))(emailProviders)
+const hrefResolverParamsPicker = pick(keys(defaultHrefResolverParams));
+const makeProviderToButtonMapperWithProps = pipe(
+  hrefResolverParamsPicker,
+  makeButtonFromProvider,
+);
+
+const EmailArray = (props = {providers: commonEmailProviders, ...defaultHrefResolverParams}) => (
+  map(makeProviderToButtonMapperWithProps(props), props.providers)
 );
 
 export default EmailArray;

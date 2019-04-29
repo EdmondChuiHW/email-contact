@@ -1,6 +1,4 @@
 import gmailIcon from "../../imgs/gmail.ico";
-import {pipe} from "ramda";
-import hrefSanitizer from "./href-sanitizer";
 
 const hrefResolver = ({email = '', cc = '', subject = '', body = ''}) => (
   // Sep 19 2016 http://stackoverflow.com/a/8852679/
@@ -10,7 +8,7 @@ const hrefResolver = ({email = '', cc = '', subject = '', body = ''}) => (
 const gmailProvider = {
   name: 'Gmail',
   src: gmailIcon,
-  hrefResolver: pipe(hrefSanitizer, hrefResolver),
+  hrefResolver,
 };
 
 export default gmailProvider;

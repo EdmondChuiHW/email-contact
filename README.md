@@ -25,7 +25,7 @@ Runs all unit tests and Clicky-McClick tests. Expects local app to be reachable
 Runs all unit tests and Clicky-McClick tests. Starts local app automatically. Defaults to use production backend server.
 
 ## Continuous Integration (CI)
-Project is continuously deployed if all tests pass.  
+Project is automatically deployed if all tests pass.  
 View the Azure Pipeline project: https://dev.azure.com/chuihinwai/email-contact
 
 ## Todo

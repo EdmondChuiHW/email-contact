@@ -3,11 +3,41 @@
 ![David](https://img.shields.io/david/chuihinwai/email-contact.svg)
 ![David](https://img.shields.io/david/dev/chuihinwai/email-contact.svg)
 
+Find your Edmonton City Councillor and auto-fills an email template: https://chuihinwai.github.io/email-contact
+
 <p style="text-align: center;">
   <img src="./docs/img/don-desktop.png" width="774" style="display:block;">
   <img src="./docs/img/scott-phone.png" height="520" style="display:inline-block;">
   <img src="./docs/img/aaron-tablet.png" height="520" style="display:inline-block;">
 </p>
+
+## Tests
+### `test:units`
+Runs unit tests in watch mode. Does not require backend to be running.
+
+### `test:e2e:watch`
+Opens Cypress for running e2e/integration/acceptance/Clicky-McClick tests. Expects local app to be reachable
+
+### `test`
+Runs all unit tests and Clicky-McClick tests. Expects local app to be reachable
+
+### `test:ci`
+Runs all unit tests and Clicky-McClick tests. Starts local app automatically. Defaults to use production backend server.
+
+## Continuous Integration (CI)
+Project is continuously deployed if all tests pass.  
+View the Azure Pipeline project: https://dev.azure.com/chuihinwai/email-contact
+
+## Todo
+- [ ] Use tagged template strings for links in email body
+- [ ] Only prompt for location when clicked on a "locate me" button
+- [ ] Revert to Open Data councillors table from hard coded hot fix
+- [ ] Add privacy policy (location is not stored on our server, email content is not tracked, etc.)
+- [ ] Add "ask your friends to send an email too" with socials after returning from clicking an email button
+- [ ] E2E test view ports, location prompt, etc.
+- [ ] Add better way to run E2E test with local server
+
+## Defaults
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 

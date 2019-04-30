@@ -36,6 +36,7 @@ View the Azure Pipeline project: https://dev.azure.com/chuihinwai/email-contact
 - [ ] Add "ask your friends to send an email too" with socials after returning from clicking an email button
 - [ ] E2E test view ports, location prompt, etc.
 - [ ] Add better way to run E2E test with local server
+- [ ] Add config file instead of calling inline `process.env.`
 
 ## Defaults
 

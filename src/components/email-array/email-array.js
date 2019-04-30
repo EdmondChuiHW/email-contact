@@ -2,7 +2,7 @@ import React from "react";
 import {keys, map, pick, pipe} from "ramda";
 import EmailButton from "../email-button/email-button";
 import commonEmailProviders from "../../services/email-providers";
-import hrefSanitizer from "../../services/email-providers/href-sanitizer";
+import hrefSanitizer from "../../utils/href-sanitizer";
 
 const defaultHrefResolverParams = {email: '', cc: '', subject: '', body: ''};
 

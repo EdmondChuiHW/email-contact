@@ -34,7 +34,7 @@ Project is automatically deployed if all tests pass.
 View the Azure Pipeline project: https://dev.azure.com/chuihinwai/email-contact
 
 ## Backend
-See [address2contact](https://github.com/chuihinwai/address2contact). Also uses [Ramdaλ](https://ramdajs.com/) extensively.
+See [address2contact](https://github.com/chuihinwai/address2contact). Also uses [Ramda](https://ramdajs.com/) extensively.
 
 ## Todo
 - [ ] Use tagged template strings for links in email body

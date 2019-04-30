@@ -1,6 +1,5 @@
 import React, {useState} from 'react';
 import './App.css';
-import {useDebounce} from "use-debounce";
 import CssBaseline from "@material-ui/core/CssBaseline";
 import SearchBar from "./components/search-bar";
 import useCouncillor from "./hooks/use-councillor";
@@ -22,8 +21,7 @@ const geoLocatedConfig = {
 
 const App = ({coords}) => {
   const [query, setQuery] = useState('');
-  const [debouncedQuery] = useDebounce(query, 300);
-  const [councillor, originalQuery] = useCouncillor({address: debouncedQuery, coords});
+  const [councillor, originalQuery] = useCouncillor({address: query, coords});
   const {iframe_pls} = queryString.parse(window.location.search);
 
   const className = classNames(
@@ -36,9 +34,8 @@ const App = ({coords}) => {
       <CssBaseline/>
       <SearchBar
         label="Find your councillor by postal code/address"
-        query={query}
-        setQuery={setQuery}
-        isLoading={query !== debouncedQuery || debouncedQuery !== originalQuery}
+        onQueryChange={setQuery}
+        isLoading={query !== originalQuery}
       />
       <Typography gutterBottom/>
       {councillor && <CouncillorCard {...councillor}/>}

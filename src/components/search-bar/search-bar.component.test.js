@@ -1,6 +1,6 @@
 import SearchBar from "./search-bar.component";
 import React from "react";
-import {cleanup, render} from "react-testing-library";
+import {cleanup, fireEvent, render} from "react-testing-library";
 import 'jest-dom/extend-expect'
 
 afterEach(cleanup);
@@ -12,18 +12,24 @@ describe('SearchBar', () => {
   });
 
   it('should render query', () => {
-    const {getByDisplayValue} = render(<SearchBar query={'qqqqq'}/>);
+    const {container, getByDisplayValue} = render(<SearchBar/>);
+    const input = container.querySelector('input');
+    fireEvent.change(input, {target: {value: 'qqqqq'}});
     expect(getByDisplayValue('qqqqq')).toBeInTheDocument();
   });
 
   it('renders clear button when query exists', () => {
-    const {container} = render(<SearchBar query={'qqqqq'}/>);
+    const {container} = render(<SearchBar/>);
+    const input = container.querySelector('input');
+    fireEvent.change(input, {target: {value: 'qqqqq'}});
     const actual = container.querySelector('[aria-label="Clear"]');
     expect(actual).toBeTruthy();
   });
 
   it('renders search icon when query is empty', () => {
-    const {container} = render(<SearchBar query={''}/>);
+    const {container} = render(<SearchBar/>);
+    const input = container.querySelector('input');
+    fireEvent.change(input, {target: {value: ''}});
     const actual = container.querySelector('[aria-label="Search"]');
     expect(actual).toBeTruthy();
   });

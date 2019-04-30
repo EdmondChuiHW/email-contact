@@ -5,6 +5,11 @@
 
 Find your Edmonton City Councillor and auto-fills an email template: https://chuihinwai.github.io/email-contact
 
+## λ
+* Uses [Ramda](https://ramdajs.com/) for functional programming where applicable.  
+* Pure/Dumb/Presentational components are favoured.  
+* All React components are functional – no classes!
+
 <p style="text-align: center;">
   <img src="./docs/img/don-desktop.png" width="774" style="display:block;">
   <img src="./docs/img/scott-phone.png" height="520" style="display:inline-block;">
@@ -28,14 +33,17 @@ Runs all unit tests and Clicky-McClick tests. Starts local app automatically. De
 Project is automatically deployed if all tests pass.  
 View the Azure Pipeline project: https://dev.azure.com/chuihinwai/email-contact
 
+## Backend
+See [address2contact](https://github.com/chuihinwai/address2contact). Also uses [Ramda](https://ramdajs.com/) extensively.
+
 ## Todo
 - [ ] Use tagged template strings for links in email body
 - [ ] Only prompt for location when clicked on a "locate me" button
-- [ ] Revert to Open Data councillors table from hard coded hot fix
 - [ ] Add privacy policy (location is not stored on our server, email content is not tracked, etc.)
 - [ ] Add "ask your friends to send an email too" with socials after returning from clicking an email button
 - [ ] E2E test view ports, location prompt, etc.
 - [ ] Add better way to run E2E test with local server
+- [ ] Improve server/network failure handling
 - [ ] Add config file instead of calling inline `process.env.`
 
 ## Defaults

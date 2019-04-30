@@ -6,9 +6,9 @@
 Find your Edmonton City Councillor and auto-fills an email template: https://chuihinwai.github.io/email-contact
 
 ## λ
-Uses [Ramda](https://ramdajs.com/) for functional programming where applicable.  
-Pure/Dumb components are favoured.  
-All React components are functional, no classes!
+* Uses [Ramda](https://ramdajs.com/) for functional programming where applicable.  
+* Pure/Dumb components are favoured.  
+* All React components are functional – no classes!
 
 <p style="text-align: center;">
   <img src="./docs/img/don-desktop.png" width="774" style="display:block;">

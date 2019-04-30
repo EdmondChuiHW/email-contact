@@ -31,7 +31,6 @@ View the Azure Pipeline project: https://dev.azure.com/chuihinwai/email-contact
 ## Todo
 - [ ] Use tagged template strings for links in email body
 - [ ] Only prompt for location when clicked on a "locate me" button
-- [ ] Revert to Open Data councillors table from hard coded hot fix
 - [ ] Add privacy policy (location is not stored on our server, email content is not tracked, etc.)
 - [ ] Add "ask your friends to send an email too" with socials after returning from clicking an email button
 - [ ] E2E test view ports, location prompt, etc.

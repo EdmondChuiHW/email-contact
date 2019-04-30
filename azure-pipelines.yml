@@ -4,33 +4,48 @@
 # https://docs.microsoft.com/azure/devops/pipelines/languages/javascript
 
 trigger:
-- master
+  - master
 
 pool:
   vmImage: 'macOS-10.13'
 
 steps:
-- task: NodeTool@0
-  inputs:
-    versionSpec: '10.x'
-  displayName: 'Install Node.js'
+  - task: NodeTool@0
+    inputs:
+      versionSpec: '10.x'
+    displayName: 'Install Node.js'
 
-- script: |
-    npm ci
-    npm run test:ci
-  displayName: 'install, unit test, e2e test'
+  - script: |
+      npm ci
+      npm run test:ci
+    displayName: 'install, unit test, e2e test'
 
-- task: PublishTestResults@2
-  condition: succeededOrFailed()
-  inputs:
-    testRunner: JUnit
-    testResultsFiles: '**/*junit.xml'
+  - task: PublishPipelineArtifact@0
+    displayName: 'Publish Screenshots (Cypress)'
+    condition: failed()
+    inputs:
+      artifactName: 'screenshots'
+      targetPath: '$(Build.SourcesDirectory)/cypress/screenshots'
 
-- script: |
-    npm run build
-  displayName: 'build'
+  - task: PublishPipelineArtifact@0
+    displayName: 'Publish Videos (Cypress)'
+    condition: failed()
+    inputs:
+      artifactName: 'videos'
+      targetPath: '$(Build.SourcesDirectory)/cypress/videos'
 
-- task: PublishPipelineArtifact@0
-  inputs:
-    artifactName: 'build'
-    targetPath: 'build'
+  - task: PublishTestResults@2
+    condition: succeededOrFailed()
+    inputs:
+      testRunner: JUnit
+      testResultsFiles: '**/*junit.xml'
+
+  - script: |
+      npm run build
+    displayName: 'build'
+
+  - task: PublishPipelineArtifact@0
+    displayName: 'Publish `npm run build` result'
+    inputs:
+      artifactName: 'build'
+      targetPath: 'build'

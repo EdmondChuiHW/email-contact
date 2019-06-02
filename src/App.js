@@ -1,14 +1,14 @@
 import React, {useState} from 'react';
 import './App.css';
-import CssBaseline from "@material-ui/core/CssBaseline";
-import SearchBar from "./components/search-bar";
-import useCouncillor from "./hooks/use-councillor";
-import CouncillorCard from "./components/councillor-card";
-import {geolocated} from "react-geolocated";
-import geolocationProvider from "./utils/geo-location-provider";
-import * as queryString from "query-string";
-import classNames from "classnames";
-import {Typography} from "@material-ui/core";
+import CssBaseline from '@material-ui/core/CssBaseline';
+import DebouncedSearchBar from './components/DebouncedSearchBar';
+import useCouncillor from './hooks/use-councillor';
+import CouncillorCard from './components/councillor-card';
+import {geolocated} from 'react-geolocated';
+import geolocationProvider from './utils/geo-location-provider';
+import * as queryString from 'query-string';
+import classNames from 'classnames';
+import {Typography} from '@material-ui/core';
 
 const geoLocatedConfig = {
   positionOptions: {
@@ -32,7 +32,7 @@ const App = ({coords}) => {
   return (
     <div className={className}>
       <CssBaseline/>
-      <SearchBar
+      <DebouncedSearchBar
         label="Find your councillor by postal code/address"
         onQueryChange={setQuery}
         isLoading={query !== originalQuery}

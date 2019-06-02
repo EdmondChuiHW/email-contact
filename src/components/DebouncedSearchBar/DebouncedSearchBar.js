@@ -1,15 +1,15 @@
 import React, {useCallback, useState} from 'react';
-import Paper from "@material-ui/core/Paper/index";
-import IconButton from "@material-ui/core/IconButton/index";
-import InputBase from "@material-ui/core/InputBase/index";
+import Paper from '@material-ui/core/Paper/index';
+import IconButton from '@material-ui/core/IconButton/index';
+import InputBase from '@material-ui/core/InputBase/index';
 import SearchIcon from '@material-ui/icons/Search';
 import ClearIcon from '@material-ui/icons/Clear';
-import './search-bar.component.css';
-import Loading from "../loading";
-import {useDebouncedCallback} from "use-debounce";
-import {juxt} from "ramda";
+import './DebouncedSearchBar.css';
+import Loading from '../loading';
+import {useDebouncedCallback} from 'use-debounce';
+import {juxt} from 'ramda';
 
-const SearchBar = ({label = '', isLoading = false, onQueryChange, debounceInMs = 300}) => {
+const DebouncedSearchBar = ({label = '', isLoading = false, onQueryChange, debounceInMs = 300}) => {
   const [query, setQuery] = useState('');
   const [debouncedQueryChange] = useDebouncedCallback(onQueryChange, debounceInMs);
   const newValueHandler = juxt([setQuery, debouncedQueryChange]);
@@ -38,4 +38,4 @@ const SearchBar = ({label = '', isLoading = false, onQueryChange, debounceInMs =
   </Paper>;
 };
 
-export default SearchBar;
+export default DebouncedSearchBar;

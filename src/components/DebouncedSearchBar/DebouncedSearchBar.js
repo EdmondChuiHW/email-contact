@@ -5,7 +5,7 @@ import InputBase from '@material-ui/core/InputBase/index';
 import SearchIcon from '@material-ui/icons/Search';
 import ClearIcon from '@material-ui/icons/Clear';
 import './DebouncedSearchBar.css';
-import Loading from '../loading';
+import Loading from '../Loading';
 import {useDebouncedCallback} from 'use-debounce';
 import {juxt} from 'ramda';
 

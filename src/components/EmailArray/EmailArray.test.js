@@ -1,8 +1,8 @@
-import {cleanup, render} from "react-testing-library";
-import React from "react";
+import {cleanup, render} from 'react-testing-library';
+import React from 'react';
 import 'jest-dom/extend-expect';
-import EmailArray from "./email-array";
-import gmailIcon from "../../imgs/gmail.ico";
+import EmailArray from './EmailArray';
+import gmailIcon from '../../imgs/gmail.ico';
 
 const makeDummyProvider = ({name}) => {
   const hrefResolver = ({email = '', cc = '', subject = '', body = ''}) => (

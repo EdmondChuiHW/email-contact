@@ -1,5 +1,5 @@
-import React from "react";
-import {always, juxt} from "ramda";
+import React from 'react';
+import {always, juxt} from 'ramda';
 
 const makeYegCoreZoneEmailBody = ({role = 'Mayor', lastName = 'Iveson', ward = ''}) =>
   (`Dear ${role} ${lastName},
@@ -17,6 +17,7 @@ const clickableCoreZone = <a
   #YEGCoreZone
 </a>;
 
+// todo use tagged template string
 const makeYegCoreZoneEmailDisplay = ({role = 'Mayor', lastName = 'Iveson', ward = ''}) =>
   (<>{`Dear ${role} ${lastName},
 

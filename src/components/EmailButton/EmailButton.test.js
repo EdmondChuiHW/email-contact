@@ -1,7 +1,7 @@
-import {cleanup, render} from "react-testing-library";
-import React from "react";
+import {cleanup, render} from 'react-testing-library';
+import React from 'react';
 import 'jest-dom/extend-expect';
-import EmailButton from "./email-button";
+import EmailButton from './EmailButton';
 
 afterEach(cleanup);
 

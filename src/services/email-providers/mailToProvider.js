@@ -1,5 +1,5 @@
 import EmailIcon from '@material-ui/icons/Email';
-import React from "react";
+import React from 'react';
 
 const hrefResolver = ({email = '', cc = '', subject = '', body = ''}) => (
   `mailto:${email}?subject=${subject}&body=${body}&cc=${cc}`

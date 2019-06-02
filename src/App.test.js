@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
 
-jest.mock('./utils/geo-location-provider', () => ({
+jest.mock('./utils/geolocationProvider', () => ({
   getCurrentPosition: jest.fn(),
   watchPosition: jest.fn(),
 }));

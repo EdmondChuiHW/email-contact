@@ -1,4 +1,4 @@
-import makeYegCoreZoneEmail from "./yeg-core-zone-template";
+import makeYegCoreZoneEmail from './makeYegCoreZoneEmail';
 
 describe('makeYegCoreZoneEmail', () => {
   it('should say Edmonton if ward is empty', () => {

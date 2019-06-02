@@ -1,6 +1,6 @@
-import './email-button.css';
-import Button from "@material-ui/core/Button";
-import React from "react";
+import './EmailButton.css';
+import Button from '@material-ui/core/Button';
+import React from 'react';
 
 const makeImgOrLeft = ({src = '', name = '', left = <></>}) => {
   return src

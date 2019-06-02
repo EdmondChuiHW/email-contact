@@ -1,4 +1,4 @@
-import gmailIcon from "../../imgs/gmail.ico";
+import gmailIcon from '../../imgs/gmail.ico';
 
 const hrefResolver = ({email = '', cc = '', subject = '', body = ''}) => (
   // Sep 19 2016 http://stackoverflow.com/a/8852679/

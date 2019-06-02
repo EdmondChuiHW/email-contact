@@ -1,7 +1,7 @@
-import gmailProvider from "./gmail-provider";
-import outlookProvider from "./outlook-provider";
-import yahooProvider from "./yahoo-provider";
-import mailToProvider from "./mailto-provider";
+import gmailProvider from './gmailProvider';
+import outlookProvider from './outlookProvider';
+import yahooProvider from './yahooProvider';
+import mailToProvider from './mailToProvider';
 
 export {gmailProvider};
 export {outlookProvider};

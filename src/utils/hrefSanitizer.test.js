@@ -1,4 +1,4 @@
-import hrefSanitizer from "./href-sanitizer";
+import hrefSanitizer from './hrefSanitizer';
 
 describe('hrefSanitizer', () => {
   it('sanitizes body', () => {

@@ -1,8 +1,8 @@
-import React from "react";
-import {keys, map, pick, pipe} from "ramda";
-import EmailButton from "../email-button/email-button";
-import commonEmailProviders from "../../services/email-providers";
-import hrefSanitizer from "../../utils/href-sanitizer";
+import React from 'react';
+import {keys, map, pick, pipe} from 'ramda';
+import EmailButton from '../EmailButton';
+import commonEmailProviders from '../../services/email-providers';
+import hrefSanitizer from '../../utils/hrefSanitizer';
 
 const defaultHrefResolverParams = {email: '', cc: '', subject: '', body: ''};
 

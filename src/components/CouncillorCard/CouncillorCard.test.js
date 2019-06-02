@@ -1,6 +1,6 @@
-import {cleanup, render} from "react-testing-library";
-import CouncillorCard from "./councillor-card";
-import React from "react";
+import {cleanup, render} from 'react-testing-library';
+import CouncillorCard from './CouncillorCard';
+import React from 'react';
 import 'jest-dom/extend-expect';
 
 afterEach(cleanup);

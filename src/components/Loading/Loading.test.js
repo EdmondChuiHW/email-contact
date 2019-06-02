@@ -1,7 +1,7 @@
-import {cleanup, render} from "react-testing-library";
-import React from "react";
+import {cleanup, render} from 'react-testing-library';
+import React from 'react';
 import 'jest-dom/extend-expect';
-import Loading from "./loading";
+import Loading from './Loading';
 
 afterEach(cleanup);
 

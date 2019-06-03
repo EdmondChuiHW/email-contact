@@ -1,11 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="94b74840-050c-4224-af0e-1605da7be64d" name="Default Changelist" comment="">
+    <list default="true" id="94b74840-050c-4224-af0e-1605da7be64d" name="Default Changelist" comment="+improve tests for debounced search bar&#10;*separate search bar and tests">
+      <change afterPath="$PROJECT_DIR$/src/components/DebouncedSearchBar/SearchBar/SearchBar.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/DebouncedSearchBar/SearchBar/SearchBar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/DebouncedSearchBar/SearchBar/SearchBar.test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/DebouncedSearchBar/SearchBar/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/.eslintignore" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/.eslintrc.js" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintrc.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/DebouncedSearchBar/DebouncedSearchBar.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/DebouncedSearchBar/DebouncedSearchBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/DebouncedSearchBar/DebouncedSearchBar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/DebouncedSearchBar/DebouncedSearchBar.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/DebouncedSearchBar/DebouncedSearchBar.test.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -22,7 +26,7 @@
         <entry file="file://$PROJECT_DIR$/.eslintignore">
           <provider selected="true" editor-type-id="text-editor">
             <state>
-              <caret column="21" lean-forward="true" selection-start-column="21" selection-end-column="21" />
+              <caret column="21" selection-start-column="21" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -31,7 +35,7 @@
         <entry file="file://$PROJECT_DIR$/.eslintrc.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="266">
-              <caret line="14" column="4" lean-forward="true" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="4" />
+              <caret line="14" column="4" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="4" />
             </state>
           </provider>
         </entry>
@@ -84,19 +88,24 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/DebouncedSearchBar/DebouncedSearchBar.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="31">
-              <caret line="30" column="59" selection-start-line="30" selection-start-column="59" selection-end-line="30" selection-end-column="59" />
+            <state relative-caret-position="414">
+              <caret line="35" column="31" selection-start-line="35" selection-start-column="31" selection-end-line="35" selection-end-column="31" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/components/DebouncedSearchBar/DebouncedSearchBar.test.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="106">
+              <caret line="13" column="33" selection-start-line="13" selection-start-column="33" selection-end-line="13" selection-end-column="33" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/DebouncedSearchBar/DebouncedSearchBar.test.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="248">
-              <caret line="21" column="43" selection-start-line="21" selection-start-column="43" selection-end-line="21" selection-end-column="43" />
-            </state>
-          </provider>
+        <entry file="file://$PROJECT_DIR$/src/components/DebouncedSearchBar/index.js">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -127,6 +136,15 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/EmailButton/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="38">
+              <caret line="2" column="15" selection-start-line="2" selection-start-column="15" selection-end-line="2" selection-end-column="15" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/utils/geolocationProvider.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="38">
@@ -148,7 +166,7 @@
         <entry file="file://$PROJECT_DIR$/src/utils/hrefSanitizer.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="38">
-              <caret line="2" column="33" lean-forward="true" selection-start-line="2" selection-start-column="33" selection-end-line="2" selection-end-column="33" />
+              <caret line="2" column="33" selection-start-line="2" selection-start-column="33" selection-end-line="2" selection-end-column="33" />
             </state>
           </provider>
         </entry>
@@ -163,43 +181,21 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$APPLICATION_CONFIG_DIR$/javascript/extLibs/global-types/node_modules/@types/jest/index.d.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="171">
+              <caret line="119" column="20" selection-start-line="119" selection-start-column="20" selection-end-line="119" selection-end-column="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/node_modules/@types/prop-types/index.d.ts">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="161">
               <caret line="61" column="13" selection-start-line="61" selection-start-column="13" selection-end-line="61" selection-end-column="13" />
             </state>
           </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/node_modules/prop-types/index.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-18" />
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/DebouncedSearchBar/index.js">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/EmailButton/index.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="38">
-              <caret line="2" column="15" selection-start-line="2" selection-start-column="15" selection-end-line="2" selection-end-column="15" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/Loading/index.js">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/hooks/useCouncillor/index.js">
-          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -211,13 +207,18 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/Loading/Loading.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="252">
-              <caret line="17" column="11" lean-forward="true" selection-start-line="17" selection-start-column="11" selection-end-line="17" selection-end-column="11" />
+              <caret line="17" column="11" selection-start-line="17" selection-start-column="11" selection-end-line="17" selection-end-column="11" />
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/Loading/index.js">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -266,6 +267,49 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/node_modules/prop-types/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-18" />
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/DebouncedSearchBar/SearchBar/SearchBar.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="285">
+              <caret line="15" selection-start-line="15" selection-end-line="15" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/DebouncedSearchBar/SearchBar/SearchBar.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-94">
+              <caret line="16" column="14" selection-start-line="16" selection-start-column="14" selection-end-line="16" selection-end-column="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/DebouncedSearchBar/SearchBar/SearchBar.test.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="80">
+              <caret line="14" column="12" selection-start-line="14" selection-start-column="12" selection-end-line="14" selection-end-column="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/DebouncedSearchBar/SearchBar/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="57">
+              <caret line="3" selection-start-line="3" selection-end-line="3" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/serviceWorker.js">
           <provider selected="true" editor-type-id="text-editor">
             <state>
@@ -283,6 +327,11 @@
               <caret line="4" column="48" selection-start-line="4" selection-start-column="48" selection-end-line="4" selection-end-column="77" />
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/hooks/useCouncillor/index.js">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -311,6 +360,8 @@
       <find>react-dispatchable</find>
       <find>eslint</find>
       <find>lint</find>
+      <find>onQueryChange</find>
+      <find>fireEvent</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -319,11 +370,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/components/email-array/email-button.js" />
-        <option value="$PROJECT_DIR$/src/services/email-providers/index.js" />
-        <option value="$PROJECT_DIR$/src/components/councillor-card/councillor-card.js" />
-        <option value="$PROJECT_DIR$/src/components/email-array/email-array.js" />
-        <option value="$PROJECT_DIR$/src/components/email-button/email-button.js" />
         <option value="$PROJECT_DIR$/src/services/email-providers/outlook-provider.js" />
         <option value="$PROJECT_DIR$/src/services/email-providers/yahoo-provider.js" />
         <option value="$PROJECT_DIR$/src/services/email-providers/mailto-provider.js" />
@@ -362,7 +408,6 @@
         <option value="$PROJECT_DIR$/src/App.js" />
         <option value="$PROJECT_DIR$/src/components/CouncillorCard/CouncillorCard.js" />
         <option value="$PROJECT_DIR$/src/components/EmailArray/EmailArray.js" />
-        <option value="$PROJECT_DIR$/src/components/DebouncedSearchBar/DebouncedSearchBar.js" />
         <option value="$PROJECT_DIR$/src/components/EmailButton/ImgOrLeft.js" />
         <option value="$PROJECT_DIR$/src/components/EmailButton/EmailButton.js" />
         <option value="$PROJECT_DIR$/src/utils/makeYegCoreZoneEmail.js" />
@@ -370,6 +415,12 @@
         <option value="$PROJECT_DIR$/src/utils/hrefSanitizer.js" />
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/src/components/Loading/Loading.js" />
+        <option value="$PROJECT_DIR$/src/components/DebouncedSearchBar/SearchBar/SearchBar.css" />
+        <option value="$PROJECT_DIR$/src/components/DebouncedSearchBar/SearchBar/SearchBar.js" />
+        <option value="$PROJECT_DIR$/src/components/DebouncedSearchBar/SearchBar/index.js" />
+        <option value="$PROJECT_DIR$/src/components/DebouncedSearchBar/SearchBar/SearchBar.test.js" />
+        <option value="$PROJECT_DIR$/src/components/DebouncedSearchBar/DebouncedSearchBar.js" />
+        <option value="$PROJECT_DIR$/src/components/DebouncedSearchBar/DebouncedSearchBar.test.js" />
       </list>
     </option>
   </component>
@@ -448,6 +499,14 @@
               <item name="email-contact" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="DebouncedSearchBar" type="462c0819:PsiDirectoryNode" />
+              <item name="SearchBar" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="email-contact" type="b2602c69:ProjectViewProjectNode" />
+              <item name="email-contact" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
               <item name="EmailArray" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -512,7 +571,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js.last.introduce.type" value="CONST" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components/playground" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components/DebouncedSearchBar/SearchBar" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -527,11 +586,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/components/DebouncedSearchBar/SearchBar" />
       <recent name="$PROJECT_DIR$/src/components/playground" />
       <recent name="$PROJECT_DIR$/src/services/email-providers" />
       <recent name="$PROJECT_DIR$/src/components/email-array" />
       <recent name="$PROJECT_DIR$/src/components/loading" />
-      <recent name="$PROJECT_DIR$/src/components/email-button" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/" />
@@ -573,31 +632,7 @@
       <scope-kind value="ALL" />
       <method v="2" />
     </configuration>
-    <configuration name="makeDispatchable" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
-      <node-interpreter value="project" />
-      <node-options value="" />
-      <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
-      <working-dir value="$PROJECT_DIR$" />
-      <jest-options value="--watch" />
-      <envs />
-      <scope-kind value="SUITE" />
-      <test-file value="$PROJECT_DIR$/src/components/playground/dispatchable.test.js" />
-      <test-names>
-        <test-name value="makeDispatchable" />
-      </test-names>
-      <method v="2" />
-    </configuration>
     <configuration name="Debug Application" type="JavascriptDebugType" uri="http://localhost:3000">
-      <method v="2" />
-    </configuration>
-    <configuration name="cy:run:ci" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
-      <package-json value="$PROJECT_DIR$/package.json" />
-      <command value="run" />
-      <scripts>
-        <script value="cy:run:ci" />
-      </scripts>
-      <node-interpreter value="project" />
-      <envs />
       <method v="2" />
     </configuration>
     <configuration name="lint" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
@@ -630,6 +665,16 @@
       <envs />
       <method v="2" />
     </configuration>
+    <configuration name="test:ci" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="test:ci" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
     <configuration name="test:e2e:ci" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -640,23 +685,33 @@
       <envs />
       <method v="2" />
     </configuration>
+    <configuration name="test:units" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="test:units" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
     <list>
       <item itemvalue="JavaScript Debug.Debug Application" />
       <item itemvalue="Jest.All Tests" />
-      <item itemvalue="Jest.makeDispatchable" />
       <item itemvalue="npm.npm start" />
       <item itemvalue="npm.test:e2e:ci" />
-      <item itemvalue="npm.cy:run:ci" />
       <item itemvalue="npm.lint" />
       <item itemvalue="npm.test" />
+      <item itemvalue="npm.test:ci" />
+      <item itemvalue="npm.test:units" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="npm.test:units" />
+        <item itemvalue="npm.test:ci" />
+        <item itemvalue="npm.test:e2e:ci" />
         <item itemvalue="npm.test" />
         <item itemvalue="npm.lint" />
-        <item itemvalue="npm.test:e2e:ci" />
-        <item itemvalue="npm.cy:run:ci" />
-        <item itemvalue="Jest.makeDispatchable" />
       </list>
     </recent_temporary>
   </component>
@@ -677,7 +732,7 @@
       <workItem from="1556495439626" duration="10230000" />
       <workItem from="1556593865845" duration="5915000" />
       <workItem from="1556678278587" duration="11102000" />
-      <workItem from="1559518929328" duration="6852000" />
+      <workItem from="1559518929328" duration="8495000" />
     </task>
     <task id="LOCAL-00001" summary="+gh-pages">
       <created>1555793649259</created>
@@ -1008,54 +1063,61 @@
       <option name="project" value="LOCAL" />
       <updated>1559544331488</updated>
     </task>
-    <option name="localTasksCounter" value="48" />
+    <task id="LOCAL-00048" summary="+add lint script">
+      <created>1559544914511</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1559544914511</updated>
+    </task>
+    <option name="localTasksCounter" value="49" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="All_Tests - 2019.06.03 at 00h 48m 28s.xml">
+    <history-entry file="All_Tests - 2019.06.03 at 01h 17m 12s.xml">
       <configuration name="All Tests" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
-    <history-entry file="All_Tests - 2019.06.03 at 00h 48m 43s.xml">
+    <history-entry file="All_Tests - 2019.06.03 at 01h 18m 24s.xml">
       <configuration name="All Tests" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
-    <history-entry file="All_Tests - 2019.06.03 at 00h 49m 15s.xml">
+    <history-entry file="All_Tests - 2019.06.03 at 01h 18m 56s.xml">
       <configuration name="All Tests" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
-    <history-entry file="All_Tests - 2019.06.03 at 00h 49m 24s.xml">
+    <history-entry file="All_Tests - 2019.06.03 at 01h 19m 01s.xml">
       <configuration name="All Tests" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
-    <history-entry file="All_Tests - 2019.06.03 at 00h 50m 27s.xml">
+    <history-entry file="All_Tests - 2019.06.03 at 01h 19m 23s.xml">
       <configuration name="All Tests" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
-    <history-entry file="All_Tests - 2019.06.03 at 00h 52m 28s.xml">
+    <history-entry file="All_Tests - 2019.06.03 at 01h 19m 40s.xml">
       <configuration name="All Tests" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
-    <history-entry file="All_Tests - 2019.06.03 at 00h 52m 40s.xml">
+    <history-entry file="All_Tests - 2019.06.03 at 01h 19m 47s.xml">
       <configuration name="All Tests" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
-    <history-entry file="All_Tests - 2019.06.03 at 00h 53m 06s.xml">
+    <history-entry file="All_Tests - 2019.06.03 at 01h 20m 18s.xml">
       <configuration name="All Tests" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
-    <history-entry file="All_Tests - 2019.06.03 at 00h 53m 59s.xml">
+    <history-entry file="All_Tests - 2019.06.03 at 01h 21m 50s.xml">
       <configuration name="All Tests" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
-    <history-entry file="All_Tests - 2019.06.03 at 00h 54m 50s.xml">
+    <history-entry file="All_Tests - 2019.06.03 at 01h 21m 57s.xml">
       <configuration name="All Tests" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="79871000" />
+    <option name="totallyTimeSpent" value="81514000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="48" y="23" width="1392" height="877" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49809885" visible="true" weight="0.24945295" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4954955" visible="true" weight="0.24945295" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="npm" order="2" sideWeight="0.50190115" side_tool="true" weight="0.24945295" />
+      <window_info id="npm" order="2" sideWeight="0.5045045" side_tool="true" visible="true" weight="0.24945295" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3299363" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.5210191" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.29299363" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -1137,7 +1199,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="+polyfill" />
     <MESSAGE value="+update mailto" />
     <MESSAGE value="+.env" />
     <MESSAGE value="+e2e" />
@@ -1162,14 +1223,10 @@
     <MESSAGE value="*rename file names to match default export" />
     <MESSAGE value="*run eslint fix" />
     <MESSAGE value="*fix all eslint warnings and errors" />
-    <option name="LAST_COMMIT_MESSAGE" value="*fix all eslint warnings and errors" />
+    <MESSAGE value="+add lint script" />
+    <option name="LAST_COMMIT_MESSAGE" value="+add lint script" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/components/playground/dispatch.test.js" />
-    <entry file="file://$PROJECT_DIR$/src/components/playground/dispatchable.ts" />
-    <entry file="file://$PROJECT_DIR$/src/components/playground/dispatchable.js" />
-    <entry file="file://$PROJECT_DIR$/src/components/playground/dispatchablezzz.tsx" />
-    <entry file="file://$PROJECT_DIR$/src/components/playground/dispatchable.d.ts" />
     <entry file="file://$PROJECT_DIR$/node_modules/react-dispatchable/index.js" />
     <entry file="file://$PROJECT_DIR$/node_modules/react-dispatchable/lib/dispatchable.js">
       <provider selected="true" editor-type-id="text-editor" />
@@ -1183,13 +1240,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/react-dispatchable/lib/index.js">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/javascript/extLibs/global-types/node_modules/@types/jest/index.d.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="11229">
-          <caret line="612" column="8" selection-start-line="612" selection-start-column="8" selection-end-line="612" selection-end-column="8" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/ramda/es/juxt.js">
       <provider selected="true" editor-type-id="text-editor">
@@ -1244,13 +1294,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="399">
           <caret line="21" column="4" selection-start-line="21" selection-start-column="4" selection-end-line="21" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/DebouncedSearchBar/DebouncedSearchBar.test.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="248">
-          <caret line="21" column="43" selection-start-line="21" selection-start-column="43" selection-end-line="21" selection-end-column="43" />
         </state>
       </provider>
     </entry>
@@ -1371,24 +1414,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/CouncillorCard/CouncillorCard.test.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" column="34" selection-start-line="8" selection-start-column="34" selection-end-line="8" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/CouncillorCard/CouncillorCard.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="334">
           <caret line="35" column="12" selection-start-line="35" selection-start-column="12" selection-end-line="35" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/DebouncedSearchBar/DebouncedSearchBar.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="31">
-          <caret line="30" column="59" selection-start-line="30" selection-start-column="59" selection-end-line="30" selection-end-column="59" />
         </state>
       </provider>
     </entry>
@@ -1430,14 +1459,14 @@
     <entry file="file://$PROJECT_DIR$/.eslintignore">
       <provider selected="true" editor-type-id="text-editor">
         <state>
-          <caret column="21" lean-forward="true" selection-start-column="21" selection-end-column="21" />
+          <caret column="21" selection-start-column="21" selection-end-column="21" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/utils/hrefSanitizer.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="38">
-          <caret line="2" column="33" lean-forward="true" selection-start-line="2" selection-start-column="33" selection-end-line="2" selection-end-column="33" />
+          <caret line="2" column="33" selection-start-line="2" selection-start-column="33" selection-end-line="2" selection-end-column="33" />
         </state>
       </provider>
     </entry>
@@ -1451,14 +1480,77 @@
     <entry file="file://$PROJECT_DIR$/.eslintrc.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="266">
-          <caret line="14" column="4" lean-forward="true" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="4" />
+          <caret line="14" column="4" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="4" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Loading/Loading.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="252">
-          <caret line="17" column="11" lean-forward="true" selection-start-line="17" selection-start-column="11" selection-end-line="17" selection-end-column="11" />
+          <caret line="17" column="11" selection-start-line="17" selection-start-column="11" selection-end-line="17" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/DebouncedSearchBar/SearchBar/SearchBar.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/DebouncedSearchBar/DebouncedSearchBar.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/CouncillorCard/CouncillorCard.test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="8" column="34" selection-start-line="8" selection-start-column="34" selection-end-line="8" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/DebouncedSearchBar/SearchBar/SearchBar.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-94">
+          <caret line="16" column="14" selection-start-line="16" selection-start-column="14" selection-end-line="16" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/DebouncedSearchBar/SearchBar/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/DebouncedSearchBar/SearchBar/SearchBar.test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="14" column="12" selection-start-line="14" selection-start-column="12" selection-end-line="14" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/javascript/extLibs/global-types/node_modules/@types/jest/index.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="119" column="20" selection-start-line="119" selection-start-column="20" selection-end-line="119" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/DebouncedSearchBar/DebouncedSearchBar.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="35" column="31" selection-start-line="35" selection-start-column="31" selection-end-line="35" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/DebouncedSearchBar/DebouncedSearchBar.test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="106">
+          <caret line="13" column="33" selection-start-line="13" selection-start-column="33" selection-end-line="13" selection-end-column="33" />
         </state>
       </provider>
     </entry>

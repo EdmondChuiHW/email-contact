@@ -1,15 +1,16 @@
 module.exports = {
-  "extends": [
-    "react-app",
-    "plugin:cypress/recommended",
+  'extends': [
+    'react-app',
+    'plugin:cypress/recommended',
+    'airbnb',
   ],
-  "rules": {
-    // More custom rules here
+  'rules': {
+    'react/jsx-filename-extension': 'off',
   },
-  "plugins": [
-    "cypress",
+  'plugins': [
+    'cypress',
   ],
-  "env": {
-    "cypress/globals": true,
+  'env': {
+    'cypress/globals': true,
   },
 };

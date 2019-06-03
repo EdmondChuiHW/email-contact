@@ -1,34 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="94b74840-050c-4224-af0e-1605da7be64d" name="Default Changelist" comment="*run eslint fix">
-      <change afterPath="$PROJECT_DIR$/src/.eslintignore" afterDir="false" />
+    <list default="true" id="94b74840-050c-4224-af0e-1605da7be64d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/components/EmailButton/ImgOrLeft.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/.eslintrc.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/.eslintrc.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.test.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/CouncillorCard/CouncillorCard.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CouncillorCard/CouncillorCard.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/CouncillorCard/CouncillorCard.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CouncillorCard/CouncillorCard.test.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/DebouncedSearchBar/DebouncedSearchBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/DebouncedSearchBar/DebouncedSearchBar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/DebouncedSearchBar/DebouncedSearchBar.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/DebouncedSearchBar/DebouncedSearchBar.test.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/EmailArray/EmailArray.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/EmailArray/EmailArray.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/EmailArray/EmailArray.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/EmailArray/EmailArray.test.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/EmailButton/EmailButton.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/EmailButton/EmailButton.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/EmailButton/EmailButton.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/EmailButton/EmailButton.test.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Loading/Loading.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Loading/Loading.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Loading/Loading.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Loading/Loading.test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/hooks/useCouncillor/useCouncillor.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/hooks/useCouncillor/useCouncillor.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/address2councillor.service.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/address2councillor.service.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/email-providers/gmailProvider.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/email-providers/gmailProvider.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/email-providers/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/email-providers/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/email-providers/mailToProvider.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/email-providers/mailToProvider.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/email-providers/outlookProvider.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/email-providers/outlookProvider.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/email-providers/yahooProvider.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/email-providers/yahooProvider.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/geolocationProvider.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/geolocationProvider.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/hrefSanitizer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/hrefSanitizer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/hrefSanitizer.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/hrefSanitizer.test.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/utils/makeYegCoreZoneEmail.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/makeYegCoreZoneEmail.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -46,16 +29,16 @@
         <entry file="file://$PROJECT_DIR$/src/.eslintignore">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="19">
-              <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+              <caret line="1" selection-start-line="1" selection-end-line="1" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/.eslintrc.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="285">
-              <caret line="15" column="2" lean-forward="true" selection-start-line="15" selection-start-column="2" selection-end-line="15" selection-end-column="2" />
+              <caret line="15" column="2" selection-start-line="15" selection-start-column="2" selection-end-line="15" selection-end-column="2" />
             </state>
           </provider>
         </entry>
@@ -72,8 +55,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/App.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="152">
-              <caret line="11" selection-start-line="11" selection-end-line="11" />
+            <state relative-caret-position="-735">
+              <caret line="7" column="40" selection-start-line="7" selection-start-column="40" selection-end-line="7" selection-end-column="40" />
             </state>
           </provider>
         </entry>
@@ -90,8 +73,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/CouncillorCard/CouncillorCard.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="31" column="4" selection-start-line="31" selection-start-column="4" selection-end-line="31" selection-end-column="4" />
+            <state relative-caret-position="334">
+              <caret line="35" column="12" selection-start-line="35" selection-start-column="12" selection-end-line="35" selection-end-column="12" />
             </state>
           </provider>
         </entry>
@@ -99,8 +82,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/CouncillorCard/CouncillorCard.test.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="171">
-              <caret line="9" column="20" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="20" />
+            <state relative-caret-position="152">
+              <caret line="8" column="34" selection-start-line="8" selection-start-column="34" selection-end-line="8" selection-end-column="34" />
             </state>
           </provider>
         </entry>
@@ -108,8 +91,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/DebouncedSearchBar/DebouncedSearchBar.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="121">
-              <caret line="11" column="24" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
+            <state relative-caret-position="31">
+              <caret line="30" column="59" selection-start-line="30" selection-start-column="59" selection-end-line="30" selection-end-column="59" />
             </state>
           </provider>
         </entry>
@@ -126,8 +109,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/EmailArray/EmailArray.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="114">
-              <caret line="6" column="54" selection-start-line="6" selection-start-column="54" selection-end-line="6" selection-end-column="54" />
+            <state relative-caret-position="113">
+              <caret line="17" column="17" selection-start-line="17" selection-start-column="17" selection-end-line="17" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -144,8 +127,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/EmailButton/EmailButton.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="304">
-              <caret line="16" column="17" selection-start-line="16" selection-start-column="17" selection-end-line="16" selection-end-column="17" />
+            <state relative-caret-position="174">
+              <caret line="31" column="11" selection-start-line="31" selection-start-column="11" selection-end-line="31" selection-end-column="11" />
             </state>
           </provider>
         </entry>
@@ -174,6 +157,31 @@
             <state relative-caret-position="114">
               <caret line="6" column="28" selection-start-line="6" selection-start-column="15" selection-end-line="6" selection-end-column="28" />
             </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/EmailButton/ImgOrLeft.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="57">
+              <caret line="3" column="11" selection-start-line="3" selection-start-column="11" selection-end-line="3" selection-end-column="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/node_modules/@types/prop-types/index.d.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="161">
+              <caret line="61" column="13" selection-start-line="61" selection-start-column="13" selection-end-line="61" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/node_modules/prop-types/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-18" />
           </provider>
         </entry>
       </file>
@@ -213,8 +221,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/Loading/Loading.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="133">
-              <caret line="9" column="22" selection-start-line="9" selection-start-column="15" selection-end-line="9" selection-end-column="22" />
+            <state relative-caret-position="100">
+              <caret line="9" column="36" selection-start-line="9" selection-start-column="36" selection-end-line="9" selection-end-column="36" />
             </state>
           </provider>
         </entry>
@@ -231,8 +239,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/utils/makeYegCoreZoneEmail.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="602">
-              <caret line="43" column="35" selection-start-line="43" selection-start-column="15" selection-end-line="43" selection-end-column="35" />
+            <state relative-caret-position="114">
+              <caret line="34" column="3" selection-start-line="34" selection-start-column="3" selection-end-line="34" selection-end-column="3" />
             </state>
           </provider>
         </entry>
@@ -255,11 +263,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/package.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="138">
-              <caret line="42" column="26" lean-forward="true" selection-start-line="42" selection-start-column="26" selection-end-line="42" selection-end-column="26" />
+            <state relative-caret-position="51">
+              <caret line="24" column="97" selection-start-line="24" selection-start-column="97" selection-end-line="24" selection-end-column="97" />
             </state>
           </provider>
         </entry>
@@ -279,7 +287,7 @@
         <entry file="file://$PROJECT_DIR$/src/hooks/useCouncillor/useCouncillor.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="76">
-              <caret line="4" column="19" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
+              <caret line="4" column="48" selection-start-line="4" selection-start-column="48" selection-end-line="4" selection-end-column="77" />
             </state>
           </provider>
         </entry>
@@ -318,11 +326,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/.env" />
-        <option value="$PROJECT_DIR$/src/services/address2councillor.service.js" />
-        <option value="$PROJECT_DIR$/cypress/support/index.js" />
-        <option value="$PROJECT_DIR$/cypress/integration/index.spec.js" />
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/cypress.json" />
         <option value="$PROJECT_DIR$/reporter-config.json" />
         <option value="$PROJECT_DIR$/src/components/email-array/email-button.js" />
@@ -353,22 +356,27 @@
         <option value="$PROJECT_DIR$/src/components/playground/dispatchablezzz.ts" />
         <option value="$PROJECT_DIR$/src/components/playground/dispatchablezzz.tsx" />
         <option value="$PROJECT_DIR$/src/components/playground/dispatchable.d.ts" />
-        <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/src/components/playground/dispatchable.test.js" />
         <option value="$PROJECT_DIR$/src/components/search-bar/search-bar.component.js" />
         <option value="$PROJECT_DIR$/src/components/search-bar/DebouncedSearchBar.js" />
-        <option value="$PROJECT_DIR$/src/App.js" />
         <option value="$PROJECT_DIR$/src/components/councillor-card/CouncillorCard.js" />
         <option value="$PROJECT_DIR$/src/components/email-button/EmailButton.js" />
         <option value="$PROJECT_DIR$/src/components/email-button/index.js" />
-        <option value="$PROJECT_DIR$/src/components/EmailArray/EmailArray.js" />
         <option value="$PROJECT_DIR$/src/utils/yeg-core-zone-template.js" />
         <option value="$PROJECT_DIR$/src/App.test.js" />
-        <option value="$PROJECT_DIR$/src/components/CouncillorCard/CouncillorCard.js" />
         <option value="$PROJECT_DIR$/src/components/CouncillorCard/CouncillorCard.test.js" />
         <option value="$PROJECT_DIR$/src/components/EmailArray/EmailArray.test.js" />
         <option value="$PROJECT_DIR$/src/.eslintrc.js" />
         <option value="$PROJECT_DIR$/src/.eslintignore" />
+        <option value="$PROJECT_DIR$/src/App.js" />
+        <option value="$PROJECT_DIR$/src/components/CouncillorCard/CouncillorCard.js" />
+        <option value="$PROJECT_DIR$/src/components/EmailArray/EmailArray.js" />
+        <option value="$PROJECT_DIR$/src/components/DebouncedSearchBar/DebouncedSearchBar.js" />
+        <option value="$PROJECT_DIR$/src/components/EmailButton/ImgOrLeft.js" />
+        <option value="$PROJECT_DIR$/src/components/EmailButton/EmailButton.js" />
+        <option value="$PROJECT_DIR$/src/utils/makeYegCoreZoneEmail.js" />
+        <option value="$PROJECT_DIR$/src/components/Loading/Loading.js" />
+        <option value="$PROJECT_DIR$/package.json" />
       </list>
     </option>
   </component>
@@ -433,12 +441,6 @@
             <path>
               <item name="email-contact" type="b2602c69:ProjectViewProjectNode" />
               <item name="email-contact" type="462c0819:PsiDirectoryNode" />
-              <item name="cypress" type="462c0819:PsiDirectoryNode" />
-              <item name="videos" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="email-contact" type="b2602c69:ProjectViewProjectNode" />
-              <item name="email-contact" type="462c0819:PsiDirectoryNode" />
               <item name="docs" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -481,6 +483,13 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
               <item name="DebouncedSearchBar" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="email-contact" type="b2602c69:ProjectViewProjectNode" />
+              <item name="email-contact" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="EmailArray" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="email-contact" type="b2602c69:ProjectViewProjectNode" />
@@ -585,7 +594,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Jest.All Tests">
+  <component name="RunManager" selected="npm.test:e2e:ci">
     <configuration name="All Tests" type="JavaScriptTestRunnerJest" nameIsGenerated="true">
       <node-interpreter value="project" />
       <node-options value="" />
@@ -605,20 +614,6 @@
       <envs />
       <scope-kind value="SUITE" />
       <test-file value="$PROJECT_DIR$/src/components/playground/dispatchable.test.js" />
-      <test-names>
-        <test-name value="SpyComponent" />
-      </test-names>
-      <method v="2" />
-    </configuration>
-    <configuration name="SpyComponent" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
-      <node-interpreter value="project" />
-      <node-options value="" />
-      <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
-      <working-dir value="$PROJECT_DIR$" />
-      <jest-options value="--watch" />
-      <envs />
-      <scope-kind value="SUITE" />
-      <test-file value="$PROJECT_DIR$/src/components/playground/with-spy.test.js" />
       <test-names>
         <test-name value="SpyComponent" />
       </test-names>
@@ -664,6 +659,16 @@
     <configuration name="Debug Application" type="JavascriptDebugType" uri="http://localhost:3000">
       <method v="2" />
     </configuration>
+    <configuration name="cy:run:ci" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="cy:run:ci" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
     <configuration name="npm start" type="js.build_tools.npm">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -687,20 +692,20 @@
     <list>
       <item itemvalue="JavaScript Debug.Debug Application" />
       <item itemvalue="Jest.All Tests" />
-      <item itemvalue="Jest.SpyComponent" />
       <item itemvalue="Jest.SpyComponent (1)" />
       <item itemvalue="Jest.makeDispatchable" />
       <item itemvalue="Jest.makeDispatch" />
       <item itemvalue="npm.npm start" />
       <item itemvalue="npm.test:e2e:ci" />
+      <item itemvalue="npm.cy:run:ci" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="npm.test:e2e:ci" />
+        <item itemvalue="npm.cy:run:ci" />
         <item itemvalue="Jest.makeDispatchable" />
         <item itemvalue="Jest.makeDispatch" />
         <item itemvalue="Jest.SpyComponent (1)" />
-        <item itemvalue="Jest.SpyComponent" />
       </list>
     </recent_temporary>
   </component>
@@ -721,7 +726,7 @@
       <workItem from="1556495439626" duration="10230000" />
       <workItem from="1556593865845" duration="5915000" />
       <workItem from="1556678278587" duration="11102000" />
-      <workItem from="1559518929328" duration="3100000" />
+      <workItem from="1559518929328" duration="6207000" />
     </task>
     <task id="LOCAL-00001" summary="+gh-pages">
       <created>1555793649259</created>
@@ -1038,62 +1043,69 @@
       <option name="project" value="LOCAL" />
       <updated>1559519996645</updated>
     </task>
-    <option name="localTasksCounter" value="46" />
+    <task id="LOCAL-00046" summary="*run eslint fix">
+      <created>1559537105189</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1559537105189</updated>
+    </task>
+    <option name="localTasksCounter" value="47" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="All_Tests - 2019.06.02 at 18h 07m 11s.xml">
+    <history-entry file="All_Tests - 2019.06.03 at 00h 29m 05s.xml">
       <configuration name="All Tests" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
-    <history-entry file="All_Tests - 2019.06.02 at 18h 07m 12s.xml">
+    <history-entry file="All_Tests - 2019.06.03 at 00h 31m 03s.xml">
       <configuration name="All Tests" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
-    <history-entry file="All_Tests - 2019.06.02 at 21h 37m 26s.xml">
+    <history-entry file="All_Tests - 2019.06.03 at 00h 33m 26s.xml">
       <configuration name="All Tests" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
-    <history-entry file="All_Tests - 2019.06.02 at 22h 34m 27s.xml">
+    <history-entry file="All_Tests - 2019.06.03 at 00h 34m 02s.xml">
       <configuration name="All Tests" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
-    <history-entry file="All_Tests - 2019.06.02 at 22h 35m 22s.xml">
+    <history-entry file="All_Tests - 2019.06.03 at 00h 37m 14s.xml">
       <configuration name="All Tests" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
-    <history-entry file="All_Tests - 2019.06.02 at 22h 35m 32s.xml">
+    <history-entry file="All_Tests - 2019.06.03 at 00h 38m 52s.xml">
       <configuration name="All Tests" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
-    <history-entry file="All_Tests - 2019.06.02 at 22h 35m 37s.xml">
+    <history-entry file="All_Tests - 2019.06.03 at 00h 40m 06s.xml">
       <configuration name="All Tests" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
-    <history-entry file="All_Tests - 2019.06.02 at 22h 39m 44s.xml">
+    <history-entry file="All_Tests - 2019.06.03 at 00h 41m 41s.xml">
       <configuration name="All Tests" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
-    <history-entry file="All_Tests - 2019.06.02 at 22h 40m 36s.xml">
+    <history-entry file="All_Tests - 2019.06.03 at 00h 42m 18s.xml">
       <configuration name="All Tests" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
-    <history-entry file="All_Tests - 2019.06.02 at 22h 42m 31s.xml">
+    <history-entry file="All_Tests - 2019.06.03 at 00h 42m 32s.xml">
       <configuration name="All Tests" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="76119000" />
+    <option name="totallyTimeSpent" value="79226000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="48" y="23" width="1392" height="877" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49809885" visible="true" weight="0.24945295" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49809885" visible="true" weight="0.24945295" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" sideWeight="0.50190115" side_tool="true" weight="0.24945295" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3299363" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3299363" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3299363" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="TypeScript" order="8" />
-      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.4" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.4" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="11" weight="0.3299363" />
       <window_info anchor="bottom" id="Messages" order="12" weight="0.29044586" />
@@ -1196,17 +1208,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="*run eslint fix" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/utils/hrefSanitizer.test.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="10" column="33" selection-start-line="10" selection-start-column="33" selection-end-line="10" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/android-chrome-512x512.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/playground/dispatch.js" />
     <entry file="file://$PROJECT_DIR$/src/components/playground/dispatch.test.js" />
     <entry file="file://$PROJECT_DIR$/src/components/playground/dispatchable.ts" />
     <entry file="file://$PROJECT_DIR$/src/components/playground/dispatchable.js" />
@@ -1296,13 +1297,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/DebouncedSearchBar/DebouncedSearchBar.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="121">
-          <caret line="11" column="24" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/DebouncedSearchBar/index.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -1316,31 +1310,10 @@
     <entry file="file://$PROJECT_DIR$/src/App.css">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/EmailButton/EmailButton.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="16" column="17" selection-start-line="16" selection-start-column="17" selection-end-line="16" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/EmailButton/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="38">
           <caret line="2" column="15" selection-start-line="2" selection-start-column="15" selection-end-line="2" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/EmailArray/EmailArray.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="6" column="54" selection-start-line="6" selection-start-column="54" selection-end-line="6" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Loading/Loading.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="9" column="22" selection-start-line="9" selection-start-column="15" selection-end-line="9" selection-end-column="22" />
         </state>
       </provider>
     </entry>
@@ -1389,13 +1362,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/utils/makeYegCoreZoneEmail.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="602">
-          <caret line="43" column="35" selection-start-line="43" selection-start-column="15" selection-end-line="43" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/utils/makeYegCoreZoneEmail.test.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="602">
@@ -1405,20 +1371,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/hooks/useCouncillor/index.js">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/hooks/useCouncillor/useCouncillor.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="4" column="19" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/App.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/services/address2councillor.service.js">
       <provider selected="true" editor-type-id="text-editor">
@@ -1431,20 +1383,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="95">
           <caret line="5" column="32" selection-start-line="5" selection-start-column="32" selection-end-line="5" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/CouncillorCard/CouncillorCard.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="31" column="4" selection-start-line="31" selection-start-column="4" selection-end-line="31" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/CouncillorCard/CouncillorCard.test.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="9" column="20" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="20" />
         </state>
       </provider>
     </entry>
@@ -1464,24 +1402,106 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="42" column="26" lean-forward="true" selection-start-line="42" selection-start-column="26" selection-end-line="42" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/.eslintignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="19">
-          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/.eslintrc.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
-          <caret line="15" column="2" lean-forward="true" selection-start-line="15" selection-start-column="2" selection-end-line="15" selection-end-column="2" />
+          <caret line="15" column="2" selection-start-line="15" selection-start-column="2" selection-end-line="15" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/hooks/useCouncillor/useCouncillor.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="4" column="48" selection-start-line="4" selection-start-column="48" selection-end-line="4" selection-end-column="77" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/prop-types/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-18" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/App.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-735">
+          <caret line="7" column="40" selection-start-line="7" selection-start-column="40" selection-end-line="7" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/CouncillorCard/CouncillorCard.test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="8" column="34" selection-start-line="8" selection-start-column="34" selection-end-line="8" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/CouncillorCard/CouncillorCard.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="334">
+          <caret line="35" column="12" selection-start-line="35" selection-start-column="12" selection-end-line="35" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/DebouncedSearchBar/DebouncedSearchBar.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="31">
+          <caret line="30" column="59" selection-start-line="30" selection-start-column="59" selection-end-line="30" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/EmailArray/EmailArray.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="113">
+          <caret line="17" column="17" selection-start-line="17" selection-start-column="17" selection-end-line="17" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/EmailButton/ImgOrLeft.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="3" column="11" selection-start-line="3" selection-start-column="11" selection-end-line="3" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/EmailButton/EmailButton.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="174">
+          <caret line="31" column="11" selection-start-line="31" selection-start-column="11" selection-end-line="31" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/utils/makeYegCoreZoneEmail.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="34" column="3" selection-start-line="34" selection-start-column="3" selection-end-line="34" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/@types/prop-types/index.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="61" column="13" selection-start-line="61" selection-start-column="13" selection-end-line="61" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Loading/Loading.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="9" column="36" selection-start-line="9" selection-start-column="36" selection-end-line="9" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="24" column="97" selection-start-line="24" selection-start-column="97" selection-end-line="24" selection-end-column="97" />
         </state>
       </provider>
     </entry>

@@ -1,21 +1,25 @@
 import './EmailButton.css';
 import Button from '@material-ui/core/Button';
 import React from 'react';
+import * as PropTypes from 'prop-types';
+import ImgOrLeft from './ImgOrLeft';
 
-const makeImgOrLeft = ({ src = '', name = '', left = <></> }) => (src
-  ? (
-    <img
-      className="left-icon button-img"
-      width={24}
-      height={24}
-      src={src}
-      alt={name}
-    />
-  )
-  : left);
+const propTypes = {
+  name: PropTypes.string,
+  src: PropTypes.string,
+  href: PropTypes.string,
+  left: PropTypes.node,
+};
+
+const defaultProps = {
+  name: '',
+  src: '',
+  href: '',
+  left: <></>,
+};
 
 const EmailButton = ({
-  name = '', src = '', href = '', left = <></>,
+  name, src, href, left,
 }) => (
   <Button
     color="primary"
@@ -23,9 +27,12 @@ const EmailButton = ({
     target="_blank"
     rel="noopener noreferrer"
   >
-    {makeImgOrLeft({ src, name, left })}
+    <ImgOrLeft src={src} name={name} left={left} />
     <span>{name}</span>
   </Button>
 );
+
+EmailButton.propTypes = propTypes;
+EmailButton.defaultProps = defaultProps;
 
 export default EmailButton;

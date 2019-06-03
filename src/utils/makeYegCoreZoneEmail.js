@@ -1,5 +1,6 @@
 import React from 'react';
 import { always, juxt } from 'ramda';
+import * as PropTypes from 'prop-types';
 
 const makeYegCoreZoneEmailBody = ({ role = 'Mayor', lastName = 'Iveson', ward = '' }) => (`Dear ${role} ${lastName},
 
@@ -19,8 +20,20 @@ const clickableCoreZone = (
   </a>
 );
 
+const propTypes = {
+  role: PropTypes.string,
+  lastName: PropTypes.string,
+  ward: PropTypes.string,
+};
+
+const defaultProps = {
+  role: 'Mayor',
+  lastName: 'Iveson',
+  ward: '',
+};
+
 // todo use tagged template string
-const makeYegCoreZoneEmailDisplay = ({ role = 'Mayor', lastName = 'Iveson', ward = '' }) => (
+const YegCoreZoneEmailDisplay = ({ role, lastName, ward }) => (
   <>
     {`Dear ${role} ${lastName},
 
@@ -35,9 +48,12 @@ Resident of ${ward || 'Edmonton'}`}
   </>
 );
 
+YegCoreZoneEmailDisplay.propTypes = propTypes;
+YegCoreZoneEmailDisplay.defaultProps = defaultProps;
+
 const makeYegCoreZoneEmail = juxt([
   makeYegCoreZoneEmailBody,
-  makeYegCoreZoneEmailDisplay,
+  YegCoreZoneEmailDisplay,
   always('Support letter for #YEGCoreZone'),
 ]);
 

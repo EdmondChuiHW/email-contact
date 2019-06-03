@@ -5,6 +5,7 @@ import { geolocated } from 'react-geolocated';
 import * as queryString from 'query-string';
 import classNames from 'classnames';
 import { Typography } from '@material-ui/core';
+import * as PropTypes from 'prop-types';
 import DebouncedSearchBar from './components/DebouncedSearchBar';
 import useCouncillor from './hooks/useCouncillor';
 import CouncillorCard from './components/CouncillorCard';
@@ -19,9 +20,21 @@ const geoLocatedConfig = {
   geolocationProvider,
 };
 
+const propTypes = {
+  coords: PropTypes.shape({
+    latitude: PropTypes.number,
+    longitude: PropTypes.number,
+  }),
+};
+
+const defaultProps = {
+  coords: undefined,
+};
+
 const App = ({ coords }) => {
   const [query, setQuery] = useState('');
   const [councillor, originalQuery] = useCouncillor({ address: query, coords });
+  // eslint-disable-next-line camelcase
   const { iframe_pls } = queryString.parse(window.location.search);
 
   const className = classNames(
@@ -42,5 +55,8 @@ const App = ({ coords }) => {
     </div>
   );
 };
+
+App.propTypes = propTypes;
+App.defaultProps = defaultProps;
 
 export default geolocated(geoLocatedConfig)(App);

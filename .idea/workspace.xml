@@ -2,10 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="94b74840-050c-4224-af0e-1605da7be64d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.eslintrc.js" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintrc.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/hoc/withDebouncedQueryChange.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/hoc/withDebouncedQueryChange.test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/hoc/withPropsHistory.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/hoc/withPropsHistory.test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/DebouncedSearchBar/DebouncedSearchBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/DebouncedSearchBar/DebouncedSearchBar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/DebouncedSearchBar/DebouncedSearchBar.test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/DebouncedSearchBar/SearchBar/SearchBar.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SearchBar/SearchBar.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/DebouncedSearchBar/SearchBar/SearchBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SearchBar/SearchBar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/DebouncedSearchBar/SearchBar/SearchBar.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SearchBar/SearchBar.test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/DebouncedSearchBar/SearchBar/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SearchBar/index.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -19,341 +27,82 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.eslintignore">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="21" selection-start-column="21" selection-end-column="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.eslintrc.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="228">
-              <caret line="12" column="12" selection-start-line="12" selection-start-column="12" selection-end-line="12" selection-end-column="12" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/services/address2councillor.service.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="247">
-              <caret line="13" selection-start-line="13" selection-end-line="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/App.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-735">
-              <caret line="7" column="40" selection-start-line="7" selection-start-column="40" selection-end-line="7" selection-end-column="40" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/App.test.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="95">
-              <caret line="5" column="32" selection-start-line="5" selection-start-column="32" selection-end-line="5" selection-end-column="32" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/azure-pipelines.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="20" column="33" selection-start-line="20" selection-start-column="33" selection-end-line="20" selection-end-column="33" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/CouncillorCard/CouncillorCard.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="334">
-              <caret line="35" column="12" selection-start-line="35" selection-start-column="12" selection-end-line="35" selection-end-column="12" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/CouncillorCard/CouncillorCard.test.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="152">
-              <caret line="8" column="34" selection-start-line="8" selection-start-column="34" selection-end-line="8" selection-end-column="34" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/DebouncedSearchBar/DebouncedSearchBar.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="414">
-              <caret line="35" column="31" selection-start-line="35" selection-start-column="31" selection-end-line="35" selection-end-column="31" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/DebouncedSearchBar/DebouncedSearchBar.test.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="324">
-              <caret line="26" column="4" selection-start-line="26" selection-start-column="4" selection-end-line="26" selection-end-column="4" />
+            <state relative-caret-position="76">
+              <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/DebouncedSearchBar/index.js">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/EmailArray/EmailArray.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="113">
-              <caret line="17" column="17" selection-start-line="17" selection-start-column="17" selection-end-line="17" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/EmailArray/EmailArray.test.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="7" selection-start-column="7" selection-end-column="7" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/EmailButton/EmailButton.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="174">
-              <caret line="31" column="11" selection-start-line="31" selection-start-column="11" selection-end-line="31" selection-end-column="11" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/EmailButton/index.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="38">
-              <caret line="2" column="15" selection-start-line="2" selection-start-column="15" selection-end-line="2" selection-end-column="15" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/utils/geolocationProvider.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="38">
-              <caret line="2" column="34" selection-start-line="2" selection-start-column="15" selection-end-line="2" selection-end-column="34" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/services/email-providers/gmailProvider.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="247">
-              <caret line="15" column="28" selection-start-line="15" selection-start-column="15" selection-end-line="15" selection-end-column="28" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/utils/hrefSanitizer.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="38">
-              <caret line="2" column="33" selection-start-line="2" selection-start-column="33" selection-end-line="2" selection-end-column="33" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/EmailButton/ImgOrLeft.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="57">
-              <caret line="3" column="11" selection-start-line="3" selection-start-column="11" selection-end-line="3" selection-end-column="11" />
+              <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cypress/integration/index.spec.js">
+        <entry file="file://$PROJECT_DIR$/package.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="133">
-              <caret line="7" column="11" selection-start-line="7" selection-start-column="11" selection-end-line="7" selection-end-column="11" />
+            <state relative-caret-position="295">
+              <caret line="43" column="19" selection-start-line="43" selection-start-column="19" selection-end-line="43" selection-end-column="19" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$APPLICATION_CONFIG_DIR$/javascript/extLibs/global-types/node_modules/@types/jest/index.d.ts">
+        <entry file="file://$PROJECT_DIR$/src/components/SearchBar/SearchBar.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="171">
-              <caret line="119" column="20" selection-start-line="119" selection-start-column="20" selection-end-line="119" selection-end-column="20" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/Loading/Loading.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="17" column="11" selection-start-line="17" selection-start-column="11" selection-end-line="17" selection-end-column="11" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/Loading/index.js">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/services/email-providers/mailToProvider.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="247">
-              <caret line="15" column="29" selection-start-line="15" selection-start-column="15" selection-end-line="15" selection-end-column="29" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/utils/makeYegCoreZoneEmail.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="114">
-              <caret line="34" column="3" selection-start-line="34" selection-start-column="3" selection-end-line="34" selection-end-column="3" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/utils/makeYegCoreZoneEmail.test.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="602">
-              <caret line="43" column="3" selection-start-line="43" selection-start-column="3" selection-end-line="43" selection-end-column="3" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/services/email-providers/outlookProvider.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="266">
-              <caret line="16" column="30" selection-start-line="16" selection-start-column="15" selection-end-line="16" selection-end-column="30" />
+              <caret line="9" column="24" lean-forward="true" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/package.json">
+        <entry file="file://$PROJECT_DIR$/src/components/SearchBar/SearchBar.test.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="166">
-              <caret line="27" column="30" selection-start-line="27" selection-start-column="30" selection-end-line="27" selection-end-column="30" />
+            <state relative-caret-position="19">
+              <caret line="1" column="65" selection-start-line="1" selection-start-column="65" selection-end-line="1" selection-end-column="65" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/node_modules/@types/prop-types/index.d.ts">
+        <entry file="file://$PROJECT_DIR$/src/hoc/withDebouncedQueryChange.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="161">
-              <caret line="61" column="13" selection-start-line="61" selection-start-column="13" selection-end-line="61" selection-end-column="13" />
+            <state relative-caret-position="74">
+              <caret line="7" column="24" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/node_modules/prop-types/index.js">
+        <entry file="file://$PROJECT_DIR$/src/hoc/withDebouncedQueryChange.test.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-18" />
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/README.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor />
-              <second_editor />
+            <state relative-caret-position="1139">
+              <caret line="67" column="17" selection-start-line="67" selection-start-column="17" selection-end-line="67" selection-end-column="17" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/DebouncedSearchBar/SearchBar/SearchBar.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="15" selection-start-line="15" selection-end-line="15" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/DebouncedSearchBar/SearchBar/SearchBar.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-94">
-              <caret line="16" column="14" selection-start-line="16" selection-start-column="14" selection-end-line="16" selection-end-column="14" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/DebouncedSearchBar/SearchBar/SearchBar.test.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="80">
-              <caret line="14" column="12" selection-start-line="14" selection-start-column="12" selection-end-line="14" selection-end-column="12" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/DebouncedSearchBar/SearchBar/index.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="57">
-              <caret line="3" selection-start-line="3" selection-end-line="3" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/serviceWorker.js">
+        <entry file="file://$PROJECT_DIR$/src/hoc/withPropsHistory.js">
           <provider selected="true" editor-type-id="text-editor">
             <state>
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
+              <caret column="26" selection-start-column="26" selection-end-column="26" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/hooks/useCouncillor/useCouncillor.js">
+        <entry file="file://$PROJECT_DIR$/src/hoc/withPropsHistory.test.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="76">
-              <caret line="4" column="48" selection-start-line="4" selection-start-column="48" selection-end-line="4" selection-end-column="77" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/hooks/useCouncillor/index.js">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/services/email-providers/yahooProvider.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="247">
-              <caret line="15" column="28" selection-start-line="15" selection-start-column="15" selection-end-line="15" selection-end-column="28" />
+            <state relative-caret-position="589">
+              <caret line="31" column="3" lean-forward="true" selection-start-line="31" selection-start-column="3" selection-end-line="31" selection-end-column="3" />
             </state>
           </provider>
         </entry>
@@ -385,14 +134,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/services/email-providers/yahoo-provider.js" />
-        <option value="$PROJECT_DIR$/src/services/email-providers/mailto-provider.js" />
-        <option value="$PROJECT_DIR$/src/services/email-providers/gmail-provider.js" />
-        <option value="$PROJECT_DIR$/src/components/email-button/email-button.test.js" />
-        <option value="$PROJECT_DIR$/src/components/loading/loading.test.js" />
-        <option value="$PROJECT_DIR$/src/components/email-array/email-array.test.js" />
-        <option value="$PROJECT_DIR$/src/services/email-providers/href-sanitizer.test.js" />
-        <option value="$PROJECT_DIR$/src/utils/href-sanitizer.test.js" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/utils/yeg-core-zone-template.test.js" />
         <option value="$PROJECT_DIR$/src/components/search-bar/search-bar.component.test.js" />
@@ -426,16 +167,24 @@
         <option value="$PROJECT_DIR$/src/utils/makeYegCoreZoneEmail.js" />
         <option value="$PROJECT_DIR$/.eslintignore" />
         <option value="$PROJECT_DIR$/src/utils/hrefSanitizer.js" />
-        <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/src/components/Loading/Loading.js" />
         <option value="$PROJECT_DIR$/src/components/DebouncedSearchBar/SearchBar/SearchBar.css" />
         <option value="$PROJECT_DIR$/src/components/DebouncedSearchBar/SearchBar/SearchBar.js" />
         <option value="$PROJECT_DIR$/src/components/DebouncedSearchBar/SearchBar/index.js" />
         <option value="$PROJECT_DIR$/src/components/DebouncedSearchBar/SearchBar/SearchBar.test.js" />
-        <option value="$PROJECT_DIR$/src/components/DebouncedSearchBar/DebouncedSearchBar.js" />
         <option value="$PROJECT_DIR$/src/components/DebouncedSearchBar/DebouncedSearchBar.test.js" />
         <option value="$PROJECT_DIR$/azure-pipelines.yml" />
         <option value="$PROJECT_DIR$/.eslintrc.js" />
+        <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/src/hoc/withDebouncedQuery.js" />
+        <option value="$PROJECT_DIR$/src/hoc/withDebouncedQuery.test.js" />
+        <option value="$PROJECT_DIR$/src/hoc/withDebouncedQueryChange.js" />
+        <option value="$PROJECT_DIR$/src/hoc/withPropsHistory.js" />
+        <option value="$PROJECT_DIR$/src/hoc/withPropsHistory.test.js" />
+        <option value="$PROJECT_DIR$/src/hoc/withDebouncedQueryChange.test.js" />
+        <option value="$PROJECT_DIR$/src/components/DebouncedSearchBar/DebouncedSearchBar.js" />
+        <option value="$PROJECT_DIR$/src/components/SearchBar/SearchBar.js" />
+        <option value="$PROJECT_DIR$/src/components/SearchBar/SearchBar.test.js" />
       </list>
     </option>
   </component>
@@ -514,14 +263,6 @@
               <item name="email-contact" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="DebouncedSearchBar" type="462c0819:PsiDirectoryNode" />
-              <item name="SearchBar" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="email-contact" type="b2602c69:ProjectViewProjectNode" />
-              <item name="email-contact" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
               <item name="EmailArray" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -537,6 +278,13 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
               <item name="Loading" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="email-contact" type="b2602c69:ProjectViewProjectNode" />
+              <item name="email-contact" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="SearchBar" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="email-contact" type="b2602c69:ProjectViewProjectNode" />
@@ -586,7 +334,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js.last.introduce.type" value="CONST" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components/DebouncedSearchBar/SearchBar" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/hoc" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -596,23 +344,23 @@
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.JavaScript" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.HTML" />
     <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/hoc" />
       <recent name="$PROJECT_DIR$/src/components/DebouncedSearchBar/SearchBar" />
       <recent name="$PROJECT_DIR$/src/components/playground" />
       <recent name="$PROJECT_DIR$/src/services/email-providers" />
       <recent name="$PROJECT_DIR$/src/components/email-array" />
-      <recent name="$PROJECT_DIR$/src/components/loading" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/components" />
       <recent name="$PROJECT_DIR$/" />
       <recent name="$PROJECT_DIR$/src/utils" />
       <recent name="$PROJECT_DIR$/docs/img" />
       <recent name="$PROJECT_DIR$/src/components/email-button" />
-      <recent name="$PROJECT_DIR$/src" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -722,9 +470,9 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="npm.test:ci" />
         <item itemvalue="npm.lint" />
         <item itemvalue="npm.test:units" />
-        <item itemvalue="npm.test:ci" />
         <item itemvalue="npm.test:e2e:ci" />
         <item itemvalue="npm.test" />
       </list>
@@ -747,14 +495,7 @@
       <workItem from="1556495439626" duration="10230000" />
       <workItem from="1556593865845" duration="5915000" />
       <workItem from="1556678278587" duration="11102000" />
-      <workItem from="1559518929328" duration="8897000" />
-    </task>
-    <task id="LOCAL-00002" summary="+init proof of concept">
-      <created>1555799012026</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1555799012026</updated>
+      <workItem from="1559518929328" duration="13219000" />
     </task>
     <task id="LOCAL-00003" summary="+add defaults">
       <created>1555799100857</created>
@@ -1092,62 +833,69 @@
       <option name="project" value="LOCAL" />
       <updated>1559546824662</updated>
     </task>
-    <option name="localTasksCounter" value="51" />
+    <task id="LOCAL-00051" summary="+add ramda eslint [skip ci]">
+      <created>1559547292354</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1559547292354</updated>
+    </task>
+    <option name="localTasksCounter" value="52" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="All_Tests - 2019.06.03 at 01h 19m 01s.xml">
+    <history-entry file="All_Tests - 2019.06.03 at 19h 39m 07s.xml">
       <configuration name="All Tests" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
-    <history-entry file="All_Tests - 2019.06.03 at 01h 19m 23s.xml">
+    <history-entry file="All_Tests - 2019.06.03 at 19h 39m 16s.xml">
       <configuration name="All Tests" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
-    <history-entry file="All_Tests - 2019.06.03 at 01h 19m 40s.xml">
+    <history-entry file="All_Tests - 2019.06.03 at 19h 39m 25s.xml">
       <configuration name="All Tests" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
-    <history-entry file="All_Tests - 2019.06.03 at 01h 19m 47s.xml">
+    <history-entry file="All_Tests - 2019.06.03 at 19h 40m 04s.xml">
       <configuration name="All Tests" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
-    <history-entry file="All_Tests - 2019.06.03 at 01h 20m 18s.xml">
+    <history-entry file="All_Tests - 2019.06.03 at 22h 25m 09s.xml">
       <configuration name="All Tests" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
-    <history-entry file="All_Tests - 2019.06.03 at 01h 21m 50s.xml">
+    <history-entry file="All_Tests - 2019.06.04 at 00h 23m 21s.xml">
       <configuration name="All Tests" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
-    <history-entry file="All_Tests - 2019.06.03 at 01h 21m 57s.xml">
+    <history-entry file="All_Tests - 2019.06.04 at 00h 24m 48s.xml">
       <configuration name="All Tests" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
-    <history-entry file="All_Tests - 2019.06.03 at 01h 31m 52s.xml">
+    <history-entry file="All_Tests - 2019.06.04 at 00h 25m 07s.xml">
       <configuration name="All Tests" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
-    <history-entry file="All_Tests - 2019.06.03 at 01h 31m 53s.xml">
+    <history-entry file="All_Tests - 2019.06.04 at 00h 25m 30s.xml">
       <configuration name="All Tests" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
-    <history-entry file="All_Tests - 2019.06.03 at 01h 31m 54s.xml">
+    <history-entry file="All_Tests - 2019.06.04 at 00h 26m 02s.xml">
       <configuration name="All Tests" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="81916000" />
+    <option name="totallyTimeSpent" value="86238000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="48" y="23" width="1392" height="877" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49619773" visible="true" weight="0.24945295" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.6857749" visible="true" weight="0.24945295" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="npm" order="2" sideWeight="0.5038023" side_tool="true" weight="0.24945295" />
+      <window_info id="npm" order="2" sideWeight="0.31422505" side_tool="true" visible="true" weight="0.24945295" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3299363" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.29299363" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.29299363" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="TypeScript" order="8" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.4" />
+      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.4" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="11" weight="0.3299363" />
       <window_info anchor="bottom" id="Messages" order="12" weight="0.29044586" />
@@ -1222,7 +970,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="+e2e" />
     <MESSAGE value="+test:ci" />
     <MESSAGE value="+add e2e tests to ci" />
     <MESSAGE value="+publish artifact" />
@@ -1247,29 +994,10 @@
     <MESSAGE value="+add lint script" />
     <MESSAGE value="+improve tests for debounced search bar&#10;*separate search bar and tests" />
     <MESSAGE value="*update azure task name [skip ci]" />
-    <option name="LAST_COMMIT_MESSAGE" value="*update azure task name [skip ci]" />
+    <MESSAGE value="+add ramda eslint [skip ci]" />
+    <option name="LAST_COMMIT_MESSAGE" value="+add ramda eslint [skip ci]" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/node_modules/react-dispatchable/lib/dispatchable.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/use-debounce/src/callback.d.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="24" selection-start-column="24" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/react-dispatchable/lib/index.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/ramda/es/juxt.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="20" column="4" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/react-dispatchable/lib/index.d.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -1311,9 +1039,6 @@
           <caret line="21" column="4" selection-start-line="21" selection-start-column="4" selection-end-line="21" selection-end-column="4" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/DebouncedSearchBar/index.js">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/cypress/integration/index.spec.js">
       <provider selected="true" editor-type-id="text-editor">
@@ -1492,7 +1217,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/DebouncedSearchBar/SearchBar/SearchBar.css">
+    <entry file="file://$PROJECT_DIR$/src/components/SearchBar/SearchBar.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
           <caret line="15" selection-start-line="15" selection-end-line="15" />
@@ -1513,24 +1238,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/DebouncedSearchBar/SearchBar/SearchBar.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-94">
-          <caret line="16" column="14" selection-start-line="16" selection-start-column="14" selection-end-line="16" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/DebouncedSearchBar/SearchBar/index.js">
+    <entry file="file://$PROJECT_DIR$/src/components/SearchBar/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="57">
           <caret line="3" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/DebouncedSearchBar/SearchBar/SearchBar.test.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="14" column="12" selection-start-line="14" selection-start-column="12" selection-end-line="14" selection-end-column="12" />
         </state>
       </provider>
     </entry>
@@ -1538,20 +1249,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="171">
           <caret line="119" column="20" selection-start-line="119" selection-start-column="20" selection-end-line="119" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/DebouncedSearchBar/DebouncedSearchBar.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="35" column="31" selection-start-line="35" selection-start-column="31" selection-end-line="35" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/DebouncedSearchBar/DebouncedSearchBar.test.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="26" column="4" selection-start-line="26" selection-start-column="4" selection-end-line="26" selection-end-column="4" />
         </state>
       </provider>
     </entry>
@@ -1579,8 +1276,71 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="166">
-          <caret line="27" column="30" selection-start-line="27" selection-start-column="30" selection-end-line="27" selection-end-column="30" />
+        <state relative-caret-position="295">
+          <caret line="43" column="19" selection-start-line="43" selection-start-column="19" selection-end-line="43" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/hoc/withPropsHistory.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="26" selection-start-column="26" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/hoc/withPropsHistory.test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="589">
+          <caret line="31" column="3" lean-forward="true" selection-start-line="31" selection-start-column="3" selection-end-line="31" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/hoc/withDebouncedQueryChange.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="74">
+          <caret line="7" column="24" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/hoc/withDebouncedQueryChange.test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1139">
+          <caret line="67" column="17" selection-start-line="67" selection-start-column="17" selection-end-line="67" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/DebouncedSearchBar/DebouncedSearchBar.test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="494">
+          <caret line="26" column="4" selection-start-line="26" selection-start-column="4" selection-end-line="26" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/DebouncedSearchBar/DebouncedSearchBar.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/DebouncedSearchBar/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/SearchBar/SearchBar.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="9" column="24" lean-forward="true" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/SearchBar/SearchBar.test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="1" column="65" selection-start-line="1" selection-start-column="65" selection-end-line="1" selection-end-column="65" />
         </state>
       </provider>
     </entry>

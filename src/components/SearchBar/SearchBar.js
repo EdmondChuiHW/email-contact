@@ -7,7 +7,7 @@ import ClearIcon from '@material-ui/icons/Clear';
 import './SearchBar.css';
 import { always } from 'ramda';
 import * as PropTypes from 'prop-types';
-import Loading from '../../Loading';
+import Loading from '../Loading';
 
 const propTypes = {
   label: PropTypes.string,

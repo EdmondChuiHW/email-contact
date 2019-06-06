@@ -49,7 +49,7 @@ const SearchBar = ({
             <SearchIcon />
           </IconButton>
         )
-        }
+      }
     </Loading>
   </Paper>
 );

@@ -9,6 +9,24 @@ import { always } from 'ramda';
 import * as PropTypes from 'prop-types';
 import Loading from '../Loading';
 
+const ClearButton = ({ onClearQuery }) => (
+  <IconButton aria-label="Clear" onClick={onClearQuery}>
+    <ClearIcon />
+  </IconButton>
+);
+ClearButton.propTypes = {
+  onClearQuery: PropTypes.func,
+};
+ClearButton.defaultProps = {
+  onClearQuery: always,
+};
+
+const PlaceboSearchButton = () => (
+  <IconButton aria-label="Search">
+    <SearchIcon />
+  </IconButton>
+);
+
 const propTypes = {
   label: PropTypes.string,
   query: PropTypes.string,
@@ -39,16 +57,8 @@ const SearchBar = ({
     />
     <Loading isLoading={isLoading} className="loading">
       {query
-        ? (
-          <IconButton aria-label="Clear" onClick={onClearQuery}>
-            <ClearIcon />
-          </IconButton>
-        )
-        : (
-          <IconButton aria-label="Search">
-            <SearchIcon />
-          </IconButton>
-        )
+        ? <ClearButton onClearQuery={onClearQuery} />
+        : <PlaceboSearchButton />
       }
     </Loading>
   </Paper>

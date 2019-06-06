@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="94b74840-050c-4224-af0e-1605da7be64d" name="Default Changelist" comment="-remove event fire">
+    <list default="true" id="94b74840-050c-4224-af0e-1605da7be64d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/SearchBar/SearchBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SearchBar/SearchBar.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -110,11 +111,20 @@
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/SearchBar/SearchBar.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="285">
+              <caret line="15" selection-start-line="15" selection-end-line="15" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/components/SearchBar/SearchBar.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="239">
-              <caret line="41" column="11" lean-forward="true" selection-start-line="41" selection-start-column="11" selection-end-line="41" selection-end-column="11" />
+            <state relative-caret-position="291">
+              <caret line="61" column="7" lean-forward="true" selection-start-line="61" selection-start-column="7" selection-end-line="61" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -245,12 +255,12 @@
         <option value="$PROJECT_DIR$/src/hoc/withDebouncedQuery.test.js" />
         <option value="$PROJECT_DIR$/src/hoc/withDebouncedQueryChange.js" />
         <option value="$PROJECT_DIR$/src/components/DebouncedSearchBar/DebouncedSearchBar.js" />
-        <option value="$PROJECT_DIR$/src/components/SearchBar/SearchBar.js" />
         <option value="$PROJECT_DIR$/src/hoc/withPropsHistory.test.js" />
         <option value="$PROJECT_DIR$/src/hoc/withPropsHistory.js" />
         <option value="$PROJECT_DIR$/src/hoc/withDebouncedQueryChange.test.js" />
         <option value="$PROJECT_DIR$/src/components/SearchBar/SearchBar.test.js" />
         <option value="$PROJECT_DIR$/src/components/CouncillorCard/CouncillorCard.test.js" />
+        <option value="$PROJECT_DIR$/src/components/SearchBar/SearchBar.js" />
       </list>
     </option>
   </component>
@@ -590,14 +600,7 @@
       <workItem from="1556495439626" duration="10230000" />
       <workItem from="1556593865845" duration="5915000" />
       <workItem from="1556678278587" duration="11102000" />
-      <workItem from="1559518929328" duration="16667000" />
-    </task>
-    <task id="LOCAL-00007" summary="+UI">
-      <created>1555906330723</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1555906330723</updated>
+      <workItem from="1559518929328" duration="17184000" />
     </task>
     <task id="LOCAL-00008" summary="+locate">
       <created>1555915287883</created>
@@ -935,13 +938,17 @@
       <option name="project" value="LOCAL" />
       <updated>1559785312793</updated>
     </task>
-    <option name="localTasksCounter" value="56" />
+    <task id="LOCAL-00056" summary="*styling">
+      <created>1559786344455</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1559786344455</updated>
+    </task>
+    <option name="localTasksCounter" value="57" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="All_Tests - 2019.06.05 at 19h 20m 48s.xml">
-      <configuration name="All Tests" configurationId="JavaScriptTestRunnerJest" />
-    </history-entry>
     <history-entry file="All_Tests - 2019.06.05 at 19h 20m 55s.xml">
       <configuration name="All Tests" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
@@ -969,9 +976,12 @@
     <history-entry file="All_Tests - 2019.06.05 at 19h 38m 53s.xml">
       <configuration name="All Tests" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
+    <history-entry file="All_Tests - 2019.06.05 at 19h 59m 04s.xml">
+      <configuration name="All Tests" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="89686000" />
+    <option name="totallyTimeSpent" value="90203000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="48" y="23" width="1392" height="877" extended-state="0" />
@@ -1065,7 +1075,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="*update pipeline task name" />
     <MESSAGE value="+add badge" />
     <MESSAGE value="*refactor email providers" />
     <MESSAGE value="+add pics to readme [skip ci]" />
@@ -1090,7 +1099,8 @@
     <MESSAGE value="*export props history as property" />
     <MESSAGE value="+clears query spec" />
     <MESSAGE value="-remove event fire" />
-    <option name="LAST_COMMIT_MESSAGE" value="-remove event fire" />
+    <MESSAGE value="*styling" />
+    <option name="LAST_COMMIT_MESSAGE" value="*styling" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/node_modules/use-debounce/src/index.d.ts">
@@ -1253,13 +1263,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="252">
           <caret line="17" column="11" selection-start-line="17" selection-start-column="11" selection-end-line="17" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/SearchBar/SearchBar.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="15" selection-start-line="15" selection-end-line="15" />
         </state>
       </provider>
     </entry>
@@ -1428,10 +1431,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/SearchBar/SearchBar.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/SearchBar/SearchBar.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="239">
-          <caret line="41" column="11" lean-forward="true" selection-start-line="41" selection-start-column="11" selection-end-line="41" selection-end-column="11" />
+        <state relative-caret-position="291">
+          <caret line="61" column="7" lean-forward="true" selection-start-line="61" selection-start-column="7" selection-end-line="61" selection-end-column="7" />
         </state>
       </provider>
     </entry>

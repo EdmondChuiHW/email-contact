@@ -6,7 +6,8 @@ const withPropsHistory = (Comp) => {
     history.push(props);
     return <Comp {...props} />;
   };
-  return [WithHistory, history];
+  WithHistory.propsHistory = history;
+  return WithHistory;
 };
 
 export default withPropsHistory;

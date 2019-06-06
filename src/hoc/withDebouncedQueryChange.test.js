@@ -36,7 +36,7 @@ describe('withDebouncedQueryChange', () => {
 
   it('sets query prop every time', async () => {
     const debounceInMs = 500;
-    const [SearchBar, history] = withPropsHistory(DumbSearchBar);
+    const SearchBar = withPropsHistory(DumbSearchBar);
     const DebouncedSearchBar = withDebouncedQueryChange({ debounceInMs })(SearchBar);
 
     const { container } = render(<DebouncedSearchBar />);
@@ -49,6 +49,7 @@ describe('withDebouncedQueryChange', () => {
 
     jest.advanceTimersByTime(debounceInMs * 2);
 
+    const history = SearchBar.propsHistory;
     const initialRenderAndEventsCount = 1 + 4;
     expect(history.length).toEqual(initialRenderAndEventsCount);
     expect(last(history).query).toEqual('last');
@@ -56,7 +57,7 @@ describe('withDebouncedQueryChange', () => {
 
   it('clears query', async () => {
     const debounceInMs = 500;
-    const [SearchBar, history] = withPropsHistory(DumbSearchBar);
+    const SearchBar = withPropsHistory(DumbSearchBar);
     const DebouncedSearchBar = withDebouncedQueryChange({ debounceInMs })(SearchBar);
 
     const { container } = render(<DebouncedSearchBar />);
@@ -69,6 +70,7 @@ describe('withDebouncedQueryChange', () => {
 
     jest.advanceTimersByTime(debounceInMs * 2);
 
+    const history = SearchBar.propsHistory;
     const initialRenderAndEventsCount = 1 + 4;
     expect(history.length).toEqual(initialRenderAndEventsCount);
     expect(last(history).query).toEqual('last');

@@ -1,5 +1,5 @@
 import React from 'react';
-import { cleanup, fireEvent, render } from 'react-testing-library';
+import { cleanup, render } from 'react-testing-library';
 import SearchBar from './SearchBar';
 import 'jest-dom/extend-expect';
 
@@ -23,9 +23,7 @@ describe('SearchBar', () => {
   });
 
   it('renders search icon when query is empty', () => {
-    const { container } = render(<SearchBar />);
-    const input = container.querySelector('input');
-    fireEvent.change(input, { target: { value: '' } });
+    const { container } = render(<SearchBar query="" />);
     const actual = container.querySelector('[aria-label="Search"]');
     expect(actual).toBeTruthy();
   });

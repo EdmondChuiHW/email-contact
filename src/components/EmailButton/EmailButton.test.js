@@ -5,10 +5,18 @@ import EmailButton from './EmailButton';
 
 afterEach(cleanup);
 
+// todo extract some tests to ImgOrLeft
 describe('EmailButton', () => {
   it('renders name', () => {
     const { getByText } = render(<EmailButton name="My Boi" />);
     expect(getByText('My Boi')).toBeInTheDocument();
+  });
+
+  it('renders name as alt', () => {
+    const { container: { firstChild } } = render(<EmailButton src="some" name="i c u" />);
+    const actual = firstChild.querySelector('img').getAttribute('alt');
+    const expected = 'i c u';
+    expect(actual).toEqual(expected);
   });
 
   it('renders href', () => {

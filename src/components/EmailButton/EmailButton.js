@@ -27,7 +27,7 @@ const EmailButton = ({
     target="_blank"
     rel="noopener noreferrer"
   >
-    <ImgOrLeft src={src} name={name} left={left} />
+    <ImgOrLeft src={src} alt={name} left={left} />
     <span>{name}</span>
   </Button>
 );

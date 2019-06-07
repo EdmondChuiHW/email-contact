@@ -1,5 +1,5 @@
 import React from 'react';
-import { cleanup, fireEvent, render } from 'react-testing-library';
+import { act, cleanup, render } from 'react-testing-library';
 import { last } from 'ramda';
 import withDebouncedQueryChange from './withDebouncedQueryChange';
 import 'jest-dom/extend-expect';
@@ -23,20 +23,22 @@ const makeDebouncedSearchBar = () => {
   return [DebouncedSearchBar, SearchBar.propsHistory];
 };
 
-const typeQuery = ({ text, inContainer }) => (
-  fireEvent.change(inContainer.querySelector('input'), { target: { value: text } })
-);
+const typeQuery = ({ text, props }) => act(() => {
+  // "Warning: The callback passed to ReactTestUtils.act(...) function must not return anything"
+  props.onQueryChange({ target: { value: text } });
+});
 
-const clickClearButton = ({ inContainer }) => (
-  fireEvent.click(inContainer.querySelector('button'), {})
-);
+const clickClearButton = ({ props }) => act(() => {
+  // "Warning: The callback passed to ReactTestUtils.act(...) function must not return anything"
+  props.onClearQuery();
+});
 
 describe('withDebouncedQueryChange', () => {
   it('calls onQueryChange only once after debounce interval', async () => {
-    const [DebouncedSearchBar] = makeDebouncedSearchBar();
+    const [DebouncedSearchBar, propsHistory] = makeDebouncedSearchBar();
 
     const onQueryChange = jest.fn();
-    const { container } = render(
+    render(
       <DebouncedSearchBar onQueryChange={onQueryChange} />,
     );
 
@@ -45,7 +47,7 @@ describe('withDebouncedQueryChange', () => {
       'la',
       'las',
       'last',
-    ].forEach(text => typeQuery({ text, inContainer: container }));
+    ].forEach(text => typeQuery({ text, props: last(propsHistory) }));
 
     jest.advanceTimersByTime(debounceInMs * 2);
 
@@ -56,14 +58,14 @@ describe('withDebouncedQueryChange', () => {
   it('sets query prop every time', async () => {
     const [DebouncedSearchBar, propsHistory] = makeDebouncedSearchBar();
 
-    const { container } = render(<DebouncedSearchBar />);
+    render(<DebouncedSearchBar />);
 
     [
       'l',
       'la',
       'las',
       'last',
-    ].forEach(text => typeQuery({ text, inContainer: container }));
+    ].forEach(text => typeQuery({ text, props: last(propsHistory) }));
 
     jest.advanceTimersByTime(debounceInMs * 2);
 
@@ -76,14 +78,15 @@ describe('withDebouncedQueryChange', () => {
     const [DebouncedSearchBar, propsHistory] = makeDebouncedSearchBar();
     const onQueryChange = jest.fn();
 
-    const { container } = render(<DebouncedSearchBar onQueryChange={onQueryChange} />);
+    render(<DebouncedSearchBar onQueryChange={onQueryChange} />);
 
-    typeQuery({ text: 'some', inContainer: container });
-    clickClearButton({ inContainer: container });
+    const props = last(propsHistory);
+    typeQuery({ text: 'some', props });
+    clickClearButton({ props });
 
     jest.advanceTimersByTime(debounceInMs * 2);
 
     expect(onQueryChange).toBeCalledTimes(1);
-    expect(last(propsHistory).query).toEqual('');
+    expect(props.query).toEqual('');
   });
 });

@@ -97,11 +97,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/components/SearchBar/SearchBar.test.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="19" selection-start-line="19" selection-end-line="19" />
+            <state relative-caret-position="259">
+              <caret line="19" column="57" selection-start-line="19" selection-start-column="57" selection-end-line="19" selection-end-column="57" />
             </state>
           </provider>
         </entry>
@@ -124,11 +124,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/hoc/withDebouncedQueryChange.test.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1296">
-              <caret line="80" column="4" selection-start-line="80" selection-start-column="4" selection-end-line="80" selection-end-column="4" />
+            <state relative-caret-position="340">
+              <caret line="88" column="43" selection-start-line="88" selection-start-column="43" selection-end-line="88" selection-end-column="43" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/hoc/withPropsHistory.test.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="551">
+              <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
             </state>
           </provider>
         </entry>
@@ -207,11 +216,11 @@
         <option value="$PROJECT_DIR$/src/components/DebouncedSearchBar/DebouncedSearchBar.js" />
         <option value="$PROJECT_DIR$/src/hoc/withPropsHistory.test.js" />
         <option value="$PROJECT_DIR$/src/hoc/withPropsHistory.js" />
-        <option value="$PROJECT_DIR$/src/components/SearchBar/SearchBar.test.js" />
         <option value="$PROJECT_DIR$/src/components/CouncillorCard/CouncillorCard.test.js" />
         <option value="$PROJECT_DIR$/src/components/SearchBar/SearchBar.js" />
         <option value="$PROJECT_DIR$/src/play.js" />
         <option value="$PROJECT_DIR$/src/hoc/withDebouncedQueryChange.test.js" />
+        <option value="$PROJECT_DIR$/src/components/SearchBar/SearchBar.test.js" />
       </list>
     </option>
   </component>
@@ -553,13 +562,6 @@
       <workItem from="1556678278587" duration="11102000" />
       <workItem from="1559518929328" duration="17184000" />
     </task>
-    <task id="LOCAL-00008" summary="+locate">
-      <created>1555915287883</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1555915287883</updated>
-    </task>
     <task id="LOCAL-00009" summary="*typo">
       <created>1555915607551</created>
       <option name="number" value="00009" />
@@ -896,19 +898,17 @@
       <option name="project" value="LOCAL" />
       <updated>1559786344455</updated>
     </task>
-    <option name="localTasksCounter" value="57" />
+    <task id="LOCAL-00057" summary="-remove fire events">
+      <created>1559888004033</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1559888004033</updated>
+    </task>
+    <option name="localTasksCounter" value="58" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="All_Tests - 2019.06.05 at 19h 38m 39s.xml">
-      <configuration name="All Tests" configurationId="JavaScriptTestRunnerJest" />
-    </history-entry>
-    <history-entry file="All_Tests - 2019.06.05 at 19h 38m 48s.xml">
-      <configuration name="All Tests" configurationId="JavaScriptTestRunnerJest" />
-    </history-entry>
-    <history-entry file="All_Tests - 2019.06.05 at 19h 38m 53s.xml">
-      <configuration name="All Tests" configurationId="JavaScriptTestRunnerJest" />
-    </history-entry>
     <history-entry file="All_Tests - 2019.06.05 at 19h 59m 04s.xml">
       <configuration name="All Tests" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
@@ -930,21 +930,30 @@
     <history-entry file="All_Tests - 2019.06.07 at 00h 12m 57s.xml">
       <configuration name="All Tests" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
+    <history-entry file="All_Tests - 2019.06.07 at 00h 13m 06s.xml">
+      <configuration name="All Tests" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
+    <history-entry file="All_Tests - 2019.06.07 at 00h 13m 54s.xml">
+      <configuration name="All Tests" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
+    <history-entry file="All_Tests - 2019.06.07 at 00h 14m 31s.xml">
+      <configuration name="All Tests" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="92517000" />
+    <option name="totallyTimeSpent" value="92624000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="48" y="23" width="1392" height="877" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.68566495" visible="true" weight="0.2574763" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.68566495" visible="true" weight="0.2574763" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" sideWeight="0.31433505" side_tool="true" visible="true" weight="0.24945295" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3299363" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.2687898" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.2687898" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -1026,7 +1035,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="+add badge" />
     <MESSAGE value="*refactor email providers" />
     <MESSAGE value="+add pics to readme [skip ci]" />
     <MESSAGE value="+update readme pics [skip ci]" />
@@ -1051,7 +1059,8 @@
     <MESSAGE value="+clears query spec" />
     <MESSAGE value="-remove event fire" />
     <MESSAGE value="*styling" />
-    <option name="LAST_COMMIT_MESSAGE" value="*styling" />
+    <MESSAGE value="-remove fire events" />
+    <option name="LAST_COMMIT_MESSAGE" value="-remove fire events" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/node_modules/react-dispatchable/lib/dispatchable.d.ts" />
@@ -1264,13 +1273,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/hoc/withPropsHistory.test.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="178">
-          <caret line="21" column="26" selection-start-line="21" selection-start-column="26" selection-end-line="21" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/hoc/withPropsHistory.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="152">
@@ -1280,13 +1282,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Loading/Loading.test.js">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/SearchBar/SearchBar.test.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="19" selection-start-line="19" selection-end-line="19" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/EmailButton/ImgOrLeft.js">
       <provider selected="true" editor-type-id="text-editor">
@@ -1367,8 +1362,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/hoc/withDebouncedQueryChange.test.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1296">
-          <caret line="80" column="4" selection-start-line="80" selection-start-column="4" selection-end-line="80" selection-end-column="4" />
+        <state relative-caret-position="340">
+          <caret line="88" column="43" selection-start-line="88" selection-start-column="43" selection-end-line="88" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/hoc/withPropsHistory.test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="551">
+          <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/SearchBar/SearchBar.test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="259">
+          <caret line="19" column="57" selection-start-line="19" selection-start-column="57" selection-end-line="19" selection-end-column="57" />
         </state>
       </provider>
     </entry>

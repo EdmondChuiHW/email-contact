@@ -49,6 +49,8 @@ describe('withDebouncedQueryChange', () => {
       'last',
     ].forEach(text => typeQuery({ text, props: last(propsHistory) }));
 
+    expect(onQueryChange).toBeCalledTimes(0);
+
     jest.advanceTimersByTime(debounceInMs * 2);
 
     expect(onQueryChange).toBeCalledTimes(1);
@@ -83,6 +85,8 @@ describe('withDebouncedQueryChange', () => {
     const props = last(propsHistory);
     typeQuery({ text: 'some', props });
     clickClearButton({ props });
+
+    expect(onQueryChange).toBeCalledTimes(0);
 
     jest.advanceTimersByTime(debounceInMs * 2);
 

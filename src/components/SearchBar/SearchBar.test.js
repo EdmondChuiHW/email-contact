@@ -2,38 +2,51 @@ import React from 'react';
 import { cleanup, render } from 'react-testing-library';
 import SearchBar from './SearchBar';
 import 'jest-dom/extend-expect';
+import makeComponentSpy from '../../utils/makeComponentSpy';
 
 afterEach(cleanup);
 
 describe('SearchBar', () => {
   it('should render label', () => {
-    const { getByPlaceholderText } = render(<SearchBar label="ayyyyyyyy" />);
-    expect(getByPlaceholderText('ayyyyyyyy')).toBeInTheDocument();
+    const InputSpy = makeComponentSpy();
+    const placeholder = 'place';
+
+    render(<SearchBar label="place" Input={InputSpy} />);
+
+    expect(InputSpy).toBeCalledTimes(1);
+    expect(InputSpy.mock.calls[0][0]).toMatchObject({ placeholder });
   });
 
   it('should render query', () => {
-    const { getByDisplayValue } = render(<SearchBar query="qqqqq" />);
-    expect(getByDisplayValue('qqqqq')).toBeInTheDocument();
+    const InputSpy = makeComponentSpy();
+    const query = 'qqqqq';
+
+    render(<SearchBar query={query} Input={InputSpy} />);
+
+    expect(InputSpy).toBeCalledTimes(1);
+    expect(InputSpy.mock.calls[0][0]).toMatchObject({ value: query });
   });
 
   it('renders clear button when query exists', () => {
-    const { container } = render(<SearchBar query="qqqqq" />);
-    const actual = container.querySelector('[aria-label="Clear"]');
-    expect(actual).toBeTruthy();
+    const ClearButtonSpy = makeComponentSpy();
+    render(<SearchBar query="qqqqq" ClearButton={ClearButtonSpy} />);
+    expect(ClearButtonSpy).toBeCalledTimes(1);
   });
 
   it('renders search icon when query is empty', () => {
-    const { container } = render(<SearchBar query="" />);
-    const actual = container.querySelector('[aria-label="Search"]');
-    expect(actual).toBeTruthy();
+    const SearchButtonSpy = makeComponentSpy();
+    render(<SearchBar query="" SearchButton={SearchButtonSpy} />);
+    expect(SearchButtonSpy).toBeCalledTimes(1);
   });
 
-  it('should render isLoading=true', () => {
+  it('should render progressbar when isLoading is true', () => {
+    // todo remove getByRole
     const { getByRole } = render(<SearchBar isLoading />);
     expect(getByRole('progressbar')).toBeInTheDocument();
   });
 
-  it('should not render isLoading=false', () => {
+  it('should not render progressbar when isLoading is false', () => {
+    // todo remove getByRole
     const { queryByRole } = render(<SearchBar isLoading={false} />);
     expect(queryByRole('progressbar')).not.toBeInTheDocument();
   });

@@ -3,23 +3,11 @@ import Paper from '@material-ui/core/Paper/index';
 import IconButton from '@material-ui/core/IconButton/index';
 import InputBase from '@material-ui/core/InputBase/index';
 import SearchIcon from '@material-ui/icons/Search';
-import ClearIcon from '@material-ui/icons/Clear';
 import './SearchBar.css';
 import { always } from 'ramda';
 import * as PropTypes from 'prop-types';
 import Loading from '../Loading';
-
-const ClearButton = ({ onClearQuery }) => (
-  <IconButton aria-label="Clear" onClick={onClearQuery}>
-    <ClearIcon />
-  </IconButton>
-);
-ClearButton.propTypes = {
-  onClearQuery: PropTypes.func,
-};
-ClearButton.defaultProps = {
-  onClearQuery: always,
-};
+import SimpleClearButton from '../ClearButton';
 
 const PlaceboSearchButton = () => (
   <IconButton aria-label="Search">
@@ -33,6 +21,9 @@ const propTypes = {
   isLoading: PropTypes.bool,
   onQueryChange: PropTypes.func,
   onClearQuery: PropTypes.func,
+  ClearButton: PropTypes.elementType,
+  SearchButton: PropTypes.elementType,
+  Input: PropTypes.elementType,
 };
 
 const defaultProps = {
@@ -41,24 +32,27 @@ const defaultProps = {
   isLoading: false,
   onQueryChange: always,
   onClearQuery: always,
+  ClearButton: SimpleClearButton,
+  SearchButton: PlaceboSearchButton,
+  Input: InputBase,
 };
 
 const SearchBar = ({
-  label, query, isLoading, onQueryChange, onClearQuery,
+  label, query, isLoading, onQueryChange, onClearQuery, ClearButton, SearchButton, Input,
 }) => (
   <Paper className="root" elevation={1}>
-    <InputBase
+    <Input
       autoComplete="postal-code"
       className="input"
-      placeholder={label}
       autoFocus
+      placeholder={label}
       value={query}
       onChange={onQueryChange}
     />
     <Loading isLoading={isLoading} className="loading">
       {query
         ? <ClearButton onClearQuery={onClearQuery} />
-        : <PlaceboSearchButton />
+        : <SearchButton />
       }
     </Loading>
   </Paper>

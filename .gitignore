@@ -91,7 +91,3 @@ fabric.properties
 .idea/caches/build_file_checksums.ser
 
 junit.xml
-
-cypress/results/*
-cypress/screenshots/*
-cypress/videos/*

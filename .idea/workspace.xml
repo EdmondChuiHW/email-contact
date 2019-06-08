@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="94b74840-050c-4224-af0e-1605da7be64d" name="Default Changelist" comment="*update search bar test to use component type">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/EmailButton/EmailButton.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/EmailButton/EmailButton.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/EmailButton/EmailButton.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/EmailButton/EmailButton.test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/EmailButton/ImgOrLeft.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/EmailButton/ImgOrLeft.js" afterDir="false" />
-    </list>
+    <list default="true" id="94b74840-050c-4224-af0e-1605da7be64d" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -129,8 +124,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/components/EmailButton/EmailButton.test.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
-              <caret line="18" column="5" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
+            <state relative-caret-position="266">
+              <caret line="14" column="35" lean-forward="true" selection-start-line="14" selection-start-column="35" selection-end-line="14" selection-end-column="35" />
             </state>
           </provider>
         </entry>
@@ -722,13 +717,6 @@
       <workItem from="1556678278587" duration="11102000" />
       <workItem from="1559518929328" duration="17184000" />
     </task>
-    <task id="LOCAL-00011" summary="+click">
-      <created>1555917896044</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1555917896045</updated>
-    </task>
     <task id="LOCAL-00012" summary="*style">
       <created>1555918034095</created>
       <option name="number" value="00012" />
@@ -1065,16 +1053,17 @@
       <option name="project" value="LOCAL" />
       <updated>1559889921851</updated>
     </task>
-    <option name="localTasksCounter" value="60" />
+    <task id="LOCAL-00060" summary="*improve a11y">
+      <created>1559891225488</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1559891225488</updated>
+    </task>
+    <option name="localTasksCounter" value="61" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="All_Tests - 2019.06.07 at 00h 57m 02s.xml">
-      <configuration name="All Tests" configurationId="JavaScriptTestRunnerJest" />
-    </history-entry>
-    <history-entry file="All_Tests - 2019.06.07 at 00h 57m 36s.xml">
-      <configuration name="All Tests" configurationId="JavaScriptTestRunnerJest" />
-    </history-entry>
     <history-entry file="All_Tests - 2019.06.07 at 00h 58m 13s.xml">
       <configuration name="All Tests" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
@@ -1099,9 +1088,15 @@
     <history-entry file="All_Tests - 2019.06.07 at 01h 05m 21s.xml">
       <configuration name="All Tests" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
+    <history-entry file="All_Tests - 2019.06.07 at 01h 05m 31s.xml">
+      <configuration name="All Tests" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
+    <history-entry file="All_Tests - 2019.06.07 at 01h 05m 55s.xml">
+      <configuration name="All Tests" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="95380000" />
+    <option name="totallyTimeSpent" value="95671000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="48" y="23" width="1392" height="877" extended-state="0" />
@@ -1113,7 +1108,7 @@
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3299363" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.2687898" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.2687898" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -1195,7 +1190,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="+update readme pics [skip ci]" />
     <MESSAGE value="+update readme pics heights [skip ci]" />
     <MESSAGE value="+update readme pics alignments [skip ci]" />
     <MESSAGE value="*npm up" />
@@ -1220,7 +1214,8 @@
     <MESSAGE value="-remove fire events" />
     <MESSAGE value="+add 0" />
     <MESSAGE value="*update search bar test to use component type" />
-    <option name="LAST_COMMIT_MESSAGE" value="*update search bar test to use component type" />
+    <MESSAGE value="*improve a11y" />
+    <option name="LAST_COMMIT_MESSAGE" value="*improve a11y" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/services/email-providers/mailToProvider.js">
@@ -1548,8 +1543,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/EmailButton/EmailButton.test.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="18" column="5" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
+        <state relative-caret-position="266">
+          <caret line="14" column="35" lean-forward="true" selection-start-line="14" selection-start-column="35" selection-end-line="14" selection-end-column="35" />
         </state>
       </provider>
     </entry>

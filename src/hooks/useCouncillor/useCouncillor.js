@@ -17,7 +17,7 @@ const useCouncillor = ({ address = '', coords = { latitude: 0, longitude: 0 } })
       : getCouncillorFromAddress(address);
     req.then(onCouncillorLoaded);
     return () => req.abort();
-  }, [address, coords]);
+  }, [address, coords, onCouncillorLoaded]);
   return [councillor, completedQuery];
 };
 

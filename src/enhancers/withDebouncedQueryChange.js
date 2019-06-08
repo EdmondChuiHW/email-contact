@@ -8,8 +8,8 @@ const withDebouncedQueryChange = ({ debounceInMs }) => (Component) => {
     const [query, setQuery] = useState('');
     const [debouncedQueryChange] = useDebouncedCallback(onQueryChange, debounceInMs);
     const onNewValue = juxt([setQuery, debouncedQueryChange]);
-    const clearQuery = useCallback(() => onNewValue(''), []);
-    const onChange = useCallback(e => onNewValue(e.target.value), []);
+    const clearQuery = useCallback(() => onNewValue(''), [onNewValue]);
+    const onChange = useCallback(e => onNewValue(e.target.value), [onNewValue]);
 
     return (
       <Component

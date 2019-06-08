@@ -1,7 +1,7 @@
 # email-contact
-[![Build Status](https://dev.azure.com/chuihinwai/email-contact/_apis/build/status/chuihinwai.email-contact?branchName=master)](https://dev.azure.com/chuihinwai/email-contact/_build/latest?definitionId=2&branchName=master)
-![David](https://img.shields.io/david/chuihinwai/email-contact.svg)
-![David](https://img.shields.io/david/dev/chuihinwai/email-contact.svg)
+[![Build Status](https://dev.azure.com/EdmondChuiHW/email-contact/_apis/build/status/EdmondChuiHW.email-contact?branchName=master)](https://dev.azure.com/EdmondChuiHW/email-contact/_build/latest?definitionId=2&branchName=master)
+![David](https://img.shields.io/david/EdmondChuiHW/email-contact.svg)
+![David](https://img.shields.io/david/dev/EdmondChuiHW/email-contact.svg)
 
 Find your Edmonton City Councillor and auto-fills an email template: https://edmondchuihw.github.io/email-contact
 

@@ -3,7 +3,7 @@
 ![David](https://img.shields.io/david/chuihinwai/email-contact.svg)
 ![David](https://img.shields.io/david/dev/chuihinwai/email-contact.svg)
 
-Find your Edmonton City Councillor and auto-fills an email template: https://chuihinwai.github.io/email-contact
+Find your Edmonton City Councillor and auto-fills an email template: https://edmondchuihw.github.io/email-contact
 
 ## λ
 * Uses [Ramda](https://ramdajs.com/) for functional programming where applicable.  

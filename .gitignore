@@ -92,6 +92,6 @@ fabric.properties
 
 junit.xml
 
-cypress/results/**
-cypress/screenshots/**
-cypress/videos/**
+cypress/results/*
+cypress/screenshots/*
+cypress/videos/*

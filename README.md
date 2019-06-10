@@ -6,7 +6,7 @@
 Find your Edmonton City Councillor and auto-fills an email template: https://edmondchuihw.github.io/email-contact
 
 ## Featured in _Joyful React Testing_  
-<a href="http://www.youtube.com/watch?feature=player_embedded&v=R8yX1tCDQIs" target="_blank">
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=R8yX1tCDQIs" target="_blank" rel="noreferrer noopener">
   <img src="http://img.youtube.com/vi/R8yX1tCDQIs/0.jpg" 
        alt="Link to YouTube video 'Joyful React Testing'"
    />

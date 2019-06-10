@@ -5,6 +5,15 @@
 
 Find your Edmonton City Councillor and auto-fills an email template: https://edmondchuihw.github.io/email-contact
 
+## Featured in _Joyful React Testing_  
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=R8yX1tCDQIs" target="_blank">
+  <img src="http://img.youtube.com/vi/R8yX1tCDQIs/0.jpg" 
+       alt="Link to YouTube video 'Joyful React Testing'"
+   />
+</a>
+
+[Video](https://www.youtube.com/watch?v=R8yX1tCDQIs) | [Resources](https://bit.ly/joyful-react-testing)
+
 ## λ
 * Uses [Ramda](https://ramdajs.com/) for functional programming where applicable.  
 * Pure/Dumb/Presentational components are favoured.  

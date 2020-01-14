@@ -1,6 +1,4 @@
-import React from 'react';
 import { always, juxt } from 'ramda';
-import * as PropTypes from 'prop-types';
 
 const makeYegCoreZoneEmailBody = ({ role = 'Mayor', lastName = 'Iveson', ward = '' }) => (`Hello ${role} ${lastName},
 

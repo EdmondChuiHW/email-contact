@@ -7,12 +7,14 @@ describe('makeYegCoreZoneEmail', () => {
       role: 'Councillor',
       lastName: 'McKeen',
     });
-    const expected = `Dear Councillor McKeen,
+    const expected = `Hello Councillor McKeen,
 
-I'm writing in support of the #YEGCoreZone proposal.
+I want safe and liveable streets. That means 30 km/hr in residential areas. The #YEGCoreZone is the only option to move Edmonton in this direction.
+
+Please vote to approve the #YEGCoreZone on February 26. 
 
 Thank you,
-Resident of Edmonton`;
+Constituent from Edmonton`;
     expect(actual[0]).toEqual(expected);
   });
 
@@ -22,23 +24,27 @@ Resident of Edmonton`;
       role: 'Councillor',
       lastName: 'McKeen',
     });
-    const expected = `Dear Councillor McKeen,
+    const expected = `Hello Councillor McKeen,
 
-I'm writing in support of the #YEGCoreZone proposal.
+I want safe and liveable streets. That means 30 km/hr in residential areas. The #YEGCoreZone is the only option to move Edmonton in this direction.
+
+Please vote to approve the #YEGCoreZone on February 26. 
 
 Thank you,
-Resident of Ward 6`;
+Constituent from Ward 6`;
     expect(actual[0]).toEqual(expected);
   });
 
   it('should say Mayor by default', () => {
     const actual = makeYegCoreZoneEmail({});
-    const expected = `Dear Mayor Iveson,
+    const expected = `Hello Mayor Iveson,
 
-I'm writing in support of the #YEGCoreZone proposal.
+I want safe and liveable streets. That means 30 km/hr in residential areas. The #YEGCoreZone is the only option to move Edmonton in this direction.
+
+Please vote to approve the #YEGCoreZone on February 26. 
 
 Thank you,
-Resident of Edmonton`;
+Constituent from Edmonton`;
     expect(actual[0]).toEqual(expected);
   });
 });

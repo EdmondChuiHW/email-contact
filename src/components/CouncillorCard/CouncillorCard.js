@@ -41,6 +41,15 @@ const defaultProps = {
   campaignId: '',
 };
 
+function emailCreatorFrom(campaignId) {
+  switch (campaignId) {
+    case 'open_parking':
+      return makeOpenParkingEmail;
+    default:
+      return makeYegCoreZoneEmail;
+  }
+}
+
 const CouncillorCard = ({
   firstName, lastName, ward, role, phone, email, photoUrl, campaignId,
 }) => {
@@ -102,12 +111,3 @@ CouncillorCard.propTypes = propTypes;
 CouncillorCard.defaultProps = defaultProps;
 
 export default CouncillorCard;
-
-function emailCreatorFrom(campaignId) {
-  switch(campaignId) {
-    case 'open_parking':
-      return makeOpenParkingEmail;
-    default:
-      return makeYegCoreZoneEmail;
-  }
-}

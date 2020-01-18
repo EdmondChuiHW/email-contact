@@ -11,6 +11,7 @@ import Paper from '@material-ui/core/Paper';
 import { isMobile } from 'react-device-detect';
 import * as PropTypes from 'prop-types';
 import makeYegCoreZoneEmail from '../../utils/makeYegCoreZoneEmail';
+import makeOpenParkingEmail from '../../utils/makeOpenParkingEmail';
 import EmailArray from '../EmailArray';
 import commonEmailProviders, { mailToProvider } from '../../services/email-providers';
 
@@ -25,6 +26,8 @@ const propTypes = {
   phone: PropTypes.string,
   email: PropTypes.string,
   photoUrl: PropTypes.string,
+
+  campaignId: PropTypes.string,
 };
 
 const defaultProps = {
@@ -35,16 +38,18 @@ const defaultProps = {
   phone: '',
   email: '',
   photoUrl: defaultPhotoUrl,
+  campaignId: '',
 };
 
 const CouncillorCard = ({
-  firstName, lastName, ward, role, phone, email, photoUrl,
+  firstName, lastName, ward, role, phone, email, photoUrl, campaignId,
 }) => {
   const name = `${firstName} ${lastName}`;
   const subtitle = when(startsWith('Councillor'), s => `${s} – ${ward}`)(role);
   const normalizeWard = when(startsWith('City'), always('Edmonton'));
 
-  const [emailBody, emailSubject] = makeYegCoreZoneEmail({
+  const emailCreator = emailCreatorFrom(campaignId);
+  const [emailBody, emailSubject] = emailCreator({
     role,
     lastName,
     ward: normalizeWard(ward),
@@ -97,3 +102,12 @@ CouncillorCard.propTypes = propTypes;
 CouncillorCard.defaultProps = defaultProps;
 
 export default CouncillorCard;
+
+function emailCreatorFrom(campaignId) {
+  switch(campaignId) {
+    case 'open_parking':
+      return makeOpenParkingEmail;
+    default:
+      return makeYegCoreZoneEmail;
+  }
+}

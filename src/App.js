@@ -35,7 +35,7 @@ const App = ({ coords }) => {
   const [query, setQuery] = useState('');
   const [councillor, originalQuery] = useCouncillor({ address: query, coords });
   // eslint-disable-next-line camelcase
-  const { iframe_pls } = queryString.parse(window.location.search);
+  const { iframe_pls, cid } = queryString.parse(window.location.search);
 
   const className = classNames(
     'app',
@@ -51,7 +51,7 @@ const App = ({ coords }) => {
         isLoading={query !== originalQuery}
       />
       <Typography gutterBottom />
-      {councillor && <CouncillorCard {...councillor} />}
+      {councillor && <CouncillorCard {...councillor} campaignId={cid} />}
     </div>
   );
 };

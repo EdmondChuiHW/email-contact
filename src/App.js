@@ -42,6 +42,10 @@ const App = ({ coords }) => {
     { 'iframe-pls': iframe_pls },
   );
 
+  if (cid === 'open_parking') {
+    document.title = 'Parking Minimums - Take Action On Climate';
+  }
+
   return (
     <div className={className}>
       <CssBaseline />

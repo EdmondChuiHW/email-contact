@@ -35,11 +35,11 @@ const App = ({ coords }) => {
   const [query, setQuery] = useState('');
   const [councillor, originalQuery] = useCouncillor({ address: query, coords });
   // eslint-disable-next-line camelcase
-  const { iframe_pls, cid } = queryString.parse(window.location.search);
+  const { iframe_pls: iframe, cid } = queryString.parse(window.location.search);
 
   const className = classNames(
     'app',
-    { 'iframe-pls': iframe_pls },
+    { 'iframe-pls': iframe },
   );
 
   if (cid === 'open_parking') {
@@ -53,7 +53,7 @@ const App = ({ coords }) => {
         label="Find your councillor by postal code/address"
         onQueryChange={setQuery}
         isLoading={query !== originalQuery}
-        autoFocus={!iframe_pls}
+        autoFocus={!iframe}
       />
       <Typography gutterBottom />
       {councillor && <CouncillorCard {...councillor} campaignId={cid} />}

@@ -53,6 +53,7 @@ const App = ({ coords }) => {
         label="Find your councillor by postal code/address"
         onQueryChange={setQuery}
         isLoading={query !== originalQuery}
+        autoFocus={!iframe_pls}
       />
       <Typography gutterBottom />
       {councillor && <CouncillorCard {...councillor} campaignId={cid} />}

@@ -19,6 +19,7 @@ const propTypes = {
   label: PropTypes.string,
   query: PropTypes.string,
   isLoading: PropTypes.bool,
+  autoFocus: PropTypes.bool,
   onQueryChange: PropTypes.func,
   onClearQuery: PropTypes.func,
   ClearButton: PropTypes.elementType,
@@ -30,6 +31,7 @@ const defaultProps = {
   label: '',
   query: '',
   isLoading: false,
+  autoFocus: true,
   onQueryChange: always,
   onClearQuery: always,
   ClearButton: SimpleClearButton,
@@ -38,13 +40,13 @@ const defaultProps = {
 };
 
 const SearchBar = ({
-  label, query, isLoading, onQueryChange, onClearQuery, ClearButton, SearchButton, Input,
+  label, query, isLoading, autoFocus, onQueryChange, onClearQuery, ClearButton, SearchButton, Input,
 }) => (
   <Paper className="root" elevation={1}>
     <Input
       autoComplete="postal-code"
       className="input"
-      autoFocus
+      autoFocus={autoFocus}
       placeholder={label}
       value={query}
       onChange={onQueryChange}

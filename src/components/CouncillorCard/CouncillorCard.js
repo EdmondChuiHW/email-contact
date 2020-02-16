@@ -16,7 +16,6 @@ import EmailArray from '../EmailArray';
 import commonEmailProviders, { mailToProvider } from '../../services/email-providers';
 
 const defaultPhotoUrl = 'https://www.edmonton.ca/city_government/documents/Mayor-Headshot_800x494_rdax_500x309.jpg';
-const cc = 'council@edmonton.ca';
 
 const propTypes = {
   firstName: PropTypes.string,
@@ -91,10 +90,9 @@ const CouncillorCard = ({
       <CardActions>
         <div className="email-array">
           <EmailArray
-            email={email}
+            email={[email, 'council@edmonton.ca', 'city.clerk@edmonton.ca'].join(',')}
             subject={emailSubject}
             body={emailBody}
-            cc={cc}
             providers={emailProviders}
           />
           <Button color="primary" href={`tel:${phone}`}>

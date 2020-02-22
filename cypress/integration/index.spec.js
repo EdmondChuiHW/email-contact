@@ -67,6 +67,8 @@ describe('Email contact', () => {
     [5, 'T5R 5N1'],
     [6, 'T5N 2R8'],
     [7, 'T5H 1L9'],
+    [7, 'T5G0M5'],  // makes sure our code convers this to T5G 0M5
+    [7, 'T5G 0M5'],
     [8, 'T6E 4Z8'],
     [8, 'T6E 2G1'],
     [9, 'T6W 1K3'],

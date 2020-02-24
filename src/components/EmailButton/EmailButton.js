@@ -1,7 +1,7 @@
-import './EmailButton.css';
 import Button from '@material-ui/core/Button';
-import React from 'react';
 import * as PropTypes from 'prop-types';
+import React from 'react';
+import './EmailButton.css';
 import ImgOrLeft from './ImgOrLeft';
 
 const propTypes = {

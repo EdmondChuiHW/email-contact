@@ -1,8 +1,8 @@
-import React from 'react';
 import { pipe } from 'ramda';
-
-import EmailButton from '../EmailButton';
+import React from 'react';
 import hrefSanitizer from '../../utils/hrefSanitizer';
+import EmailButton from '../EmailButton';
+
 
 function EmailArray(props) {
   const { providers, ...emailArrayProps } = props;

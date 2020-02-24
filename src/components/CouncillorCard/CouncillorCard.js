@@ -1,19 +1,19 @@
-import React from 'react';
+import { Divider } from '@material-ui/core';
+import Button from '@material-ui/core/Button';
 import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
-import Button from '@material-ui/core/Button';
-import CallIcon from '@material-ui/icons/Call';
-import Typography from '@material-ui/core/Typography';
-import { always, startsWith, when } from 'ramda';
-import './CouncillorCard.css';
-import { Divider } from '@material-ui/core';
 import Paper from '@material-ui/core/Paper';
-import { isMobile } from 'react-device-detect';
+import Typography from '@material-ui/core/Typography';
+import CallIcon from '@material-ui/icons/Call';
 import * as PropTypes from 'prop-types';
-import makeYegCoreZoneEmail from '../../utils/makeYegCoreZoneEmail';
-import makeOpenParkingEmail from '../../utils/makeOpenParkingEmail';
-import EmailArray from '../EmailArray';
+import { always, startsWith, when } from 'ramda';
+import React from 'react';
+import { isMobile } from 'react-device-detect';
 import commonEmailProviders, { mailToProvider } from '../../services/email-providers';
+import makeOpenParkingEmail from '../../utils/makeOpenParkingEmail';
+import makeYegCoreZoneEmail from '../../utils/makeYegCoreZoneEmail';
+import EmailArray from '../EmailArray';
+import './CouncillorCard.css';
 
 const defaultPhotoUrl = 'https://www.edmonton.ca/city_government/documents/Mayor-Headshot_800x494_rdax_500x309.jpg';
 

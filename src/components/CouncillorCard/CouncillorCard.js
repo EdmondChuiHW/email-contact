@@ -7,12 +7,13 @@ import Typography from '@material-ui/core/Typography';
 import CallIcon from '@material-ui/icons/Call';
 import * as PropTypes from 'prop-types';
 import { always, startsWith, when } from 'ramda';
-import React from 'react';
+import React, { useState } from 'react';
 import { isMobile } from 'react-device-detect';
 import commonEmailProviders, { mailToProvider } from '../../services/email-providers';
 import makeOpenParkingEmail from '../../utils/makeOpenParkingEmail';
 import makeYegCoreZoneEmail from '../../utils/makeYegCoreZoneEmail';
 import EmailArray from '../EmailArray';
+import ShareSheet from '../ShareSheet/ShareSheet';
 import './CouncillorCard.css';
 
 const defaultPhotoUrl = 'https://www.edmonton.ca/city_government/documents/Mayor-Headshot_800x494_rdax_500x309.jpg';
@@ -66,6 +67,8 @@ const CouncillorCard = ({
     ? [mailToProvider, ...commonEmailProviders]
     : [...commonEmailProviders, mailToProvider];
 
+  const [showShareSheet, setShowShareSheet] = useState(false);
+
   return (
     <Paper>
       <div className="contact">
@@ -94,7 +97,7 @@ const CouncillorCard = ({
             subject={emailSubject}
             body={emailBody}
             providers={emailProviders}
-            onClick={() => undefined}
+            onClick={() => setShowShareSheet(true)}
           />
           <Button color="primary" href={`tel:${phone}`}>
             <CallIcon className="left-icon" />
@@ -102,6 +105,14 @@ const CouncillorCard = ({
           </Button>
         </div>
       </CardActions>
+      {showShareSheet && (
+        <>
+          <Divider />
+          <CardContent>
+            <ShareSheet />
+          </CardContent>
+        </>
+      )}
     </Paper>
   );
 };

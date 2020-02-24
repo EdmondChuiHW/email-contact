@@ -9,6 +9,7 @@ const propTypes = {
   src: PropTypes.string,
   href: PropTypes.string,
   left: PropTypes.node,
+  onClick: PropTypes.func,
 };
 
 const defaultProps = {
@@ -16,16 +17,18 @@ const defaultProps = {
   src: '',
   href: '',
   left: <></>,
+  onClick: undefined,
 };
 
 const EmailButton = ({
-  name, src, href, left,
+  name, src, href, left, onClick,
 }) => (
   <Button
     color="primary"
     href={href}
     target="_blank"
     rel="noopener noreferrer"
+    onClick={onClick}
   >
     <ImgOrLeft src={src} alt={name} left={left} />
     <span>{name}</span>

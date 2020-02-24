@@ -94,6 +94,7 @@ const CouncillorCard = ({
             subject={emailSubject}
             body={emailBody}
             providers={emailProviders}
+            onClick={() => undefined}
           />
           <Button color="primary" href={`tel:${phone}`}>
             <CallIcon className="left-icon" />

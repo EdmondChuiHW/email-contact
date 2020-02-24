@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/email-contact/static/css/main.2592b30f.chunk.css",
-    "main.js": "/email-contact/static/js/main.73660632.chunk.js",
-    "main.js.map": "/email-contact/static/js/main.73660632.chunk.js.map",
+    "main.js": "/email-contact/static/js/main.997af0a5.chunk.js",
+    "main.js.map": "/email-contact/static/js/main.997af0a5.chunk.js.map",
     "runtime-main.js": "/email-contact/static/js/runtime-main.6acd5fb1.js",
     "runtime-main.js.map": "/email-contact/static/js/runtime-main.6acd5fb1.js.map",
     "static/js/2.73b739e3.chunk.js": "/email-contact/static/js/2.73b739e3.chunk.js",
     "static/js/2.73b739e3.chunk.js.map": "/email-contact/static/js/2.73b739e3.chunk.js.map",
     "index.html": "/email-contact/index.html",
-    "precache-manifest.110e5d225543b97657da19622ef35ec2.js": "/email-contact/precache-manifest.110e5d225543b97657da19622ef35ec2.js",
+    "precache-manifest.beeec8f76c38f122b36f569e2d9eb2de.js": "/email-contact/precache-manifest.beeec8f76c38f122b36f569e2d9eb2de.js",
     "service-worker.js": "/email-contact/service-worker.js",
     "static/css/main.2592b30f.chunk.css.map": "/email-contact/static/css/main.2592b30f.chunk.css.map",
     "static/js/2.73b739e3.chunk.js.LICENSE": "/email-contact/static/js/2.73b739e3.chunk.js.LICENSE",
@@ -20,6 +20,6 @@
     "static/js/runtime-main.6acd5fb1.js",
     "static/js/2.73b739e3.chunk.js",
     "static/css/main.2592b30f.chunk.css",
-    "static/js/main.73660632.chunk.js"
+    "static/js/main.997af0a5.chunk.js"
   ]
 }

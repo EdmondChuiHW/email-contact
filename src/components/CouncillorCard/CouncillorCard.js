@@ -97,7 +97,7 @@ const CouncillorCard = ({
           />
           <Button color="primary" href={`tel:${phone}`}>
             <CallIcon className="left-icon" />
-          Call
+            Call
           </Button>
         </div>
       </CardActions>

@@ -7,6 +7,9 @@ module.exports = {
   ],
   'rules': {
     'react/jsx-filename-extension': 'off',
+    'no-use-before-define': ['error', { 'functions': false, 'classes': false }],
+    'consistent-return': 'off',
+    'no-return-assign': 'except-parens',
   },
   'plugins': [
     'cypress',

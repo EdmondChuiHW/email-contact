@@ -50,8 +50,6 @@ function emailCreatorFrom(campaignId) {
   }
 }
 
-const shareSheetEnabled = false;
-
 const CouncillorCard = ({
   firstName, lastName, ward, role, phone, email, photoUrl, campaignId,
 }) => {
@@ -79,7 +77,7 @@ const CouncillorCard = ({
           src={photoUrl}
           alt={name}
         />
-        <CardContent>
+        <CardContent className="text-content">
           <Typography variant="h5" component="h2">
             {name}
           </Typography>
@@ -107,7 +105,7 @@ const CouncillorCard = ({
           </Button>
         </div>
       </CardActions>
-      {shareSheetEnabled && showShareSheet && (
+      {showShareSheet && (
         <>
           <Divider />
           <CardContent>

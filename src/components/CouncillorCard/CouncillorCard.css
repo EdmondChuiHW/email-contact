@@ -10,6 +10,10 @@
   height: auto;
 }
 
+.text-content {
+  max-width: 45em;
+}
+
 .template {
   white-space: pre-wrap;
 }

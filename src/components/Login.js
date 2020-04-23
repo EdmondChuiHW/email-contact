@@ -1,28 +1,35 @@
+import firebase from 'firebase';
 import React, { useEffect } from "react";
+import StyledFirebaseAuth from 'react-firebaseui/StyledFirebaseAuth';
 import { useHistory, useLocation } from "react-router-dom";
 import useAuth from "../contexts/useAuth";
+
+const uiConfig = {
+  signInFlow: 'redirect',
+  signInOptions: [
+    {
+      provider: firebase.auth.EmailAuthProvider.PROVIDER_ID,
+      signInMethod: firebase.auth.EmailAuthProvider.EMAIL_LINK_SIGN_IN_METHOD,
+    }
+  ],
+};
 
 export default function Login() {
   const history = useHistory();
   const location = useLocation();
-  const [authKey, signIn] = useAuth();
+  const [user] = useAuth();
 
-  const { from } = location.state || { from: { pathname: "/" } };
+  const { from } = location.state || { from: { pathname: "/admin" } };
 
   useEffect(() => {
-    if (!authKey) return;
+    if (!user) return;
 
     history.replace(from);
-  }, [authKey, history, from]);
+  }, [user, history, from]);
 
   return (
     <div>
-      <p>You must log in to view the page at {from.pathname}</p>
-      <button onClick={onLoginClick}>Log in</button>
+      <StyledFirebaseAuth uiConfig={uiConfig} firebaseAuth={firebase.auth()} />
     </div>
   );
-
-  function onLoginClick() {
-    signIn("aefwafew");
-  }
 }

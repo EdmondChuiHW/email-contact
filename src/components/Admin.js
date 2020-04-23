@@ -1,5 +1,5 @@
 import AppBar from '@material-ui/core/AppBar';
-import Divider from '@material-ui/core/Divider';
+import Button from '@material-ui/core/Button';
 import Drawer from '@material-ui/core/Drawer';
 import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
@@ -8,10 +8,12 @@ import ListItemText from '@material-ui/core/ListItemText';
 import { withStyles } from '@material-ui/core/styles';
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
-import MailIcon from '@material-ui/icons/Mail';
-import InboxIcon from '@material-ui/icons/MoveToInbox';
+import DraftsIcon from '@material-ui/icons/Drafts';
 import React from "react";
+import { Link, Redirect, Route, Switch, useRouteMatch } from "react-router-dom";
 import useAuth from "../contexts/useAuth";
+import Campaigns from './Campaigns';
+
 
 const drawerWidth = 240;
 const styles = theme => ({
@@ -20,6 +22,9 @@ const styles = theme => ({
   },
   appBar: {
     zIndex: theme.zIndex.drawer + 1,
+  },
+  grow: {
+    flexGrow: 1,
   },
   drawer: {
     width: drawerWidth,
@@ -36,19 +41,25 @@ const styles = theme => ({
 });
 
 function Admin(props) {
-  const { classes } = props;
-
   const [user, signOut] = useAuth();
+  if (!user) throw new Error(`protected route`);
+
+  const { classes } = props;
+  const { path, url } = useRouteMatch();
+  const isCampaigns = !!useRouteMatch(`${path}/campaigns`);
 
   return <>
-    <span>Admin, {user.email}</span>
-    <button onClick={signOut}>sign out</button>
+    <Redirect from={path} to={`${path}/campaigns`} />
     <div className={classes.root}>
       <AppBar position="fixed" className={classes.appBar}>
         <Toolbar>
-          <Typography variant="h6" color="inherit" noWrap>
-            Clipped drawer
+          <Typography variant="h6" color="inherit" className={classes.grow}>
+            Admin
           </Typography>
+          <Typography variant="body2" color="inherit">
+            {user.email}
+          </Typography>
+          <Button color="inherit" onClick={signOut}>Sign out</Button>
         </Toolbar>
       </AppBar>
       <Drawer
@@ -60,48 +71,27 @@ function Admin(props) {
       >
         <div className={classes.toolbar} />
         <List>
-          {['Inbox', 'Starred', 'Send email', 'Drafts'].map((text, index) => (
-            <ListItem button key={text}>
-              <ListItemIcon>{index % 2 === 0 ? <InboxIcon /> : <MailIcon />}</ListItemIcon>
-              <ListItemText primary={text} />
-            </ListItem>
-          ))}
-        </List>
-        <Divider />
-        <List>
-          {['All mail', 'Trash', 'Spam'].map((text, index) => (
-            <ListItem button key={text}>
-              <ListItemIcon>{index % 2 === 0 ? <InboxIcon /> : <MailIcon />}</ListItemIcon>
-              <ListItemText primary={text} />
-            </ListItem>
-          ))}
+          <ListItem
+            button
+            component={Link}
+            to={`${url}/campaigns`}
+            selected={isCampaigns}
+          >
+            <ListItemIcon><DraftsIcon /></ListItemIcon>
+            <ListItemText primary="Campaign" />
+          </ListItem>
         </List>
       </Drawer>
       <main className={classes.content}>
         <div className={classes.toolbar} />
-        <Typography paragraph>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-          ut labore et dolore magna aliqua. Rhoncus dolor purus non enim praesent elementum
-          facilisis leo vel. Risus at ultrices mi tempus imperdiet. Semper risus in hendrerit
-          gravida rutrum quisque non tellus. Convallis convallis tellus id interdum velit laoreet id
-          donec ultrices. Odio morbi quis commodo odio aenean sed adipiscing. Amet nisl suscipit
-          adipiscing bibendum est ultricies integer quis. Cursus euismod quis viverra nibh cras.
-          Metus vulputate eu scelerisque felis imperdiet proin fermentum leo. Mauris commodo quis
-          imperdiet massa tincidunt. Cras tincidunt lobortis feugiat vivamus at augue. At augue eget
-          arcu dictum varius duis at consectetur lorem. Velit sed ullamcorper morbi tincidunt. Lorem
-          donec massa sapien faucibus et molestie ac.
-        </Typography>
-        <Typography paragraph>
-          Consequat mauris nunc congue nisi vitae suscipit. Fringilla est ullamcorper eget nulla
-          facilisi etiam dignissim diam. Pulvinar elementum integer enim neque volutpat ac
-          tincidunt. Ornare suspendisse sed nisi lacus sed viverra tellus. Purus sit amet volutpat
-          consequat mauris. Elementum eu facilisis sed odio morbi. Euismod lacinia at quis risus sed
-          vulputate odio. Morbi tincidunt ornare massa eget egestas purus viverra accumsan in. In
-          hendrerit gravida rutrum quisque non tellus orci ac. Pellentesque nec nam aliquam sem et
-          tortor. Habitant morbi tristique senectus et. Adipiscing elit duis tristique sollicitudin
-          nibh sit. Ornare aenean euismod elementum nisi quis eleifend. Commodo viverra maecenas
-          accumsan lacus vel facilisis. Nulla posuere sollicitudin aliquam ultrices sagittis orci a.
-        </Typography>
+        <Switch>
+          <Route exact path={path}>
+            <h3>Please select a topic.</h3>
+          </Route>
+          <Route path={`${path}/campaigns`}>
+            <Campaigns />
+          </Route>
+        </Switch>
       </main>
     </div>
   </>;

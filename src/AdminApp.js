@@ -27,13 +27,13 @@ export default function AdminApp() {
 }
 
 function PrivateRoute({ children, ...rest }) {
-  const [authKey] = useAuth();
+  const [user] = useAuth();
 
   return (
     <Route
       {...rest}
       render={({ location }) =>
-        authKey ? (
+        user ? (
           children
         ) : (
             <Redirect

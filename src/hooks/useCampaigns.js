@@ -3,7 +3,11 @@ import firebase from "firebase";
 import { useEffect, useState } from "react";
 import useAuth from "../contexts/useAuth";
 
-const defaultBody = "";
+const defaultBody = `I want safe and liveable streets.
+
+Vote YES to slower streets in Edmonton's neighbourhoods.
+
+Sincerely,`;
 
 export default function useCampaigns() {
   const [user] = useAuth();
@@ -29,7 +33,7 @@ export default function useCampaigns() {
       authorUid: user.uid,
       createdOn: firebase.firestore.FieldValue.serverTimestamp(),
       subject: "",
-      body: "",
+      body: defaultBody,
     }).catch(e => {
       console.error(e);
     });

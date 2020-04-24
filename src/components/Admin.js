@@ -78,7 +78,7 @@ function Admin(props) {
             selected={isCampaigns}
           >
             <ListItemIcon><DraftsIcon /></ListItemIcon>
-            <ListItemText primary="Campaign" />
+            <ListItemText primary="Campaigns" />
           </ListItem>
         </List>
       </Drawer>

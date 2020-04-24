@@ -1,30 +1,51 @@
-import { Divider } from '@material-ui/core';
-import Typography from '@material-ui/core/Typography';
-import React, { Fragment } from "react";
+import Button from '@material-ui/core/Button';
+import { withStyles } from '@material-ui/core/styles';
+import AddIcon from '@material-ui/icons/Add';
+import React from "react";
 import useCampaigns from '../hooks/useCampaigns';
+import Campaign from './Campaign';
+
+
+const styles = theme => ({
+  card: {
+    minWidth: 275,
+    ...theme.mixins.gutters(),
+    paddingTop: theme.spacing.unit * 2,
+    paddingBottom: theme.spacing.unit,
+  },
+  bullet: {
+    display: 'inline-block',
+    margin: '0 2px',
+    transform: 'scale(0.8)',
+  },
+  title: {
+    fontSize: 14,
+  },
+  textContext: {
+    maxWidth: "45em"
+  },
+  icon: {
+    marginRight: theme.spacing.unit * 0.5,
+  },
+  actions: { display: "flex", alignItems: "center", marginTop: theme.spacing.unit * 2 },
+});
 
 function Campaigns(props) {
-  const [campaigns] = useCampaigns();
+  const { classes } = props;
+  const [campaigns, create] = useCampaigns();
 
   if (!campaigns) return <>Loading…</>;
 
-  return <>
+  return <div className={classes.textContext}>
     {campaigns.map(snapshot => {
       const campaign = snapshot.data();
-      return <Fragment key={snapshot.id}>
-        <Typography variant="h3">
-          {campaign.name}
-        </Typography>
-        <Typography variant="h4">
-          {campaign.subject}
-        </Typography>
-        <Typography paragraph>
-          {campaign.body}
-        </Typography>
-        <Divider />
-      </Fragment>
+      return <Campaign key={snapshot.id} id={snapshot.id} {...campaign} />;
     })}
-  </>;
+    <Button fullWidth variant="outlined" color="primary" onClick={create}>
+      <AddIcon className={classes.icon} />
+      <span>Add new campign</span>
+    </Button>
+  </div>;
 }
 
-export default Campaigns;
+export default withStyles(styles)(Campaigns);

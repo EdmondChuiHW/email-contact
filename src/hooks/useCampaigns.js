@@ -3,6 +3,8 @@ import firebase from "firebase";
 import { useEffect, useState } from "react";
 import useAuth from "../contexts/useAuth";
 
+const defaultBody = "";
+
 export default function useCampaigns() {
   const [user] = useAuth();
   const [campaigns, setCampaigns] = useState();

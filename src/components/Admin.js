@@ -54,7 +54,7 @@ function Admin(props) {
       <AppBar position="fixed" className={classes.appBar}>
         <Toolbar>
           <Typography variant="h6" color="inherit" className={classes.grow}>
-            Admin
+            Email Campaigns Admin Panel
           </Typography>
           <Typography variant="body2" color="inherit">
             {user.email}

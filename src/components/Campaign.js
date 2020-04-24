@@ -1,4 +1,4 @@
-import { TextField, Typography } from '@material-ui/core';
+import { InputAdornment, TextField, Tooltip, Typography } from '@material-ui/core';
 import Paper from '@material-ui/core/Paper';
 import { withStyles } from '@material-ui/core/styles';
 import DoneIcon from '@material-ui/icons/Done';
@@ -39,7 +39,9 @@ const styles = theme => ({
     display: "flex",
     flexDirection: "row",
     marginLeft: theme.spacing.unit,
-  }
+  },
+  templateGreeting: { alignSelf: "start", height: "auto", marginBottom: theme.spacing.unit * 2 },
+  templateClosing: { alignSelf: "end", height: "auto", marginLeft: 0, marginTop: theme.spacing.unit * 2 },
 });
 
 function Campaign(props) {
@@ -60,14 +62,25 @@ function Campaign(props) {
       />
       <TextField
         label="Body template"
-        rows={9}
-        placeholder="Placeholder"
         multiline
         margin="normal"
         variant="outlined"
         fullWidth
         value={body}
         onChange={e => update(id, { body: e.target.value })}
+        InputProps={{
+          style: { flexDirection: "column" },
+          startAdornment: <InputAdornment position="start" className={classes.templateGreeting}>
+            <Tooltip title="automatically updated in live mode" placement="right">
+              <Typography variant="body1" color="textSecondary">Hello Councillor Knack,</Typography>
+            </Tooltip>
+          </InputAdornment>,
+          endAdornment: <InputAdornment position="end" className={classes.templateClosing}>
+            <Tooltip title="automatically updated in live mode" placement="right">
+              <Typography variant="body1" color="textSecondary">Constituent from Ward 1</Typography>
+            </Tooltip>
+          </InputAdornment>,
+        }}
       />
 
       <div className={classes.actions}>
@@ -76,8 +89,8 @@ function Campaign(props) {
           type="url"
           label="Shareable link"
           value={`https://edmondchuihw.github.io/email-contact/?cid=${id}`}
-          InputProps={{ readOnly: true }}
           inputRef={shareableLinkInputRef}
+          InputProps={{ readOnly: true }}
           onClick={() => {
             shareableLinkInputRef.current.focus();
             shareableLinkInputRef.current.select();

@@ -102,7 +102,7 @@ function Campaign(props) {
           InputProps={{
             readOnly: true,
             endAdornment: <InputAdornment position="end">
-              <IconButton href={shareableLink} target="_blank" rel="noreferrer noopener" onClick={e => e.stopPropagation()}>
+              <IconButton href={shareableLink} target="_blank" rel="noreferrer noopener" onClick={e => e.stopPropagation()} aria-label="preview in new tab">
                 <OpenTabIcon />
               </IconButton>
             </InputAdornment>,

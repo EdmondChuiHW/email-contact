@@ -1,7 +1,8 @@
-import { InputAdornment, TextField, Tooltip, Typography } from '@material-ui/core';
+import { IconButton, InputAdornment, TextField, Tooltip, Typography } from '@material-ui/core';
 import Paper from '@material-ui/core/Paper';
 import { withStyles } from '@material-ui/core/styles';
 import DoneIcon from '@material-ui/icons/Done';
+import OpenTabIcon from '@material-ui/icons/OpenInNew';
 import React, { useRef, useState } from "react";
 import useCampaigns from '../hooks/useCampaigns';
 import DeleteConfirm from './DeleteConfirm';
@@ -31,7 +32,7 @@ const styles = theme => ({
   icon: {
     marginRight: theme.spacing.unit * 0.5,
   },
-  actions: { display: "flex", alignItems: "center", marginTop: theme.spacing.unit * 2 },
+  actions: { display: "flex", alignItems: "end", marginTop: theme.spacing.unit * 2 },
   copiedTextContainer: {
     flex: 1,
     alignItems: "baseline",
@@ -46,6 +47,7 @@ const styles = theme => ({
 
 function Campaign(props) {
   const { classes, id, subject, body } = props;
+  const shareableLink = `https://edmondchuihw.github.io/email-contact/?cid=${id}`;
   const shareableLinkInputRef = useRef();
   const [, , update, remove] = useCampaigns();
   const [showCopied, setShowCopied] = useState(false);
@@ -88,9 +90,8 @@ function Campaign(props) {
           variant="standard"
           type="url"
           label="Shareable link"
-          value={`https://edmondchuihw.github.io/email-contact/?cid=${id}`}
+          value={shareableLink}
           inputRef={shareableLinkInputRef}
-          InputProps={{ readOnly: true }}
           onClick={() => {
             shareableLinkInputRef.current.focus();
             shareableLinkInputRef.current.select();
@@ -98,7 +99,15 @@ function Campaign(props) {
 
             setShowCopied([]);
           }}
-          style={{ flex: 2, alignSelf: "baseline" }}
+          InputProps={{
+            readOnly: true,
+            endAdornment: <InputAdornment position="end">
+              <IconButton href={shareableLink} target="_blank" rel="noreferrer noopener" onClick={e => e.stopPropagation()}>
+                <OpenTabIcon />
+              </IconButton>
+            </InputAdornment>,
+          }}
+          style={{ flex: 3, alignSelf: "baseline" }}
           fullWidth
         />
         <div className={classes.copiedTextContainer} >
@@ -107,7 +116,7 @@ function Campaign(props) {
             <Typography variant="overline" color="primary">Copied!</Typography>
           </Timeout>
         </div>
-        <DeleteConfirm style={{ marginLeft: "auto" }} onDeleteConfirmed={() => remove(id)} />
+        <DeleteConfirm onDeleteConfirmed={() => remove(id)} />
       </div>
     </Paper>
   </div>;

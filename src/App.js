@@ -1,14 +1,15 @@
-import React, { useState } from 'react';
-import './App.css';
-import CssBaseline from '@material-ui/core/CssBaseline';
-import { geolocated } from 'react-geolocated';
-import * as queryString from 'query-string';
-import classNames from 'classnames';
 import { Typography } from '@material-ui/core';
+import CssBaseline from '@material-ui/core/CssBaseline';
+import classNames from 'classnames';
 import * as PropTypes from 'prop-types';
-import DebouncedSearchBar from './components/DebouncedSearchBar';
-import useCouncillor from './hooks/useCouncillor';
+import * as queryString from 'query-string';
+import React, { useState } from 'react';
+import { geolocated } from 'react-geolocated';
+import './App.css';
 import CouncillorCard from './components/CouncillorCard';
+import DebouncedSearchBar from './components/DebouncedSearchBar';
+import useCampaign from './hooks/useCampaign';
+import useCouncillor from './hooks/useCouncillor';
 import geolocationProvider from './utils/geolocationProvider';
 
 const geoLocatedConfig = {
@@ -37,6 +38,8 @@ const App = ({ coords }) => {
   // eslint-disable-next-line camelcase
   const { iframe_pls: iframe, cid } = queryString.parse(window.location.search);
 
+  const [campaign, campaignLoadError] = useCampaign(cid);
+
   const className = classNames(
     'app',
     { 'iframe-pls': iframe },
@@ -56,7 +59,8 @@ const App = ({ coords }) => {
         autoFocus={!iframe}
       />
       <Typography gutterBottom />
-      {councillor && <CouncillorCard {...councillor} campaignId={cid} />}
+      {campaignLoadError && <Typography variant="subtitle1" color="error">{campaignLoadError.message}</Typography>}
+      {councillor && campaign && <CouncillorCard {...councillor} campaign={campaign} />}
     </div>
   );
 };

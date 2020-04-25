@@ -3,7 +3,7 @@ import CssBaseline from '@material-ui/core/CssBaseline';
 import classNames from 'classnames';
 import * as PropTypes from 'prop-types';
 import * as queryString from 'query-string';
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { geolocated } from 'react-geolocated';
 import './App.css';
 import CouncillorCard from './components/CouncillorCard';
@@ -37,17 +37,20 @@ const App = ({ coords }) => {
   const [councillor, originalQuery] = useCouncillor({ address: query, coords });
   // eslint-disable-next-line camelcase
   const { iframe_pls: iframe, cid } = queryString.parse(window.location.search);
+  const campaignId = cid || 'core_zone';
 
-  const [campaign, campaignLoadError] = useCampaign(cid);
+  const [campaign, campaignLoadError] = useCampaign(campaignId);
 
   const className = classNames(
     'app',
     { 'iframe-pls': iframe },
   );
 
-  if (cid === 'open_parking') {
-    document.title = 'Parking Minimums - Take Action On Climate';
-  }
+  useEffect(() => {
+    if (!campaign) return;
+
+    document.title = campaign.subject;
+  }, [campaign]);
 
   return (
     <div className={className}>

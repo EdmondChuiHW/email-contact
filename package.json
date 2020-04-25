@@ -28,7 +28,7 @@
     "start": "HTTPS=true react-scripts start",
     "start:ci": "REACT_APP_ADDRESS_SERVER_HOST=https://address2contact.herokuapp.com BROWSER=none react-scripts start",
     "build": "react-scripts build",
-    "lint": "eslint ./src && echo 'Linting done'",
+    "lint": "eslint ./src",
     "test": "npm-run-all lint test:units test:e2e",
     "test:ci": "CI=true npm-run-all lint test:units:junit test:e2e:ci",
     "test:units": "react-scripts test",

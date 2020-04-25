@@ -9,9 +9,11 @@ import { withStyles } from '@material-ui/core/styles';
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import DraftsIcon from '@material-ui/icons/Drafts';
-import React from "react";
-import { Link, Redirect, Route, Switch, useRouteMatch } from "react-router-dom";
-import useAuth from "../contexts/useAuth";
+import React from 'react';
+import {
+  Link, Redirect, Route, Switch, useRouteMatch,
+} from 'react-router-dom';
+import useAuth from '../contexts/useAuth';
 import Campaigns from './Campaigns';
 
 
@@ -42,59 +44,61 @@ const styles = theme => ({
 
 function Admin(props) {
   const [user, signOut] = useAuth();
-  if (!user) throw new Error(`protected route`);
+  if (!user) throw new Error('protected route');
 
   const { classes } = props;
   const { path, url } = useRouteMatch();
   const isCampaigns = !!useRouteMatch(`${path}/campaigns`);
 
-  return <>
-    <Redirect from={path} to={`${path}/campaigns`} />
-    <div className={classes.root}>
-      <AppBar position="fixed" className={classes.appBar}>
-        <Toolbar>
-          <Typography variant="h6" color="inherit" className={classes.grow}>
+  return (
+    <>
+      <Redirect from={path} to={`${path}/campaigns`} />
+      <div className={classes.root}>
+        <AppBar position="fixed" className={classes.appBar}>
+          <Toolbar>
+            <Typography variant="h6" color="inherit" className={classes.grow}>
             Email Campaigns Admin Panel
-          </Typography>
-          <Typography variant="body2" color="inherit">
-            {user.email}
-          </Typography>
-          <Button color="inherit" onClick={signOut}>Sign out</Button>
-        </Toolbar>
-      </AppBar>
-      <Drawer
-        className={classes.drawer}
-        variant="permanent"
-        classes={{
-          paper: classes.drawerPaper,
-        }}
-      >
-        <div className={classes.toolbar} />
-        <List>
-          <ListItem
-            button
-            component={Link}
-            to={`${url}/campaigns`}
-            selected={isCampaigns}
-          >
-            <ListItemIcon><DraftsIcon /></ListItemIcon>
-            <ListItemText primary="Campaigns" />
-          </ListItem>
-        </List>
-      </Drawer>
-      <main className={classes.content}>
-        <div className={classes.toolbar} />
-        <Switch>
-          <Route exact path={path}>
-            <h3>Please select a topic.</h3>
-          </Route>
-          <Route path={`${path}/campaigns`}>
-            <Campaigns />
-          </Route>
-        </Switch>
-      </main>
-    </div>
-  </>;
+            </Typography>
+            <Typography variant="body2" color="inherit">
+              {user.email}
+            </Typography>
+            <Button color="inherit" onClick={signOut}>Sign out</Button>
+          </Toolbar>
+        </AppBar>
+        <Drawer
+          className={classes.drawer}
+          variant="permanent"
+          classes={{
+            paper: classes.drawerPaper,
+          }}
+        >
+          <div className={classes.toolbar} />
+          <List>
+            <ListItem
+              button
+              component={Link}
+              to={`${url}/campaigns`}
+              selected={isCampaigns}
+            >
+              <ListItemIcon><DraftsIcon /></ListItemIcon>
+              <ListItemText primary="Campaigns" />
+            </ListItem>
+          </List>
+        </Drawer>
+        <main className={classes.content}>
+          <div className={classes.toolbar} />
+          <Switch>
+            <Route exact path={path}>
+              <h3>Please select a topic.</h3>
+            </Route>
+            <Route path={`${path}/campaigns`}>
+              <Campaigns />
+            </Route>
+          </Switch>
+        </main>
+      </div>
+    </>
+  );
 }
 
 export default withStyles(styles)(Admin);

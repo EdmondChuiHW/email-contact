@@ -7,5 +7,5 @@ ${body}
 Constituent from ${ward || 'Edmonton'}`;
 
     return [textBody, subject];
-  }
+  };
 }

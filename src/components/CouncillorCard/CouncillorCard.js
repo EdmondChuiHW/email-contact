@@ -25,8 +25,6 @@ const propTypes = {
   phone: PropTypes.string,
   email: PropTypes.string,
   photoUrl: PropTypes.string,
-
-  campaignId: PropTypes.string,
 };
 
 const defaultProps = {
@@ -37,7 +35,6 @@ const defaultProps = {
   phone: '',
   email: '',
   photoUrl: defaultPhotoUrl,
-  campaignId: '',
 };
 
 const shareSheetEnabled = false;
@@ -45,7 +42,6 @@ const shareSheetEnabled = false;
 const CouncillorCard = ({
   firstName, lastName, ward, role, phone, email, photoUrl, campaign,
 }) => {
-
   const [showShareSheet, setShowShareSheet] = useState(false);
   const name = `${firstName} ${lastName}`;
   const subtitle = when(startsWith('Councillor'), s => `${s} – ${ward}`)(role);

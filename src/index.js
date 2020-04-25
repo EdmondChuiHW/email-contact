@@ -7,14 +7,14 @@ import './index.css';
 import * as serviceWorker from './serviceWorker';
 
 const config = {
-  apiKey: "AIzaSyCnK8Xx45B2IoKySAMpT4KKxZzTM39U7XM",
-  authDomain: "email-contact-6bf7d.firebaseapp.com",
-  databaseURL: "https://email-contact-6bf7d.firebaseio.com",
-  projectId: "email-contact-6bf7d",
-  storageBucket: "email-contact-6bf7d.appspot.com",
-  messagingSenderId: "414763126743",
-  appId: "1:414763126743:web:33459f34cf73e670934592",
-  measurementId: "G-7B7J7X44VR"
+  apiKey: 'AIzaSyCnK8Xx45B2IoKySAMpT4KKxZzTM39U7XM',
+  authDomain: 'email-contact-6bf7d.firebaseapp.com',
+  databaseURL: 'https://email-contact-6bf7d.firebaseio.com',
+  projectId: 'email-contact-6bf7d',
+  storageBucket: 'email-contact-6bf7d.appspot.com',
+  messagingSenderId: '414763126743',
+  appId: '1:414763126743:web:33459f34cf73e670934592',
+  measurementId: 'G-7B7J7X44VR',
 };
 firebase.initializeApp(config);
 

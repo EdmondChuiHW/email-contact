@@ -45,6 +45,7 @@ steps:
     displayName: 'build'
 
   - task: PublishPipelineArtifact@0
+    condition: and(succeeded(), eq(variables['Build.SourceBranch'], 'refs/heads/master'))
     displayName: 'Publish `npm run build` result'
     inputs:
       artifactName: 'build'

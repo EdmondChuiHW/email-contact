@@ -29,11 +29,30 @@ const styles = theme => ({
     flexGrow: 1,
   },
   drawer: {
-    width: drawerWidth,
+    width: 0,
     flexShrink: 0,
   },
   drawerPaper: {
-    width: drawerWidth,
+    width: 0,
+  },
+  emailDisplay: {
+    display: 'none',
+  },
+  [theme.breakpoints.up('md')]: {
+    drawer: {
+      width: drawerWidth,
+    },
+    drawerPaper: {
+      width: drawerWidth,
+    },
+    emailDisplay: {
+      display: 'inline-block',
+    },
+  },
+  [theme.breakpoints.up('sm')]: {
+    emailDisplay: {
+      display: 'inline-block',
+    },
   },
   content: {
     flexGrow: 1,
@@ -59,7 +78,7 @@ function Admin(props) {
             <Typography variant="h6" color="inherit" className={classes.grow}>
             Email Campaigns Admin Panel
             </Typography>
-            <Typography variant="body2" color="inherit">
+            <Typography variant="body2" color="inherit" className={classes.emailDisplay}>
               {user.email}
             </Typography>
             <Button color="inherit" onClick={signOut}>Sign out</Button>

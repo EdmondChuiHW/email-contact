@@ -1,4 +1,6 @@
-import { FilledInput, FormControl, FormHelperText, InputAdornment, InputLabel, Typography } from '@material-ui/core';
+import {
+  FilledInput, FormControl, FormHelperText, InputAdornment, InputLabel, Typography,
+} from '@material-ui/core';
 import IconButton from '@material-ui/core/IconButton/index';
 import Email from '@material-ui/icons/Email';
 import SendIcon from '@material-ui/icons/Send';
@@ -15,14 +17,14 @@ export default function ShareSheet() {
   const [state, dispatch] = useReducer(progressReducer, { status: 'idle' });
   const [email, setEmail] = useState('');
 
-  const errorMessage = state.status === "completed" && state.response.errorMessage;
+  const errorMessage = state.status === 'completed' && state.response.errorMessage;
 
   useEffect(() => {
     if (state.status !== 'inProgress') return;
 
     let didCancel = false;
 
-    handleSubmit(state.formData, cancelAwareDispatch).catch((e) => {
+    handleSubmit(state.formData, cancelAwareDispatch).catch(() => {
       cancelAwareDispatch({
         type: 'completingRequest',
         payload: {
@@ -119,7 +121,8 @@ async function handleSubmit(formData, dispatch) {
 
   console.log(resp);
   dispatch({
-    type: 'completingRequest', payload: {
+    type: 'completingRequest',
+    payload: {
       response: resp.ok ? { success: true } : { success: false, errorMessage: resp.statusText },
     },
   });

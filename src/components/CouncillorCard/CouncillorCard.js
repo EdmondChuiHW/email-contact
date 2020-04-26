@@ -10,8 +10,7 @@ import { always, startsWith, when } from 'ramda';
 import React, { useState } from 'react';
 import { isMobile } from 'react-device-detect';
 import commonEmailProviders, { mailToProvider } from '../../services/email-providers';
-import makeOpenParkingEmail from '../../utils/makeOpenParkingEmail';
-import makeYegCoreZoneEmail from '../../utils/makeYegCoreZoneEmail';
+import makeEmailCreatorFromCampaign from '../../utils/makeEmailCreatorFromCampaign';
 import EmailArray from '../EmailArray';
 import ShareSheet from '../ShareSheet/ShareSheet';
 import './CouncillorCard.css';
@@ -26,8 +25,6 @@ const propTypes = {
   phone: PropTypes.string,
   email: PropTypes.string,
   photoUrl: PropTypes.string,
-
-  campaignId: PropTypes.string,
 };
 
 const defaultProps = {
@@ -38,28 +35,19 @@ const defaultProps = {
   phone: '',
   email: '',
   photoUrl: defaultPhotoUrl,
-  campaignId: '',
 };
-
-function emailCreatorFrom(campaignId) {
-  switch (campaignId) {
-    case 'open_parking':
-      return makeOpenParkingEmail;
-    default:
-      return makeYegCoreZoneEmail;
-  }
-}
 
 const shareSheetEnabled = false;
 
 const CouncillorCard = ({
-  firstName, lastName, ward, role, phone, email, photoUrl, campaignId,
+  firstName, lastName, ward, role, phone, email, photoUrl, campaign,
 }) => {
+  const [showShareSheet, setShowShareSheet] = useState(false);
   const name = `${firstName} ${lastName}`;
   const subtitle = when(startsWith('Councillor'), s => `${s} – ${ward}`)(role);
   const normalizeWard = when(startsWith('City'), always('Edmonton'));
 
-  const emailCreator = emailCreatorFrom(campaignId);
+  const emailCreator = makeEmailCreatorFromCampaign(campaign);
   const [emailBody, emailSubject] = emailCreator({
     role,
     lastName,
@@ -68,8 +56,6 @@ const CouncillorCard = ({
   const emailProviders = isMobile
     ? [mailToProvider, ...commonEmailProviders]
     : [...commonEmailProviders, mailToProvider];
-
-  const [showShareSheet, setShowShareSheet] = useState(false);
 
   return (
     <Paper>

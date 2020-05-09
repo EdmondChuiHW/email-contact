@@ -21,6 +21,7 @@ function CcAddressesField({ classes, ccAddresses, update }) {
   const [inputValue, setInputValue] = useState('');
   const [isFocus, setFocus] = useState(false);
   const inputRef = useRef();
+  const showInput = !ccAddresses || !ccAddresses.length || isFocus;
 
   return (
     <>
@@ -28,6 +29,7 @@ function CcAddressesField({ classes, ccAddresses, update }) {
         label="CC"
         margin="normal"
         variant="outlined"
+        placeholder="e.g. council@edmonton.ca, city.clerk@edmonton.ca"
         fullWidth
         multiline
         inputRef={inputRef}
@@ -37,12 +39,12 @@ function CcAddressesField({ classes, ccAddresses, update }) {
         onChange={e => setInputValue(e.currentTarget.value)}
         onBlur={onInputBlur}
         InputProps={{
-          inputProps: isFocus ? undefined : { style: { height: 0 } },
+          inputProps: showInput ? undefined : { style: { height: 0 } },
           style: { flexDirection: 'column' },
-          startAdornment: (
-            <InputAdornment position="start" className={classes.chipsAdornment} style={isFocus ? undefined : { marginBottom: 0 }}>
+          startAdornment: ccAddresses && ccAddresses.length && (
+            <InputAdornment position="start" className={classes.chipsAdornment} style={showInput ? undefined : { marginBottom: 0 }}>
               <>
-                {ccAddresses && ccAddresses.map(address => (
+                {ccAddresses.map(address => (
                   <Chip
                     key={address}
                     label={address}

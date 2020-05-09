@@ -84,6 +84,7 @@ const CouncillorCard = ({
             email={[email, 'council@edmonton.ca', 'city.clerk@edmonton.ca'].join(',')}
             subject={emailSubject}
             body={emailBody}
+            cc={campaign.ccAddresses && campaign.ccAddresses.join(',')}
             providers={emailProviders}
             onClick={() => setShowShareSheet(true)}
           />

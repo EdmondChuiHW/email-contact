@@ -15,12 +15,15 @@ export default function useCampaigns() {
   const db = firebase.firestore();
 
   useEffect(() => {
-    const unsubscribe = db.collection('campaigns').orderBy('createdOn').onSnapshot((querySnapshot) => {
-      setCampaigns(querySnapshot.docs);
-    });
+    const unsubscribe = db.collection('campaigns')
+      .orderBy('createdOn')
+      .where('authorUid', '==', user.uid)
+      .onSnapshot((querySnapshot) => {
+        setCampaigns(querySnapshot.docs);
+      });
 
     return () => unsubscribe();
-  }, [db]);
+  }, [db, user.uid]);
 
   function update(id, updates) {
     db.collection('campaigns').doc(id).update(updates).catch((e) => {

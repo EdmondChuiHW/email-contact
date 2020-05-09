@@ -1,8 +1,9 @@
 import {
   Chip, InputAdornment, TextField, withStyles,
 } from '@material-ui/core';
+import classNames from 'classnames';
 import firebase from 'firebase';
-import React, { useRef, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 
 const styles = (theme => ({
   chipsAdornment: {
@@ -13,7 +14,14 @@ const styles = (theme => ({
     flexWrap: 'wrap',
   },
   chip: {
-    margin: theme.spacing.unit / 2,
+    marginRight: theme.spacing.unit / 2,
+    marginTop: theme.spacing.unit / 2,
+  },
+  input: {
+    paddingTop: theme.spacing.unit,
+  },
+  inputIdle: {
+    paddingBottom: theme.spacing.unit,
   },
 }));
 
@@ -21,7 +29,14 @@ function CcAddressesField({ classes, ccAddresses, update }) {
   const [inputValue, setInputValue] = useState('');
   const [isFocus, setFocus] = useState(false);
   const inputRef = useRef();
-  const showInput = !ccAddresses || !ccAddresses.length || isFocus;
+  const hasExisting = ccAddresses && ccAddresses.length > 0;
+  const showInput = !hasExisting || isFocus;
+
+  useEffect(() => {
+    if (ccAddresses && ccAddresses.length) return;
+
+    setInputValue('');
+  }, [ccAddresses]);
 
   return (
     <>
@@ -39,9 +54,13 @@ function CcAddressesField({ classes, ccAddresses, update }) {
         onChange={e => setInputValue(e.currentTarget.value)}
         onBlur={onInputBlur}
         InputProps={{
+          className: classNames({
+            [classes.input]: hasExisting,
+            [classes.inputIdle]: hasExisting && !showInput,
+          }),
           inputProps: showInput ? undefined : { style: { height: 0 } },
           style: { flexDirection: 'column' },
-          startAdornment: ccAddresses && ccAddresses.length && (
+          startAdornment: hasExisting && (
             <InputAdornment position="start" className={classes.chipsAdornment} style={showInput ? undefined : { marginBottom: 0 }}>
               <>
                 {ccAddresses.map(address => (
@@ -75,6 +94,7 @@ function CcAddressesField({ classes, ccAddresses, update }) {
     const addresses = inputValue.split(',').map(e => e.trim()).filter(e => !!e);
     if (!addresses.length) return;
 
+    setInputValue(' ');
     update({
       ccAddresses: firebase.firestore.FieldValue.arrayUnion(...addresses),
     });

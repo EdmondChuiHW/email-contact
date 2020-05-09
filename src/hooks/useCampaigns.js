@@ -37,6 +37,7 @@ export default function useCampaigns() {
       createdOn: firebase.firestore.FieldValue.serverTimestamp(),
       subject: '',
       body: defaultBody,
+      ccAddresses: ['council@edmonton.ca', 'city.clerk@edmonton.ca'],
     }).catch((e) => {
       console.error(e);
     });

@@ -7,6 +7,7 @@ import DoneIcon from '@material-ui/icons/Done';
 import OpenTabIcon from '@material-ui/icons/OpenInNew';
 import React, { useRef, useState } from 'react';
 import useCampaigns from '../hooks/useCampaigns';
+import CcAddressesField from './CcAddressesField';
 import DeleteConfirm from './DeleteConfirm';
 import Timeout from './Timeout';
 
@@ -51,7 +52,7 @@ const styles = theme => ({
 
 function Campaign(props) {
   const {
-    classes, id, subject, body,
+    classes, id, subject, body, ccAddresses,
   } = props;
   const shareableLink = `${window.location.origin}/email-contact/?cid=${id}`;
   const shareableLinkInputRef = useRef();
@@ -69,6 +70,7 @@ function Campaign(props) {
           value={subject}
           onChange={e => update(id, { subject: e.target.value })}
         />
+        <CcAddressesField ccAddresses={ccAddresses} update={updates => update(id, updates)} />
         <TextField
           label="Body template"
           multiline

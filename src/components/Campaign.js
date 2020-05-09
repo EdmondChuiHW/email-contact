@@ -53,7 +53,7 @@ function Campaign(props) {
   const {
     classes, id, subject, body,
   } = props;
-  const shareableLink = `https://edmondchuihw.github.io/email-contact/?cid=${id}`;
+  const shareableLink = `${window.location.origin}/email-contact/?cid=${id}`;
   const shareableLinkInputRef = useRef();
   const [, , update, remove] = useCampaigns();
   const [showCopied, setShowCopied] = useState(false);

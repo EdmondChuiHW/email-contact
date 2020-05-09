@@ -81,7 +81,7 @@ const CouncillorCard = ({
       <CardActions>
         <div className="email-array">
           <EmailArray
-            email={[email, 'council@edmonton.ca', 'city.clerk@edmonton.ca'].join(',')}
+            email={email}
             subject={emailSubject}
             body={emailBody}
             cc={campaign.ccAddresses && campaign.ccAddresses.join(',')}

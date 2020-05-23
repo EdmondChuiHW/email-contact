@@ -1,38 +1,17 @@
 import { Typography } from '@material-ui/core';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import classNames from 'classnames';
-import * as PropTypes from 'prop-types';
 import * as queryString from 'query-string';
 import React, { useEffect, useState } from 'react';
-import { geolocated } from 'react-geolocated';
 import './App.css';
 import CouncillorCard from './components/CouncillorCard';
 import DebouncedSearchBar from './components/DebouncedSearchBar';
 import useCampaign from './hooks/useCampaign';
 import useCouncillor from './hooks/useCouncillor';
-import geolocationProvider from './utils/geolocationProvider';
+import useGeo from './hooks/useGeo';
 
-const geoLocatedConfig = {
-  positionOptions: {
-    enableHighAccuracy: false,
-    timeout: 5000,
-  },
-  userDecisionTimeout: 5000,
-  geolocationProvider,
-};
-
-const propTypes = {
-  coords: PropTypes.shape({
-    latitude: PropTypes.number,
-    longitude: PropTypes.number,
-  }),
-};
-
-const defaultProps = {
-  coords: undefined,
-};
-
-const App = ({ coords }) => {
+const App = () => {
+  const [coords, geoErrorMessage, isGeoLoading, requestCurrentGeo] = useGeo();
   const [query, setQuery] = useState('');
   const [councillor, originalQuery] = useCouncillor({ address: query, coords });
   // eslint-disable-next-line camelcase
@@ -52,9 +31,13 @@ const App = ({ coords }) => {
     document.title = campaign.subject;
   }, [campaign]);
 
+  console.log('coords', coords);
+
   return (
     <div className={className}>
       <CssBaseline />
+      {geoErrorMessage}
+      {isGeoLoading && 'Loading location…'}
       <DebouncedSearchBar
         label="Find your councillor by postal code/address"
         onQueryChange={setQuery}
@@ -68,7 +51,4 @@ const App = ({ coords }) => {
   );
 };
 
-App.propTypes = propTypes;
-App.defaultProps = defaultProps;
-
-export default geolocated(geoLocatedConfig)(App);
+export default App;

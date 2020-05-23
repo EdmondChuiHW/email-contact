@@ -31,8 +31,6 @@ const App = () => {
     document.title = campaign.subject;
   }, [campaign]);
 
-  console.log('coords', coords);
-
   return (
     <div className={className}>
       <CssBaseline />

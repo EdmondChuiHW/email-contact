@@ -33,6 +33,7 @@ const App = () => {
     document.title = campaign.subject;
   }, [campaign]);
 
+  const isTextSearchLoading = query !== originalQuery;
   const geoLoadingMessage = isGeoLoading && 'Finding your area councillor with your location…';
   const searchBarLabel = geoErrorMessage || geoLoadingMessage || 'Find your councillor by postal code/address';
 
@@ -43,7 +44,7 @@ const App = () => {
         label={searchBarLabel}
         onQueryChange={setQuery}
         onRequestCurrentLocation={requestCurrentGeo}
-        isLoading={query !== originalQuery}
+        isLoading={isTextSearchLoading || isGeoLoading}
         autoFocus={!iframe}
       />
       <Typography gutterBottom />

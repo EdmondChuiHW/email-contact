@@ -1,19 +1,14 @@
-import React from 'react';
-import Paper from '@material-ui/core/Paper/index';
-import IconButton from '@material-ui/core/IconButton/index';
-import InputBase from '@material-ui/core/InputBase/index';
-import SearchIcon from '@material-ui/icons/Search';
-import './SearchBar.css';
-import { always } from 'ramda';
-import * as PropTypes from 'prop-types';
-import Loading from '../Loading';
-import SimpleClearButton from '../ClearButton';
 
-const PlaceboSearchButton = () => (
-  <IconButton aria-label="Search">
-    <SearchIcon />
-  </IconButton>
-);
+import InputBase from '@material-ui/core/InputBase/index';
+import Paper from '@material-ui/core/Paper/index';
+import * as PropTypes from 'prop-types';
+import { always } from 'ramda';
+import React from 'react';
+import SimpleClearButton from '../ClearButton';
+import Loading from '../Loading';
+import LocateMeButton from '../LocateMeButton';
+import './SearchBar.css';
+
 
 const propTypes = {
   label: PropTypes.string,
@@ -22,8 +17,8 @@ const propTypes = {
   autoFocus: PropTypes.bool,
   onQueryChange: PropTypes.func,
   onClearQuery: PropTypes.func,
+  onRequestCurrentLocation: PropTypes.func,
   ClearButton: PropTypes.elementType,
-  SearchButton: PropTypes.elementType,
   Input: PropTypes.elementType,
 };
 
@@ -34,13 +29,14 @@ const defaultProps = {
   autoFocus: true,
   onQueryChange: always,
   onClearQuery: always,
+  onRequestCurrentLocation: always,
   ClearButton: SimpleClearButton,
-  SearchButton: PlaceboSearchButton,
   Input: InputBase,
 };
 
 const SearchBar = ({
-  label, query, isLoading, autoFocus, onQueryChange, onClearQuery, ClearButton, SearchButton, Input,
+  label, query, isLoading, autoFocus, onQueryChange, onClearQuery, onRequestCurrentLocation,
+  ClearButton, Input,
 }) => (
   <Paper className="root" elevation={1}>
     <Input
@@ -54,7 +50,7 @@ const SearchBar = ({
     <Loading isLoading={isLoading} className="loading">
       {query
         ? <ClearButton onClearQuery={onClearQuery} />
-        : <SearchButton />
+        : <LocateMeButton onClick={onRequestCurrentLocation} />
       }
     </Loading>
   </Paper>

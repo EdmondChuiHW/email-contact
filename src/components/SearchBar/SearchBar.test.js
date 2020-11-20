@@ -1,8 +1,8 @@
+import 'jest-dom/extend-expect';
 import React from 'react';
 import { cleanup, render } from 'react-testing-library';
-import SearchBar from './SearchBar';
-import 'jest-dom/extend-expect';
 import makeComponentSpy from '../../utils/makeComponentSpy';
+import SearchBar from './SearchBar';
 
 afterEach(cleanup);
 
@@ -31,12 +31,6 @@ describe('SearchBar', () => {
     const ClearButtonSpy = makeComponentSpy();
     render(<SearchBar query="qqqqq" ClearButton={ClearButtonSpy} />);
     expect(ClearButtonSpy).toBeCalledTimes(1);
-  });
-
-  it('renders search icon when query is empty', () => {
-    const SearchButtonSpy = makeComponentSpy();
-    render(<SearchBar query="" SearchButton={SearchButtonSpy} />);
-    expect(SearchButtonSpy).toBeCalledTimes(1);
   });
 
   it('should render progressbar when isLoading is true', () => {

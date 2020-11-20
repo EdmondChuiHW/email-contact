@@ -11,7 +11,9 @@ import useCouncillor from './hooks/useCouncillor';
 import useGeo from './hooks/useGeo';
 
 const App = () => {
-  const [coords, geoErrorMessage, isGeoLoading, requestCurrentGeo] = useGeo();
+  const [
+    coords, geoErrorMessage, isGeoLoading, requestCurrentGeo,
+  ] = useGeo({ disableLocateOnLoad: true });
   const [query, setQuery] = useState('');
   const [councillor, originalQuery] = useCouncillor({ address: query, coords });
   // eslint-disable-next-line camelcase
@@ -31,14 +33,16 @@ const App = () => {
     document.title = campaign.subject;
   }, [campaign]);
 
+  const geoLoadingMessage = isGeoLoading && 'Finding your area councillor with your location…';
+  const searchBarLabel = geoErrorMessage || geoLoadingMessage || 'Find your councillor by postal code/address';
+
   return (
     <div className={className}>
       <CssBaseline />
-      {geoErrorMessage}
-      {isGeoLoading && 'Loading location…'}
       <DebouncedSearchBar
-        label="Find your councillor by postal code/address"
+        label={searchBarLabel}
         onQueryChange={setQuery}
+        onRequestCurrentLocation={requestCurrentGeo}
         isLoading={query !== originalQuery}
         autoFocus={!iframe}
       />

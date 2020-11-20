@@ -1,9 +1,9 @@
-const requestWithAddress = ({ward, address}) => {
+const requestWithAddress = ({ ward, address }) => {
   cy.get('input')
     .clear()
     .type(address);
 
-  cy.contains(`Ward ${ward}`, {timeout: extendedTimeout});
+  cy.contains(`Ward ${ward}`, { timeout: extendedTimeout });
 
   cy.get('.email-array')
     .contains(/gmail/i)
@@ -42,21 +42,21 @@ describe('Email contact', () => {
   it('should display mayor by default', () => {
     cy.visit('/');
 
-    cy.contains('Mayor', {timeout: extendedTimeout});
+    cy.contains('Mayor', { timeout: extendedTimeout });
   });
 
   it('should show clear button after typing', () => {
     cy.visit('/');
 
-    cy.get('button[aria-label="Search"]');
+    cy.get('button[aria-label="Use your location to find the area councillor"]');
 
     cy.get('input')
       .type('aaa')
       .get('[role="progressbar"]')
-      .get('button[aria-label="Clear"]', {timeout: extendedTimeout})
+      .get('button[aria-label="Clear"]', { timeout: extendedTimeout })
       .click();
 
-    cy.get('input').should('not.have.value', 'aaa', {timeout: extendedTimeout});
+    cy.get('input').should('not.have.value', 'aaa', { timeout: extendedTimeout });
   });
 
   [
@@ -67,7 +67,7 @@ describe('Email contact', () => {
     [5, 'T5R 5N1'],
     [6, 'T5N 2R8'],
     [7, 'T5H 1L9'],
-    [7, 'T5G0M5'],  // makes sure our code convers this to T5G 0M5
+    [7, 'T5G0M5'], // makes sure our code convers this to T5G 0M5
     [7, 'T5G 0M5'],
     [8, 'T6E 4Z8'],
     [8, 'T6E 2G1'],

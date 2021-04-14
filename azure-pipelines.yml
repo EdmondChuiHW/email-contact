@@ -54,4 +54,4 @@ steps:
   - script: |
       git config user.email "chui.hinwai+azure@gmail.com" 
       git config user.name "Azure"
-      npm run deploy -- -r https://$(github_pat)@github.com/email-contact.git
+      npm run deploy -- -r https://$(github_pat)@github.com/EdmondChuiHW/email-contact.git

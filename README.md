@@ -3,7 +3,7 @@
 ![David](https://img.shields.io/david/EdmondChuiHW/email-contact.svg)
 ![David](https://img.shields.io/david/dev/EdmondChuiHW/email-contact.svg)
 
-Find your Edmonton City Councillor and auto-fills an email template: https://edmondchuihw.github.io/email-contact
+Find your Edmonton City Councillor and auto-fills an email template: https://edmondchuihw.github.io/email-contact (inactive at the moment)
 
 ## Featured in _Joyful React Testing_  
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=R8yX1tCDQIs" target="_blank" rel="noreferrer noopener">
